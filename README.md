@@ -23,3 +23,10 @@ descripción de los participantes :
 
 Pablo Domañksi : Hola  me llamo Pablo vivo en General Rodríguez Buenos Aires Argentina.  Trabajo  Yamaha Motor Argentina en el área de sistemas. Actualmente estoy estudiando para recibirme de técnico analista de sistemas. Espero poder aprender mucho con mis compañeros de grupo  y tener una buena experiencia desarrollando  nuestro sitio, Ancio codear   a pleno para llevar acabo el proyecto saludos! 
 
+
+wireframe digital : 
+HOME PAGE 
+https://drive.google.com/file/d/1HtbCLa0_OWoygKmhnkvPByq0qjtUSAQK/view?usp=sharing
+
+
+
