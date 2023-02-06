@@ -23,6 +23,7 @@ descripción de los participantes :
 Pablo Domañksi : Hola  me llamo Pablo vivo en General Rodríguez Buenos Aires Argentina.  Trabajo  Yamaha Motor Argentina en el área de sistemas. Actualmente estoy estudiando para recibirme de técnico analista de sistemas. Espero poder aprender mucho con mis compañeros de grupo  y tener una buena experiencia desarrollando  nuestro sitio, Ancio codear   a pleno para llevar acabo el proyecto saludos!
 Mauricio Cerutti: Hola, mi nombre es Mauricio, vivo en San Miguel de Tucumán, Tucumán, Argentina, soy ex estudiante de inglés de la universidad de letras nacional de Tucumán y me apasiona el área de el coding y la ciber seguridad.
 Cristian Giraldo Londoño : Hola, Mi nombre es Cristian Giraldo Londoño, soy de  armenia quindio Colombia, actualmente me encuentro cursando la carrera de ingenieria de sistemas,  se que con mi ayuda , tantto mi equipo como yo vamos a poder salir adelante con este proyecto.
+Eric Pino Najarro: Hola! mi nombre es Eric Pino Najarro, soy de Morón, buenos Aires, Argentina. Trabajo en una empresa de soluciones IT como Product Manager y estoy capacitándome en programación para poder alcanzar el puesto de Project Manager que tanto me interesa!. Con muchas ganas de aportar y seguir aprendiendo con este grupo! 
  
 
 
