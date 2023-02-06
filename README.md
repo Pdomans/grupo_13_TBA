@@ -32,5 +32,7 @@ HOME PAGE
 https://drive.google.com/file/d/1HtbCLa0_OWoygKmhnkvPByq0qjtUSAQK/view?usp=sharing , 
 https://app.diagrams.net/#G1HtbCLa0_OWoygKmhnkvPByq0qjtUSAQK
 
+Link trello : https://trello.com/b/aksovRBS/webaccesorios
+
 
 
