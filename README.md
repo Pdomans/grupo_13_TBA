@@ -30,6 +30,7 @@ Eric Pino Najarro: Hola! mi nombre es Eric Pino Najarro, soy de Morón, buenos A
 wireframe digital : 
 HOME PAGE 
 https://drive.google.com/file/d/1HtbCLa0_OWoygKmhnkvPByq0qjtUSAQK/view?usp=sharing
+https://app.diagrams.net/#G1HtbCLa0_OWoygKmhnkvPByq0qjtUSAQK
 
 
 
