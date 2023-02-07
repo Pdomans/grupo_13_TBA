@@ -6,13 +6,14 @@ Elegimos  un e-commerce  de equipamiento  de entrenamiento tanto para gimnasios 
 Nuestro e-commerce ofrece productos como : 
 •	Barras, discos, mancuernas, sogas, cajones, pelotas, entre otros instrumentos vitales para  poder realizar un entrenamiento recreativo o competitivo.
 
-Paginas de referencia 
-https://tienda.gfitness.com.ar
-https://www.fenixequipment.com.ar
-https://www.equipamientosfox.com
-https://jbh.com.ar
-https://drmfitness.com
-https://mercadofitness.com
+Paginas de referencia
+<ol>
+<li> https://tienda.gfitness.com.ar </li>
+<li> https://www.fenixequipment.com.ar </li>
+<li> https://www.equipamientosfox.com </li>
+<li> https://jbh.com.ar </li>
+<li> https://drmfitness.com </li>
+<li> https://mercadofitness.com </li>
 
 Estas paginas fueron elegidas por su distribución de los componentes del sitio,  por su diseño, tipografías, fuentes  distribución del contenido y la forma  intuitiva de mostrar sus productos  
 
