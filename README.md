@@ -40,7 +40,7 @@ Wireframe digital:
 <ul>
  <li>HOME PAGE
 https://drive.google.com/file/d/1HtbCLa0_OWoygKmhnkvPByq0qjtUSAQK/view?usp=sharing, 
-  https://app.diagrams.net/#G1HtbCLa0_OWoygKmhnkvPByq0qjtUSAQK</li>
+  [https://app.diagrams.net/#G1HtbCLa0_OWoygKmhnkvPByq0qjtUSAQK](https://app.diagrams.net/#G1HtbCLa0_OWoygKmhnkvPByq0qjtUSAQK)</li>
 <li>REGISTRO
   https://wireframe.cc/pro/pp/b96a6a2af625463</li>
 <li>LOGIN
