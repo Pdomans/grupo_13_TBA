@@ -40,6 +40,7 @@ Wireframe digital:
 <ul>
  <li>HOME/PRODUCTO/CARRITO/QUIENES_SOMOS
 https://drive.google.com/file/d/1HtbCLa0_OWoygKmhnkvPByq0qjtUSAQK/view
+https://imgur.com/a/SEhZl8H
 <li>REGISTRO
   https://wireframe.cc/pro/pp/b96a6a2af625463</li>
 <li>LOGIN
