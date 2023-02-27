@@ -49,4 +49,20 @@ https://imgur.com/a/SEhZl8H
 Link trello : https://trello.com/invite/b/aksovRBS/ATTIb492154713a56f0524ca0e7896d69c3a900150D8/webtba
 
 
+Paleta de colores:
+
+HEADER Y FOOTER:
+Background: #fff
+Lletras : White.
+Botones: Red
+Iconos redes sociales: White
+
+BODY:
+Background: White
+letras: Black
+PRecio: Verde
+
+ 
+
+
 
