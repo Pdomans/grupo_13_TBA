@@ -33,7 +33,9 @@ Cristian Giraldo Londoño : Hola, Mi nombre es Cristian Giraldo Londoño, soy de
 <br>
 <br>
 Eric Pino Najarro: Hola! mi nombre es Eric Pino Najarro, soy de Morón, buenos Aires, Argentina. Trabajo en una empresa de soluciones IT como Product Manager y estoy capacitándome en programación para poder alcanzar el puesto de Project Manager que tanto me interesa!. Con muchas ganas de aportar y seguir aprendiendo con este grupo! 
-
+<br>
+<br>
+Carolina Ruiz Arcos: hola mi nombre es Carolina Ruiz Arcos, soy de cali Colombia. trabajo para una empresa de salud, tengo un negocio de cannabis.
 
 
 Wireframe digital:
