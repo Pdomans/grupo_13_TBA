@@ -46,10 +46,10 @@
             <div class="caja-padre">
                 <ul>
                     <li><a class="active" href="/">inicio</a></li>
-                    <li><a href="/loggin">loggin</a></li>
-                    <li><a href="#">ingresar</a></li>
+                    <li><a href="/loggin">ingresar</a></li>
+                    <li><a href="#">registrarse</a></li>
                     <li><a href="#">productos</a></li>
-                    <li><a href="#">nosotros</a></li>   
+                    <li><a href="/quienes-somos">nosotros</a></li>   
                     <li><a href="#">carrito</a></li>   
                 </ul>
             </div>    
@@ -71,15 +71,48 @@
 
     <main>
 
+        <div class="login-box">
+
+            <h1>Loggin</h1>
+            <br>
+            <form action="/" method="get">
+
+                <!-- USERNAME -->
+                <label for="username">NOMBRE</label>
+                <br>
+                <input type="text" name="username" id="username" placeholder="Nombre" class="cdi">
+                <br>
+
+                <!-- PASSWORD -->
+                <label for="password">CONTRASEÑA</label>
+                <br>
+                <input type="password" name="password" id="password" placeholder="Contraseña" class="cdi">
+                <br>
+
+            <div class="cdb-padre">
+                <!-- BOTON -->
+                <a href="/"><input type="submit" name="submit" id="submit" value="CONTINUAR" class="cdb"></a>
+                <br>
+            </div>
+            <div class="contenedorDeA">
+                <br>
+                <a href="">Olvido su contraseña?</a>
+                <br>
+                <a href="/registro">Aun no esta registrado?</a>
+            </div>
+            </form>
+
+        </div>
+
     </main>
 
 <!----------FIN DE MAIN----------------------------------------------------------------------------------------------->
 
 <!----------INICIO DE FOOTER------------------------------------------------------------------------------------------>
 
-    <footer>
-        
-    </footer>
+<footer>
+    
+</footer>
 
 <!----------FIN DE FOOTER--------------------------------------------------------------------------------------------->
 

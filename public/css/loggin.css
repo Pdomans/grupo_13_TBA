@@ -116,7 +116,77 @@ nav ul li a{
 .bars{
     text-align: center;
 }
+/* FIN DEL HEADER-------------------------------------------------------------------------- */
 
+/* INICIO DEL MAIN -------------------------------------------------------------------------*/
+
+body{
+    background-color: var(--GrisOscuro);
+}
+
+main{
+    position: absolute;
+    top: 28%;
+    left: 20%;
+}
+
+.login-box{
+    background-color: var(--rojoOscuro);
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    border: solid 3px var(--vinoTinto);
+}
+
+.login-box h1{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: var(--Blanco);
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.login-box a{
+    color: var(--Blanco);
+    font-size: 15px;
+    text-align: center;
+}
+
+.login-box label{
+    color: var(--Blanco);
+    font-size: 12px;
+}
+
+.cdi{
+    border-radius: 4px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    border: solid 5px var(--Blanco);
+
+}
+
+.cdb-padre{
+    text-align: center;
+    margin: 0;
+    padding: 0%;
+}
+
+.cdb{
+    margin-top: 3px;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    border: solid 5px blue;
+}
+
+.contenedorDeA{
+    text-align: center;
+}
+
+/* FIN DEL MAIN---------------------------------------------------------------------- */
 
 /* --------------------------------------------- */
 
@@ -194,10 +264,81 @@ ul{
 }
 }
 
+
+/* INICIO DEL MAIN -------------------------------------------------------------------------*/
+
+body{
+    background-color: var(--GrisOscuro);
+}
+
+main{
+    position: absolute;
+    top: 28%;
+    left: 20%;
+}
+
+.login-box{
+    background-color: var(--rojoOscuro);
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    border: solid 3px var(--vinoTinto);
+}
+
+.login-box h1{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: var(--Blanco);
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.login-box a{
+    color: var(--Blanco);
+    font-size: 15px;
+    text-align: center;
+}
+
+.login-box label{
+    color: var(--Blanco);
+    font-size: 12px;
+}
+
+.cdi{
+    border-radius: 4px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    border: solid 5px var(--Blanco);
+
+}
+
+.cdb-padre{
+    text-align: center;
+    margin: 0;
+    padding: 0%;
+}
+
+.cdb{
+    margin-top: 3px;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    border: solid 5px blue;
+}
+
+.contenedorDeA{
+    text-align: center;
+}
+
+/* FIN DEL MAIN---------------------------------------------------------------------- */
+
 /* ---------------------------------------------------------------------------------------------------- */
 
 /* CONFIGURACION DESKTOP */
-@media (min-width: 900px){
+@media (min-width: 1100px){
     .bars{
         display: none;
          }
@@ -259,5 +400,76 @@ ul{
 }
 
 }
+
+/* INICIO DEL MAIN -------------------------------------------------------------------------*/
+
+body{
+    background-color: var(--GrisOscuro);
+}
+
+main{
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}
+
+.login-box{
+    background-color: var(--rojoOscuro);
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    border: solid 3px var(--vinoTinto);
+}
+
+.login-box h1{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: var(--Blanco);
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.login-box a{
+    color: var(--Blanco);
+    font-size: 15px;
+    text-align: center;
+}
+
+.login-box label{
+    color: var(--Blanco);
+    font-size: 12px;
+}
+
+.cdi{
+    border-radius: 4px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    border: solid 5px var(--Blanco);
+
+}
+
+.cdb-padre{
+    text-align: center;
+    margin: 0;
+    padding: 0%;
+}
+
+.cdb{
+    margin-top: 3px;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    border: solid 5px blue;
+    transition: all .5s;
+}
+
+.contenedorDeA{
+    text-align: center;
+}
+
+/* FIN DEL MAIN---------------------------------------------------------------------- */
 
  /* ------------------------------------------------------------------------- */
