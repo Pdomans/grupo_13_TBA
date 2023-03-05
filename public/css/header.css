@@ -73,7 +73,9 @@ header{
     border-radius: 6px;
     border: solid white 15px;
 }
-
+.logo-carrito{
+    color: white;
+}
 /* ----------------------------------------------------- */
 
 /* CONFIGURACION DE TODO EL NAV */
