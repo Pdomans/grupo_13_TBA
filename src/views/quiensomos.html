@@ -10,16 +10,50 @@
     <link rel="stylesheet" href="/css/quiensomos.css">
 
     <title>NOSOTROS</title>
+	<script src=
+	"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+		</script>
+	<style>
+        
+        .change {
+            position: top;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            cursor: pointer;
+            border: 1px solid #555;
+            border-radius: 40%;
+            width: 35px;
+            text-align: center;
+            
+            margin-left: 16px;
+        }
+        .dark{
+            background-color: #222;
+            color: white;
+        }
+    </style>
 </head>
 
 
 
 
 <body>
-	<div class="mode">
-        Dark mode:             
+	<div class="mode">                  
         <span class="change">OFF</span>
     </div>
+	<script>
+        $( ".change" ).on("click", function() {
+            if( $( "body" ).hasClass( "dark" )) {
+                $( "body" ).removeClass( "dark" );
+                $( ".change" ).text( "OFF" );
+            } else {
+                $( "body" ).addClass( "dark" );
+                $( ".change" ).text( "ON" );
+            }
+        });
+    </script>
+   
     
 
 
