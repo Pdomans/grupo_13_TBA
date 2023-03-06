@@ -141,7 +141,9 @@ nav ul li a{
         display: none;
          }
     .caja-padre{
-        display: block;
+        font-size: 15px;
+        display: flex;
+        flex-direction: row;
     }
 
 /* CONFIGURACION DE LA IMAGEN */
