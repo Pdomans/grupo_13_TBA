@@ -2,7 +2,7 @@
   "name": "grupo_13_tba",
   "version": "1.0.0",
   "description": "<h1> GRUPO-13-TBA </h1>\r <br>\r Hola bienvenidos!  nosotros somos el grupo 13 conformado por Pablo Domañski, Angel Maurico Cerutti de la Cruz, Eric Pino Najarro, Carolina Ruiz, Cristian Giraldo Londoño y Andres Lopez.\r <br>\r Elegimos  un e-commerce  de equipamiento  de entrenamiento tanto para gimnasios como para los hogares.\r Nuestro e-commerce ofrece productos como : \r •\tBarras, discos, mancuernas, sogas, cajones, pelotas, entre otros instrumentos vitales para  poder realizar un entrenamiento recreativo o competitivo.",
-  "main": "src/app.js",
+  "main": "app.js",
   "scripts": {
     "test": "nodemon src/app.js",
     "start": "node src/app.js"
