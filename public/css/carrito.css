@@ -1,0 +1,171 @@
+/* CONFIGURACION DE PALETA DE COLORES */
+:root{
+    --rojoOscuro: #620707;
+    --vinoTinto: #330a0a;
+    --negro: #000000;
+    --GrisOscuro: rgb(30, 29, 29);
+    --Blanco: #ffffff; 
+}
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+/* CONFIGURACION DEL HEADER */
+
+header {
+    background-color: #330a0a;
+    color: #fff;
+}
+
+li{
+    list-style-type:none;
+    font-size: 12px;
+}
+
+body{
+    background-color: #ebebeb;
+    
+}
+
+.nav-header{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding: 2rem 0
+}
+
+.estiloNav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+img {
+    max-width: 30%;
+    vertical-align: top;
+}
+
+.header-input{
+    background-color: #ffffff;
+    width: 45%;
+    align-self: center;
+    display: flex;
+    border-radius: 4px;
+}
+
+.header-input form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.header-campo-busqueda{
+    width: 100%;
+    display: inline;
+}
+
+.header-campo-busqueda input {
+    width: 100%;
+}
+
+.header-lupa{
+    background-color: white;
+    justify-self: flex-end;
+    display: inline;
+}
+
+input, button{
+    border: none;
+    background-image: none;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.icono-lupa-input{
+    background-color: white;
+    justify-self: flex-end;
+    display: inline;
+}
+
+
+
+
+.lista-navegacion-header-izq{
+
+    display:none;
+
+}
+
+.lista-navegacion-header-der{
+
+    display:none;
+
+}
+
+.icono-burga-header{
+    padding-bottom: 1rem;
+    color: white;
+    width: 50%;
+    align-self: center;
+    text-align: center;
+    margin: auto;
+
+}
+
+.icono-burga-clase{
+    background-color: rgba(10, 10, 10, 0.795);
+    padding: 8px;
+    color: white;
+    margin: 3px;
+    border-radius: 10px;
+}
+
+.main-completo{
+    width: 90%;
+    margin: auto;
+    background-color: #ebebeb;
+}
+
+
+
+.footer-completo{
+    background-color: white;
+    color: #666;
+}
+
+
+@media(min-width:361px){
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        padding-bottom: 1.5rem;
+    }
+
+    .lista-navegacion-header-izq{
+        display: flex;
+        justify-content: space-around;
+        width: 40%;
+        text-align: center;
+    }
+    .lista-navegacion-header-der{
+        display: flex;
+        justify-content: space-around;
+        width: 40%;
+        text-align: center;
+    }
+ 
+    .icono-burga-header{
+    display: none;    
+    }
+    .header-input{
+        width: 30%;
+    }
+}

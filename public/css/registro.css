@@ -13,7 +13,6 @@
 *{
     padding: 0;
     margin: 0;
-    text-decoration: none;
     list-style: none;
     box-sizing: border-box;
 }
@@ -33,7 +32,6 @@
 
 header{
     background-color: var(--vinoTinto);
-    position: absolute;
     width: 100%;
 }
 
@@ -133,6 +131,15 @@ nav ul li a{
     display: none;
 }
 
+
+/* MAIN */
+
+.registrocuadro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px black solid;
+}
 /* ------------------------------------------------------------------------------------------------------------ */
 
  /* CONFIGURACION DE TABLET */

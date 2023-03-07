@@ -347,3 +347,266 @@ footer, .textocopy h6{
     bottom: 200px;
     font-size: 15px;
 }
+/* CONFIGURACION DE PALETA DE COLORES */
+:root{
+    --rojoOscuro: #620707;
+    --vinoTinto: #330a0a;
+    --negro: #000000;
+    --GrisOscuro: rgb(30, 29, 29);
+    --Blanco: #ffffff; 
+}
+
+/* CONFIGURACION DEL HEADER */
+
+/* CONFIGURACION GENERAL */
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+#check{
+    display: none;
+}
+
+.fa-magnifying-glass:before, .fa-search:before {
+    content: "\f002";
+    position: relative;
+    right: 180%;
+    background-color: white;
+}
+
+/* CONFIGURACION MOVIL */
+
+header{
+    background-color: var(--vinoTinto);
+    position: absolute;
+    width: 100%;
+}
+
+/* CONFIGURACION DE LA IMAGEN */
+
+.enlace-imagen{
+    padding: 20px 50px;
+}
+
+.logo-imagen{
+    width: 50%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.logo{
+    position: relative;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.icono-carrito{
+    color: white;
+}
+
+/* -------------------------------------- */
+
+/* CONFIGURACION DE LA BARRA DE BUSQUEDA */
+.logo-barraDeBusqueda{
+    display: flex;
+    align-items: center;
+}
+
+.barraDeBusqueda{
+    width: 50%;
+}
+
+.barra-de-busqueda{
+    width: 80%;
+    border-radius: 6px;
+    border: solid white 15px;
+}
+
+/* ----------------------------------------------------- */
+
+/* CONFIGURACION DE TODO EL NAV */
+
+.checkbtn{
+    display: block;
+}
+
+nav{
+    background-color: var(--vinoTinto);
+}
+
+ul{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #620707;
+    top: 100px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+}
+
+nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+}
+
+nav ul li a{
+    font-size: 20px;
+}
+
+#check:checked ~ ul{
+    left: 0;
+} 
+
+/* CONFIGURACION DEL BARS */
+
+.bars{
+    text-align: center;
+}
+
+
+/* --------------------------------------------- */
+
+.fa-bars:before, .fa-navicon:before {
+    content: "\f0c9";
+    color: white;
+}
+
+.caja-padre{
+    display: none;
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+ /* CONFIGURACION DE TABLET */
+@media (min-width: 700px){
+    .bars{
+        display: none;
+         }
+    .caja-padre{
+        display: block;
+    }
+
+/* CONFIGURACION DE LA IMAGEN */
+
+.logo-imagen{
+    width: 45%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.logo{
+    width: 70%;
+    height: 100px;
+    position: relative;
+    left: 2px;
+}
+
+/* -------------------------------------------------- */
+
+ /* CONFIGURACION DEL NAV */   
+
+ li a.active, li a:hover{
+    background: var(--vinoTinto);
+    transition: .5s;
+    border-radius: 4px;
+    padding:15px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 70px;
+}
+
+nav ul li a{
+    color: var(--Blanco);
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+nav ul{
+    background-color: var(--rojoOscuro);
+}
+
+ul{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color:#620707;
+    top: initial;
+    left: initial;
+    text-align: center;
+    transition: all .5s;
+}
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+/* CONFIGURACION DESKTOP */
+@media (min-width: 900px){
+    .bars{
+        display: none;
+         }
+    .caja-padre{
+        display: block;
+    }
+
+/* CONFIGURACION DE LA IMAGEN */
+
+.logo-imagen{
+    width: 30%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.logo{
+    width: 70%;
+    height: 100px;
+    position: relative;
+    left: 5px;
+}
+
+/* -------------------------------------------------- */
+
+ /* CONFIGURACION DEL NAV */   
+
+ li a.active, li a:hover{
+    background: var(--vinoTinto);
+    transition: .5s;
+    border-radius: 4px;
+    padding:15px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 70px;
+}
+
+nav ul li a{
+    color: var(--Blanco);
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+nav ul{
+    background-color: var(--rojoOscuro);
+}
+
+ul{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color:#620707;
+    top: initial;
+    left: initial;
+    text-align: center;
+    transition: all .5s;
+}
