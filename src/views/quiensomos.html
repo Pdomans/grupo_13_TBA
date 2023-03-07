@@ -10,11 +10,48 @@
     <link rel="stylesheet" href="/css/quiensomos.css">
 
     <title>NOSOTROS</title>
+	<script src=
+	"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+		</script>
+		<style>
+			
+			.change {
+				position: top;
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				cursor: pointer;
+				border: 1px solid #555;
+				border-radius: 40%;
+				width: 35px;				
+				margin-left: 16px;
+			}
+			.dark{
+				background-color: #222;
+				color: #e6e6e6;
+			}
+		</style>
 </head>
 
 
 
+
 <body>
+	<div class="mode">                  
+        <span class="change">OFF</span>
+    </div>
+	<script>
+        $( ".change" ).on("click", function() {
+            if( $( "body" ).hasClass( "dark" )) {
+                $( "body" ).removeClass( "dark" );
+                $( ".change" ).text( "OFF" );
+            } else {
+                $( "body" ).addClass( "dark" );
+                $( ".change" ).text( "ON" );
+            }
+        });
+    </script>
+   
     
 
 
@@ -46,7 +83,7 @@
             <div class="caja-padre">
                 <ul>
                     <li><a class="active" href="/">inicio</a></li>
-                    <li><a href="/loggin">ingresar</a></li>
+                    <li><a href="/login">ingresar</a></li>
                     <li><a href="#">registrarse</a></li>
                     <li><a href="#">productos</a></li>
                     <li><a href="/quienes-somos">nosotros</a></li>   
@@ -67,8 +104,8 @@
 					<img src="" alt="">
 				</div>
 				<div class="content">
-					<h1>Bienvenido a TBA</h1>
-					<p>En TBA nos dedicamos a la venta y alquiler de productos de Deportes y Coaching para el mismo, ofreciendo siempre las mejores marcas y los mejores precios.</p>
+					<h1>Bienvenido a FITHOUSE</h1>
+					<p>En FITHOUSE nos dedicamos a la venta y alquiler de productos de Deportes y Coaching para el mismo, ofreciendo siempre las mejores marcas y los mejores precios.</p>
 					<h2>¿Quienes Somos?</h2>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id architecto nisi cum reiciendis minima itaque deleniti rem laborum voluptatibus quos.
 					</p>
@@ -92,8 +129,8 @@
 				<div class="footer">
 					<div class="footer-content">
 						<div class="footer-section about">
-							<h3 class="logo-text">TBA</h3>
-							<p>En TBA ofrecemos la mejor calidad en lo que es el cuidado fisico de tu cuerpo.</p>
+							<h3 class="logo-text">FITHOUSE</h3>
+							<p>En FITHOUSE ofrecemos la mejor calidad en lo que es el cuidado fisico de tu cuerpo.</p>
 							<div class="contact">
 								<span><i class="fas fa-phone"></i> +54 9 999 999 9999</span>
 								<span><i class="fas fa-envelope"></i> info@tba.com.ar</span>
