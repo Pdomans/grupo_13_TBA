@@ -10,7 +10,6 @@
 *{
     margin: 0px;
     box-sizing: border-box;
-    padding: 0;
     
 }
 
@@ -34,6 +33,7 @@ body{
 .nav-header{
     display: flex;
     justify-content: space-around;
+    width: 70%;
 }
 
 .estiloNav{
@@ -41,7 +41,9 @@ body{
     justify-content: flex-end;
 }
 
-
+.formulario{
+    width: 100%;
+}
 
 .header-input{
     background-color: #ffffff;
@@ -149,11 +151,13 @@ img{
 
 .cantidadYvalorProducto{
     display: flex;
+    align-items: center;
 }
 
 .fotoProducto{
     display: flex;
     text-align: center;
+    width: 15%;
 }
 
 .precioDescripcionProducto{
@@ -182,6 +186,17 @@ img{
     flex-direction: column;
     justify-content: center;
 }
+
+.sectionDetalleCompra{
+    display: flex;
+    justify-content: center;
+}
+
+.resumenCarrito{
+    display: flex;
+}
+
+
 
 @media(min-width:361px){
 
