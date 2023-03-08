@@ -6,8 +6,8 @@ const app = express();
 app.use(express.static('public'));
 
 
-app.get ("/", (req, res)=>{
-    res.sendFile(path.join(__dirname, "src/views/home.html"));
+app.get ("inicio", (req, res)=>{
+    res.sendFile(path.join(__dirname, "src/views/inicio.html"));
 });
 
 app.get("/login", (req, res) => {
@@ -29,6 +29,9 @@ app.get("/carrito", (req, res) => {
 app.get("/quienes-somos", (req, res) => {
     res.sendFile(path.join(__dirname, "src/views/quiensomos.html"));
 });
+
+
+
 
 
 app.listen(3500,() => {
