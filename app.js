@@ -7,7 +7,7 @@ app.use(express.static('public'));
 
 
 app.get ("/", (req, res)=>{
-    res.sendFile(path.join(__dirname, "src/views/home.html"));
+    res.sendFile(path.join(__dirname, "src/views/inicio.html"));
 });
 
 app.get("/login", (req, res) => {
