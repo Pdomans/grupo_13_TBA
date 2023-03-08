@@ -6,8 +6,8 @@ const app = express();
 app.use(express.static('public'));
 
 
-app.get ("inicio", (req, res)=>{
-    res.sendFile(path.join(__dirname, "src/views/inicio.html"));
+app.get ("/", (req, res)=>{
+    res.sendFile(path.join(__dirname, "src/views/home.html"));
 });
 
 app.get("/login", (req, res) => {
