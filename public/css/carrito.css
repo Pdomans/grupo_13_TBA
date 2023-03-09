@@ -97,10 +97,21 @@ nav a {
     background-color: #ebebeb;
 }
 
+li{
+    list-style-type:none;
+
+}
 
 .sectionProductosCarrito{
     display: flex;
-    border: black;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    border: solid 0px #ebebeb;
+    padding: 10px;
+    margin: 10px 10px;
+    box-shadow: 0px 0px 10px rgb(100 100 100);
+
 }
 
 .cuadroTotalCarrito{
