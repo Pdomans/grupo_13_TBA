@@ -1,26 +1,19 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-  
-}
-body{
-   
-   align-items: center;
-   justify-content: center;
-   padding: 30px;
-   width: 100%;
-   height: 100vh;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+/* COPIAR TODO AL INICIO */
+:root{
+    --rojoOscuro: #620707;
+    --vinoTinto: #330a0a;
+    --negro: #000000;
+    --GrisOscuro: rgb(30, 29, 29);
+    --Blanco: #ffffff; 
 }
-/* CONFIGURACION DEL HEADER */
 
 *{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
+    margin: 0%;
+    padding: 0%;
     box-sizing: border-box;
+    font-family: "Roboto";
 }
 
 header{
@@ -97,6 +90,7 @@ nav a {
 
 .fa-bars {font-size: 20px;}
 
+/* HASTA ACÁ */
 /* estilo del slide  */
 img{
     max-width: 100%;
@@ -291,3 +285,4 @@ input[id="3"]:checked ~ .pagination-item[for="3"]{
     }
     
 }
+/* -------------------------------------------------------- */

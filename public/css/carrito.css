@@ -1,4 +1,6 @@
-/* CONFIGURACION DE PALETA DE COLORES */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* COPIAR TODO AL INICIO */
 :root{
     --rojoOscuro: #620707;
     --vinoTinto: #330a0a;
@@ -8,122 +10,87 @@
 }
 
 *{
-    margin: 0px;
+    margin: 0%;
+    padding: 0%;
     box-sizing: border-box;
-    
+    font-family: "Roboto";
 }
 
-/* CONFIGURACION DEL HEADER */
-
-header {
-    background-color: #330a0a;
-    color: #fff;
+header{
+    background-color: var(--vinoTinto);
 }
-
-li{
-    list-style-type:none;
-    font-size: 12px;
-}
-
-body{
-    background-color: #ebebeb;
-    
-}
-
-.nav-header{
+#logo-busqueda{
     display: flex;
-    justify-content: space-around;
-    width: 70%;
-}
-
-.estiloNav{
-    display: flex;
-    justify-content: flex-end;
-}
-
-.formulario{
-    width: 100%;
-}
-
-.header-input{
-    background-color: #ffffff;
-    width: 45%;
-    align-self: center;
-    display: flex;
-    border-radius: 4px;
-}
-
-.header-input form {
-    width: 100%;
-    display: flex;
+    flex-direction: row;
     align-items: center;
-    margin: 0.5rem;
+    justify-content: space-around;
+    background-color: var(--vinoTinto);
+}
+.logo{
+    width: 30%;
 }
 
-.header-campo-busqueda{
-    width: 100%;
-    display: inline;
-}
-
-.header-campo-busqueda input {
-    width: 100%;
-}
-
-.header-lupa{
-    background-color: white;
-    justify-self: flex-end;
-    display: inline;
-}
-
-input, button{
-    border: none;
-    background-image: none;
-    background-color: transparent;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-    outline: none;
-}
-
-.icono-lupa-input{
-    background-color: white;
-    justify-self: flex-end;
-    display: inline;
-}
-
-
-
-
-.lista-navegacion-header-izq{
-
-    display:none;
-
-}
-
-.lista-navegacion-header-der{
-
-    display:none;
-
-}
-
-.icono-burga-header{
-    padding-bottom: 1rem;
-    color: white;
+.busqueda {
+    text-align: left;
     width: 50%;
-    align-self: center;
-    text-align: center;
     margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 0;
+    margin-right: 2rem;
 
 }
 
-.icono-burga-clase{
-    background-color: rgba(10, 10, 10, 0.795);
-    padding: 8px;
-    color: white;
-    margin: 3px;
-    border-radius: 10px;
+#barraBusqueda {
+    width: 100%;
+    height: 2.2rem;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    ;
+    padding-left: 0.5rem;
+    background-color: var(--Blanco);
 }
 
+.fa-solid.fa-magnifying-glass{
+    color: grey;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.4rem;
+}
+
+#botonLupa {
+    background-color: var(--Blanco);
+    border-left: 1px solid var(--Blanco);
+    border-radius: 0 4px 4px 0;
+    align-self: stretch;
+}
+
+nav {display: none;}
+
+nav li {margin: 0 5px;}
+nav a {
+    color: var(--Blanco);
+    display: inline-block;
+    text-decoration: none;
+    padding: 3px 0;
+    font-size: 14px;
+}
+
+.burger-menu {
+    background-color: var(--negro);
+    color: var(--Blanco);
+    display: block;
+    max-width: 40px;
+    text-align: center;
+    border-radius: 15%;
+    padding: 10px 0;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.fa-bars {font-size: 20px;}
+
+/* HASTA ACÁ */
 .main-completo{
     width: 90%;
     margin: auto;
@@ -198,34 +165,34 @@ img{
 
 
 
-@media(min-width:361px){
-
-    .estiloNav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-        padding-bottom: 1.5rem;
-        font-size: 20px;
-
+/* ----------------------TABLET---------------------------- */
+@media (min-width: 768px){
+    .burger-menu{
+        display: none;
     }
-
-    .lista-navegacion-header-izq{
+    nav{
+        display: flex;
+    }
+    .navFlex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 40px;
+    }
+    .lista1flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 45%;
+        list-style: none;
+    }
+    .lista2flex{
         display: flex;
         justify-content: space-around;
-        width: 40%;
-        text-align: center;
+        align-items: center;
+        width: 45%;
+        list-style: none;
     }
-    .lista-navegacion-header-der{
-        display: flex;
-        justify-content: space-around;
-        width: 40%;
-        text-align: center;
-    }
- 
-    .icono-burga-header{
-    display: none;    
-    }
-    .header-input{
-        width: 30%;
-    }
+    
 }
+/* -------------------------------------------------------- */

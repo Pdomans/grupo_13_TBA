@@ -1,4 +1,6 @@
-/* CONFIGURACION DE PALETA DE COLORES */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* COPIAR TODO AL INICIO */
 :root{
     --rojoOscuro: #620707;
     --vinoTinto: #330a0a;
@@ -14,7 +16,6 @@
     font-family: "Roboto";
 }
 
-/* CONFIGURACION HEADER */
 header{
     background-color: var(--vinoTinto);
 }
@@ -89,10 +90,10 @@ nav a {
 
 .fa-bars {font-size: 20px;}
 
+/* HASTA ACÁ */
 
 
-/* TABLET */
-
+/* ----------------------TABLET---------------------------- */
 @media (min-width: 768px){
     .burger-menu{
         display: none;
@@ -122,3 +123,4 @@ nav a {
     }
     
 }
+/* -------------------------------------------------------- */

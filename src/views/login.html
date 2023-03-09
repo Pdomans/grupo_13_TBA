@@ -18,52 +18,33 @@
     
 <!----------INICIO DE HEADER------------------------------------------------------------------------------------------>
 
-    <header>
-
-            <!-- INICIO DEL NAV -->
-        <nav>
-            <div class="logo-barraDeBusqueda">
-            <!-- codigo de imagen -->
-            <div class="logo-imagen">
-                <a href="#" class="enlace-imagen">
-                    <img src="/img/LOGO.png" alt="120" height="120" class="logo">
-                </a>
-            </div>    
-            <!-- fin de codigo de imagen -->
-    
-            <!-- INICIO DE LA BARRA DE BUSQUEDA -->
-            <div class="barraDeBusqueda">
-                
-                <form action="" action="">
-                <input type="text" name="s" value="" placeholder="Búsqueda en catálogo" class="barra-de-busqueda" autocomplete="off">
-                <i class="fa-solid fa-magnifying-glass"></i></form>
-    
-            </div>
-            <!-- FIN DE LA BARRA DE BUSQUEDA -->
-            </div>
-            <!-- INICIO DEL UL -->
-    
-            <div class="caja-padre">
-                <ul>
-                    <li><a class="active" href="/">inicio</a></li>
-                    <li><a href="/login">ingresar</a></li>
-                    <li><a href="/registro">registrarse</a></li>
-                    <li><a href="/productos">productos</a></li>
-                    <li><a href="/quienes-somos">nosotros</a></li>   
-                    <li><a href="/carrito">carrito</a></li>   
-                </ul>
-            </div>    
-            <!-- FIN DEL UL -->
-            <div class="bars">
-                <input type="checkbox" id="check">
-                <label for="check" class="checkbtn">
-                <i class="fas fa-bars menu"></i>
-                </label>
-            </div>
+     <!-- COPIAR HEADERS -->
+<header>
+    <section id="logo-busqueda">
+        <img class="logo" src="/img/LOGO.png" alt="logo">
+        <div class="busqueda">
+            <input id="barraBusqueda" type="text" placeholder="Buscar productos, marcas">
+            <a href="#" id="botonLupa"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+        
+    </section>
+    <nav class="navFlex">
+            <ul class="lista1flex">
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/productos">Productos</a></li>
+                <li><a href="/carrito">Carrito</a></li>
+            </ul>
+            <ul class="lista2flex">
+                <li><a href="/registro">Creá tu cuenta</a><i id="iconos" class="far fa-id-card"></i></li> 
+                <li><a href="/login">Ingresar</a><i id="iconos" class="fas fa-sign-in-alt"></i></li>
+                <li><a href="/quienes-somos">Sobre Nosotros</a></li>
+            </ul>
         </nav>
-            <!-- FIN DEL NAV -->
-
-    </header>
+        <div class="burger-menu">  
+            <i class="fa-solid fa-bars"></i>
+        </div>
+</header>
+<!-- COPIAR HEADERS -->
 
 <!----------FIN DE HEADER--------------------------------------------------------------------------------------------->
 

@@ -1,4 +1,6 @@
-/* CONFIGURACION DE PALETA DE COLORES */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* COPIAR TODO AL INICIO */
 :root{
     --rojoOscuro: #620707;
     --vinoTinto: #330a0a;
@@ -7,126 +9,88 @@
     --Blanco: #ffffff; 
 }
 
-/* CONFIGURACION DEL HEADER */
-
-/* CONFIGURACION GENERAL */
 *{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
+    margin: 0%;
+    padding: 0%;
     box-sizing: border-box;
+    font-family: "Roboto";
 }
-
-#check{
-    display: none;
-}
-
-.fa-magnifying-glass:before, .fa-search:before {
-    content: "\f002";
-    position: relative;
-    right: 180%;
-    background-color: white;
-}
-
-/* CONFIGURACION MOVIL */
 
 header{
-
-    position: absolute;
-    width: 100%;
-}
-
-/* CONFIGURACION DE LA IMAGEN */
-
-.enlace-imagen{
-    padding: 20px 50px;
-}
-
-.logo-imagen{
-    width: 50%;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-.logo{
-    position: relative;
-    right: 20px;
-    width: 100px;
-    height: 100px;
-}
-
-/* -------------------------------------- */
-
-/* CONFIGURACION DE LA BARRA DE BUSQUEDA */
-.logo-barraDeBusqueda{
-    display: flex;
-    align-items: center;
     background-color: var(--vinoTinto);
-
+}
+#logo-busqueda{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--vinoTinto);
+}
+.logo{
+    width: 30%;
 }
 
-.barraDeBusqueda{
+.busqueda {
+    text-align: left;
     width: 50%;
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 0;
+    margin-right: 2rem;
+
 }
 
-.barra-de-busqueda{
-    width: 80%;
-    border-radius: 6px;
-    border: solid white 15px;
-}
-
-/* ----------------------------------------------------- */
-
-/* CONFIGURACION DE TODO EL NAV */
-
-.checkbtn{
-    display: block;
-}
-
-
-ul{
-    position: fixed;
+#barraBusqueda {
     width: 100%;
-    height: 100%;
-
-    top: 100px;
-    left: -100%;
-    text-align: center;
-    transition: all .5s;
+    height: 2.2rem;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    ;
+    padding-left: 0.5rem;
+    background-color: var(--Blanco);
 }
 
-nav ul li{
+.fa-solid.fa-magnifying-glass{
+    color: grey;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.4rem;
+}
+
+#botonLupa {
+    background-color: var(--Blanco);
+    border-left: 1px solid var(--Blanco);
+    border-radius: 0 4px 4px 0;
+    align-self: stretch;
+}
+
+nav {display: none;}
+
+nav li {margin: 0 5px;}
+nav a {
+    color: var(--Blanco);
+    display: inline-block;
+    text-decoration: none;
+    padding: 3px 0;
+    font-size: 14px;
+}
+
+.burger-menu {
+    background-color: var(--negro);
+    color: var(--Blanco);
     display: block;
-    margin: 50px 0;
-    line-height: 30px;
-}
-
-nav ul li a{
-    font-size: 20px;
-}
-
-#check:checked ~ ul{
-    left: 0;
-} 
-
-/* CONFIGURACION DEL BARS */
-
-.bars{
+    max-width: 40px;
     text-align: center;
+    border-radius: 15%;
+    padding: 10px 0;
+    margin: auto;
+    margin-top: 1rem;
 }
 
+.fa-bars {font-size: 20px;}
 
-/* --------------------------------------------- */
-
-.fa-bars:before, .fa-navicon:before {
-    content: "\f0c9";
-    color: white;
-}
-
-.caja-padre{
-    display: none;
-}
+/* HASTA ACÁ */
 
 /* ------------------------------------------------------------------------------------------------------------ */
 

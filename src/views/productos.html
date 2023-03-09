@@ -6,45 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/productos.css">
-    <title>productos</title>
+    <title>FitH - Productos</title>
 </head>
 
-<header> 
-    <section class="nav-header">
-        <figure class="imagenLogo">   
-            <img src="/img/LOGO.png">    
-        </figure>                                                                      
-        <section class="header-input">
-            <form action="/buscar" method="POST">
-                <div class="header-campo-busqueda"> 
-                    <input type="text" placeholder="Buscá productos" required="">
-                </div>
-                <div class="header-lupa"> 
-                    <button class="icono-lupa-input"><i class="fa-solid fa-magnifying-glass"></i></button>               
-                </div>                  
-            </form>
-        </section>
-   </section>          
-    </section> 
-            <nav class="estiloNav">
-               <ul class="lista-navegacion-header-izq">
-                <li><a class="active" href="/">inicio</a></li>                   
-                <li><a href="#">registrarse</a></li>
-                <li><a href="/productos">productos</a></li>
-                <li><a href="/quienes-somos">nosotros</a></li>   
-                <li><a href="/carrito">carrito</a></li>  
-               </ul>
-               <ul class="lista-navegacion-header-der">
-                <div name="userinfo">
-                <li><a href="/loggin">ingresar</a></li>
-                </div>
-                </ul>
-            </nav>            
-            <div class="icono-burga-header">                      
-                <i class="fas fa-bars icono-burga-clase"></i>
-            </div>
-                                                               
+ <!-- COPIAR HEADERS -->
+ <header>
+    <section id="logo-busqueda">
+        <img class="logo" src="/img/LOGO.png" alt="logo">
+        <div class="busqueda">
+            <input id="barraBusqueda" type="text" placeholder="Buscar productos, marcas">
+            <a href="#" id="botonLupa"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+        
+    </section>
+    <nav class="navFlex">
+            <ul class="lista1flex">
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/productos">Productos</a></li>
+                <li><a href="/carrito">Carrito</a></li>
+            </ul>
+            <ul class="lista2flex">
+                <li><a href="/registro">Creá tu cuenta</a><i id="iconos" class="far fa-id-card"></i></li> 
+                <li><a href="/login">Ingresar</a><i id="iconos" class="fas fa-sign-in-alt"></i></li>
+                <li><a href="/quienes-somos">Sobre Nosotros</a></li>
+            </ul>
+        </nav>
+        <div class="burger-menu">  
+            <i class="fa-solid fa-bars"></i>
+        </div>
 </header>
+<!-- COPIAR HEADERS -->
 
 <main>
     <section>
