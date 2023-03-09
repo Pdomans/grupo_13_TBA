@@ -5,45 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="C:\Users\ADMIN\Documents\productos grupoo 13\public\css\productos.css">
+    <link rel="stylesheet" href="/css/productos.css">
     <title>productos</title>
 </head>
-<header class="main-header">
-    <div class="main-header-top-bar">
-        <img class="logo" src="C:\Users\ADMIN\Documents\productos grupoo 13\public\img\logo.jpg">
-        <div class="main-header-search">
-            <form action="" method="get">
-                <label for="">
-        <input type="text">
-        <button><i class="fa-solid fa-magnifying-glass"></i></button>
-    </label>
-    </form>
-    </div>
 
-    <div class="cuotas">
-    <p> <span><i class="fa-sharp fa-solid fa-hand-holding-dollar"></i></span> Compra en cuotas y sin tarjeta de credito</p>
-    </div>
-    </div>
-
-    <nav class="main-navbar">
-        <ul class="lista-navegacion">
-            <li> <a href="#">TIENDA</a></li>
-            <li><a href="#"> BARBELLS </a></li>
-            <li><a href="#">PLATES</a></li>
-            <li><a href="#">CARDIO-HIT</a></li>
-        </ul>
-        <ul class="lista-navegacion-2">
-            <li><a href="">BOOTY MAX</a> <span><i class="fa-solid fa-user"></i></span></li> 
-            <li><a href="">ARGENTINA THROW DOWN</a> <span><i class="fa-sharp fa-solid fa-right-to-bracket"></i></span></li> 
-            <li><a href="">SALE</a> <span><i class="fa-sharp fa-solid fa-cart-shopping"></i></span></li>
-            <br>  
-        </ul>
-    </nav>
-    <div class="iconoburga">                      
-        <i class="fas fa-bars menu"></i>
-    </div>
-    
+<header> 
+    <section class="nav-header">
+        <figure class="imagenLogo">   
+            <img src="/img/LOGO.png">    
+        </figure>                                                                      
+        <section class="header-input">
+            <form action="/buscar" method="POST">
+                <div class="header-campo-busqueda"> 
+                    <input type="text" placeholder="Buscá productos" required="">
+                </div>
+                <div class="header-lupa"> 
+                    <button class="icono-lupa-input"><i class="fa-solid fa-magnifying-glass"></i></button>               
+                </div>                  
+            </form>
+        </section>
+   </section>          
+    </section> 
+            <nav class="estiloNav">
+               <ul class="lista-navegacion-header-izq">
+                <li><a class="active" href="/">inicio</a></li>                   
+                <li><a href="#">registrarse</a></li>
+                <li><a href="/productos">productos</a></li>
+                <li><a href="/quienes-somos">nosotros</a></li>   
+                <li><a href="/carrito">carrito</a></li>  
+               </ul>
+               <ul class="lista-navegacion-header-der">
+                <div name="userinfo">
+                <li><a href="/loggin">ingresar</a></li>
+                </div>
+                </ul>
+            </nav>            
+            <div class="icono-burga-header">                      
+                <i class="fas fa-bars icono-burga-clase"></i>
+            </div>
+                                                               
 </header>
+
 <main>
     <section>
         <div class="banner">
