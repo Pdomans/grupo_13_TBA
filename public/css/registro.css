@@ -9,7 +9,6 @@
 
 /* CONFIGURACION DEL HEADER */
 
-/* CONFIGURACION GENERAL */
 *{
     padding: 0;
     margin: 0;
@@ -18,16 +17,6 @@
     box-sizing: border-box;
 }
 
-#check{
-    display: none;
-}
-
-.fa-magnifying-glass:before, .fa-search:before {
-    content: "\f002";
-    position: relative;
-    right: 180%;
-    background-color: white;
-}
 header{
     background-color: var(--vinoTinto);
 }
@@ -125,7 +114,7 @@ nav a {
 
 /* -------------------------------------------------- */
 
-/* -------------------------------------------------- */
+/* ----------------------TABLET---------------------------- */
 @media (min-width: 768px){
         .burger-menu{
             display: none;
