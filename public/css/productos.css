@@ -90,6 +90,10 @@ nav a {
 
 .fa-bars {font-size: 20px;}
 
+#iconos{
+    color: var(--Blanco);
+}
+
 /* HASTA ACÁ */
 
 
@@ -265,5 +269,10 @@ article{
         list-style: none;
     }
     
+
+    .fa-right-to-bracket:before, .fa-sign-in-alt:before {
+        content: "\f2f6";
+        color: white;
+    }
 }
 /* -------------------------------------------------------- */
