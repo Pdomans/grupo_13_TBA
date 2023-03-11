@@ -95,23 +95,66 @@ nav a {
 
 /* MAIN */
 
+
+
 #registrocuadro{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    border: 2px black solid;
+    background-color: var(--rojoOscuro);
     margin: 2rem 3rem;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    border: solid 3px var(--vinoTinto);
 }
-#registrocuadro ul li{
-    margin-bottom: 15px;
+#registrocuadro h1{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: var(--Blanco);
+    font-weight: bold;
+    font-size: 35px;
+}
+#registrocuadro a{
+    color: var(--Blanco);
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#registrocuadro label{
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    color: var(--Blanco);
+    font-weight: bold;
+    font-size: 15px;
+}
+#registrocuadro input{
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    border: solid 5px var(--Blanco);
+}
+button{
+    text-align: center;
+    margin: 0;
+    padding: 0%;
+    margin-bottom: 2rem;
 }
 .boton-reg{
-    text-align: center;
-    border: 2px var(--vinoTinto) solid;
-    border-radius: 10px;
-    background-color: var(--rojoOscuro);
+    margin-top: 3px;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    border: solid 5px blue;
+    transition: all .5s;
 }
+
 /* ------------------------------------------------------------------------------------------------------------ */
 
 /* -------------------------------------------------- */

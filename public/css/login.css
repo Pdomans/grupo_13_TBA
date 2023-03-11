@@ -122,7 +122,7 @@ main{
     text-align: center;
     color: var(--Blanco);
     font-weight: bold;
-    font-size: 35px;
+    font-size: 30px;
 }
 
 .login-box a{
@@ -133,14 +133,18 @@ main{
 }
 
 .login-box label{
+    margin: 0;
+    padding: 0;
+    text-align: center;
     color: var(--Blanco);
-    font-size: 12px;
+    font-weight: bold;
+    font-size: 15px;
 }
 
 .cdi{
     border-radius: 4px;
     margin-top: 3px;
-    margin-bottom: 3px;
+    margin-bottom: 2rem;
     border: solid 5px var(--Blanco);
 
 }
