@@ -103,11 +103,19 @@ nav a {
     border: 2px black solid;
     margin: 2rem 3rem;
 }
-#registrocuadro ul li{
+#registrocuadro h1{
+    margin:1rem;
+}
+#registrocuadro label{
+    justify-content: left;
+}
+#registrocuadro input{
     margin-bottom: 15px;
 }
 .boton-reg{
     text-align: center;
+    padding: 10px;
+    margin: 10px;
     border: 2px var(--vinoTinto) solid;
     border-radius: 10px;
     background-color: var(--rojoOscuro);

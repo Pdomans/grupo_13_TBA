@@ -41,16 +41,17 @@
 </header>
 <!-- COPIAR HEADERS -->
 <main>
-    <section id="registrocuadro">
+    <form id="registrocuadro" action="/registro" method="post" >
         <h1>Crear una cuenta</h1>
-        <ul>
-            <li><p>Correo electrónico</p><input type="email"></li>
-            <li><p>Usuario</p><input type="text"></li>
-            <li><p>Nombre</p><input type="text"></li>
-            <li><p>Apellido</p><input type="text"></li>
-            <li class="boton-reg"><p>REGISTRARSE</p></li>
-
-        </ul>
-    </section>
+            <label for="email">Correo electrónico</label>
+            <input type="email" name="email" id="email"></li>
+            <label for="usuario">Usuario</label>
+            <input type="text" name="usuario" id="nombre"></li>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre"></li>
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" id="apellido"></li>
+            <button class="boton-reg" type="submit"><a href="/">REGISTRARSE</a></button> 
+    </form>
 </main>
 </body>
