@@ -192,7 +192,17 @@ nav a {
     font-size: 1.5rem; 
     color: #007bff; 
   }
-
+.founder {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  border: solid 0px #ebebeb;
+  padding: 1px;
+  margin: 1rem;
+  box-shadow: 0px 0px 50px rgb(100, 100, 100);
+  width: 100%;
+}
 
 /* FOOTER */
 footer{
