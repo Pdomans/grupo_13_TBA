@@ -41,6 +41,10 @@ header{
 
 }
 
+.banner{
+    width: 100%;
+}
+
 #barraBusqueda {
     width: 100%;
     height: 2.2rem;
