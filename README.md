@@ -36,6 +36,9 @@ Eric Pino Najarro: Hola! mi nombre es Eric Pino Najarro, soy de Morón, buenos A
 <br>
 <br>
 Carolina Ruiz Arcos: hola mi nombre es Carolina Ruiz Arcos, soy de cali Colombia. trabajo para una empresa de salud, tengo un negocio de cannabis.
+<br>
+<br>
+Andrés López: Holi, me llamo Andres Lopez, me gusta mucho la musica, actualmente trabajo en un local de comida rápida y solo ando estudiando el curso de DigitalHouse, espero poder aprender bastante para poder apoyar el futuro de la tecnología tanto como pueda :).
 
 
 Wireframe digital:
