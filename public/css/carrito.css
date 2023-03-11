@@ -90,6 +90,9 @@ nav a {
 
 .fa-bars {font-size: 20px;}
 
+#iconos {
+    color: var(--Blanco);
+}
 /* HASTA ACÁ */
 .main-completo{
     width: 90%;
@@ -173,6 +176,24 @@ img{
 .resumenCarrito{
     display: flex;
 }
+
+/* INICIO DEL FOOTER -------------------------------------------------------------------*/
+
+footer{
+    background-color: var(--vinoTinto);
+    color: var(--Blanco);
+    text-align: center;
+    align-items: center; 
+    border-top: solid var(--rojoOscuro) 10px;  
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--Blanco);
+}
+
+
+/* FIN DEL FOOTER ----------------------------------------------------------------------- */
 
 
 

@@ -90,6 +90,9 @@ nav a {
 
 .fa-bars {font-size: 20px;}
 
+#iconos {
+    color: var(--Blanco);
+}
 /* HASTA ACÁ */
 /* estilo del slide  */
 img{
@@ -251,6 +254,25 @@ input[id="3"]:checked ~ .pagination-item[for="3"]{
  line-height: 1.5; 
  color: #6a6a6a;
 }
+
+
+/* INICIO DEL FOOTER -------------------------------------------------------------------*/
+
+footer{
+    background-color: var(--vinoTinto);
+    color: var(--Blanco);
+    text-align: center;
+    align-items: center; 
+    border-top: solid var(--rojoOscuro) 10px;  
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--Blanco);
+}
+
+
+/* FIN DEL FOOTER ----------------------------------------------------------------------- */
 
 /* ----------------------TABLET---------------------------- */
 @media (min-width: 768px){

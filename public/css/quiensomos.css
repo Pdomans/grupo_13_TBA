@@ -90,6 +90,9 @@ nav a {
 
 .fa-bars {font-size: 20px;}
 
+#iconos {
+  color: var(--Blanco);
+}
 /* HASTA ACÁ */
 /* Estilos generales */ 
   a {
@@ -135,13 +138,6 @@ nav a {
     margin-bottom: 20px; 
   }
   
-  
-  ul li a {
-    color: #007bff; 
-    text-decoration: none; 
-  }
-  
-  
   .button {
     display: inline-block; 
     background-color: var(--rojoOscuro); 
@@ -151,14 +147,6 @@ nav a {
     text-decoration: none; 
     margin-top: 20px; 
   }
-  
-  
-  .footer {
-    background-color: #f8f8f8; 
-    padding: 20px; 
-    margin-top: 20px; 
-  }
-  
   
   .about {
     flex: 1; 
@@ -201,13 +189,28 @@ nav a {
   padding: 1px;
   margin: 1rem;
   box-shadow: 0px 0px 50px rgb(100, 100, 100);
-  width: 100%;
+  width: 50%;
 }
 
-/* FOOTER */
+/* INICIO DEL FOOTER -------------------------------------------------------------------*/
+
 footer{
-  background-color: var(--GrisOscuro);
+  background-color: var(--vinoTinto);
+  color: var(--Blanco);
+  text-align: center;
+  align-items: center; 
+  border-top: solid var(--rojoOscuro) 10px;  
 }
+
+footer a{
+  text-decoration: none;
+  color: var(--Blanco);
+}
+
+
+/* FIN DEL FOOTER ----------------------------------------------------------------------- */
+
+
 /* ----------------------TABLET---------------------------- */
 @media (min-width: 768px){
   .burger-menu{

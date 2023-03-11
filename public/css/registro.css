@@ -90,6 +90,9 @@ nav a {
 
 .fa-bars {font-size: 20px;}
 
+#iconos {
+    color: var(--Blanco);
+}
 /* HASTA ACÁ */
 
 
@@ -154,10 +157,23 @@ button{
     border: solid 5px blue;
     transition: all .5s;
 }
+/* FIN DE MAIN*/
 
-/* ------------------------------------------------------------------------------------------------------------ */
+/* INICIO DEL FOOTER -------------------------------------------------------------------*/
 
-/* -------------------------------------------------- */
+footer{
+    background-color: var(--vinoTinto);
+    color: var(--Blanco);
+    text-align: center;
+    align-items: center; 
+    border-top: solid var(--rojoOscuro) 10px;  
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--Blanco);
+}
+/* FIN DEL FOOTER ----------------------------------------------------------------------- */
 
 /* ----------------------TABLET---------------------------- */
 @media (min-width: 768px){
