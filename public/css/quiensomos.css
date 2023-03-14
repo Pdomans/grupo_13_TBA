@@ -134,8 +134,7 @@ nav a {
   
   ul {
     list-style: none; 
-    padding: 0; 
-    margin-bottom: 20px; 
+    padding: 0;  
   }
   
   .button {
@@ -160,24 +159,8 @@ nav a {
     margin-bottom: 20px; 
   }
   
-  
-  .contact span {
-    display: block; 
-    margin-bottom: 10px; 
-  }
-  
-  .contact span i {
-    margin-right: 10px; 
-  }
-  
-  
-.socials a {
-    display: inline-block; 
-    margin-right: 10px; 
-}
-  
   .socials a i {
-    font-size: 1.5rem; 
+    font-size: 15px; 
     color: #007bff; 
   }
 .founder {
@@ -191,8 +174,17 @@ nav a {
   box-shadow: 0px 0px 50px rgb(100, 100, 100);
   width: 50%;
 }
-
 /* INICIO DEL FOOTER -------------------------------------------------------------------*/
+
+.footer-content h3{
+  color: var(--Blanco);
+  margin: 0px;
+}
+
+.footer-content p{
+  margin: 0px;
+}
+
 
 footer{
   background-color: var(--vinoTinto);
@@ -206,9 +198,6 @@ footer a{
   text-decoration: none;
   color: var(--Blanco);
 }
-
-
-/* FIN DEL FOOTER ----------------------------------------------------------------------- */
 
 
 /* ----------------------TABLET---------------------------- */

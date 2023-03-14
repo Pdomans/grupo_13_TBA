@@ -277,6 +277,10 @@ footer{
     border-top: solid var(--rojoOscuro) 10px;  
 }
 
+.socials a i{
+    color: blue;
+}
+
 footer a{
     text-decoration: none;
     color: var(--Blanco);

@@ -149,6 +149,11 @@ main{
 
 }
 
+.checked{
+    margin-bottom: 8%;
+    margin-top: 5%;
+}
+
 .cdb-padre{
     text-align: center;
     margin: 0;
@@ -178,6 +183,10 @@ footer{
     text-align: center;
     align-items: center; 
     border-top: solid var(--rojoOscuro) 10px;  
+}
+
+.socials a i{
+    color: blue;
 }
 
 footer a{
