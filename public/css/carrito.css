@@ -94,6 +94,8 @@ nav a {
     color: var(--Blanco);
 }
 /* HASTA ACÁ */
+
+
 .main-completo{
     width: 90%;
     margin: auto;
@@ -121,10 +123,6 @@ li{
     display: flex;
 }
 
-.fotoProducto{
-    width: 30%;
-}
-
 img{
     max-width: 100%;
     vertical-align: top;
@@ -134,11 +132,18 @@ img{
     display: flex;
     align-items: center;
 }
+#restar{
+    color: darkred;
+}
+#sumar{
+    color: darkgreen;
+}
 
 .fotoProducto{
     display: flex;
-    text-align: center;
-    width: 15%;
+    justify-content: center;
+    width: 15rem;
+    height: 8rem;
 }
 
 .precioDescripcionProducto{
@@ -166,11 +171,17 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-content: center;
+    margin: 5px;
 }
 
 .sectionDetalleCompra{
     display: flex;
     justify-content: center;
+    margin: 1rem;
+}
+.sectionDetalleCompra li{
+    margin-top: 1rem;
 }
 
 .resumenCarrito{
