@@ -44,17 +44,25 @@
     <form id="registrocuadro" action="/registro" method="post" >
         <h1>Crear una cuenta</h1>
             <label for="email">Correo electrónico</label>
-            <input type="email" name="email" id="email"></li>
+            <input type="email" name="email" id="email" placeholder="ej. fithouse@gmail.com">
             <br>
             <label for="usuario">Usuario</label>
-            <input type="text" name="usuario" id="nombre"></li>
+            <input type="text" name="usuario" id="nombre" placeholder="ej. Lifter50">
             <br>
+            <label for="contraseña">Contraseña</label>
+            <input type="password" name="contraseña" id="contraseña" placeholder="ej. pablo123">
             <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre"></li>
+            <input type="text" name="nombre" id="nombre" placeholder="...">
             <br>
             <label for="apellido">Apellido</label>
-            <input type="text" name="apellido" id="apellido"></li>
+            <input type="text" name="apellido" id="apellido" placeholder="...">
             <br>
+            <label for="noticias"><input type="checkbox" value="si">Recibir novedades y ofertas</label>
+            <br>
+            <label for="terminos"><input type="checkbox" value="si">Aceptar términos y condiciones</label>
+            <br>
+            
+            
             <button class="boton-reg" type="submit"><a href="/">REGISTRARSE</a></button> 
             <a href="/login">Ya tenés una cuenta? Iniciá sesión!</a>
     </form>
