@@ -10,11 +10,7 @@ const mainController = require("../controllers/mainController.js")
 
 // Procesa el pedido get con ruta /
 router.get("/", mainController.inicio);
-router.get("/carrito", mainController.carrito);
-router.get("/login", mainController.login);
-router.get("/productos", mainController.productos);
-router.get("/quiensomos", mainController.quiensomos);
-router.get("/registro", mainController.registro);
+router.get("/admin", mainController.inicio);
 
 // Exportamos la variable router ya con todas las rutas "guardadas", que se usará en app.js
 module.exports = router;

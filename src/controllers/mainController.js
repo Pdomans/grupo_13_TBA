@@ -11,7 +11,14 @@ const mainController = {
     },
     admin: (req, res) => {
         res.sendFile(path.resolve(__dirname, "../views/admin.html"))
+    },
+    quiensomos: (req, res) => {
+        res.sendFile(path.resolve(__dirname, "../views/quiensomos.html"))
+    },
+    registro: (req, res) => {
+        res.sendFile(path.resolve(__dirname, "../views/registro.html"))
     }
+    
 }
 
 // Exportamos el objeto literal con los distintos métodos, que se usará en el enrutador por defecto
