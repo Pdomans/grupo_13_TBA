@@ -8,8 +8,7 @@ const productsController = require("../controllers/productsController.js")
 
 // En vez de app.get, utilizamos router.get. Esto va "guardando" en router las distintas rutas, que luego exportamos
 
-// Procesa el pedido get con ruta /productos/venta
-router.get("/venta", productsController.venta)
+
 // Procesa el pedido get con ruta /productos/numeroProducto
 // Ruta parametrizada!!
 router.get("/:idProducto", productsController.detalle)

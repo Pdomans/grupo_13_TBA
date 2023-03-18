@@ -1,14 +1,13 @@
 const express = require ("express");
-const path = require("path");
 const app = express();
 
-app.use(express.static('public'));
-
-
 // Importamos los distintos enrutadores
-const mainRouter = require("./routes/mainRouter.js")
-const productsRouter = require("./routes/productsRouter.js")
-const userRouter = require("./routes/userRouter.js")
+const mainRouter = require("./src/routes/mainRouter.js")
+const productsRouter = require("./src/routes/productsRouter.js")
+const userRouter = require("./src/routes/userRouter.js")
+
+
+app.use(express.static('public'));
 
 // Usando los enrutadores importados
 app.use("/", mainRouter);
