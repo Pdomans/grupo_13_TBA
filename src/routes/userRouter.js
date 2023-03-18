@@ -3,7 +3,7 @@ const express = require("express");
 const router = express.Router();
 
 // Importamos el controlador de usuarios
-const usersController = require("../controllers/usersController.js");
+const usersController = require("../controllers/userController.js");
 
 // En vez de app.get, utilizamos router.get. Esto va "guardando" en router las distintas rutas, que luego exportamos
 

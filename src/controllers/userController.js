@@ -5,12 +5,12 @@ const usersController = {
 
     // Manejo del pedido get con ruta /usuarios/conectarse
     login: (req, res) => {
-        res.send("Formulario de conexión")
+        res.send(path.join(__dirname, "src/views/login.html"))
     },
 
     // Manejo del pedido get con ruta /usuarios/registrarse
     registro: (req, res) => {
-        res.send("Formulario de creación")
+        res.send(path.join(__dirname, "src/views/registro.html"))
     }
 }
 
