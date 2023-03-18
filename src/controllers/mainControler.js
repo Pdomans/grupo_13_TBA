@@ -7,7 +7,7 @@ const mainController = {
     // Manejo del pedido get con ruta
     inicio: (req, res) => {
         // comunicarse con el modelo, conseguir información
-        res.sendFile(path.resolve(__dirname, "../views/carrito.html"))
+        res.sendFile(path.resolve(__dirname, "../views/inicio.html"))
     }
 }
 
