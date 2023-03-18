@@ -214,56 +214,63 @@ input[id="3"]:checked ~ .pagination-item[for="3"]{
 
 .contenedor{
     width: 100%;
+    background-color: var(--GrisOscuro);
+    margin-bottom: 1rem;
+    padding: 5px;
     display: flex;
-    flex-direction: row;
-   box-sizing: border-box;
-    
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    border: solid var(--vinoTinto) 5px;
 }
 
-.tarjeta{
+.tarjetaOfertas{
+    display: flex;
     width: 100%;
-    margin: 20px;
+    margin-bottom: 5px;
     border-radius: 6px;
-    overflow: hidden;
-    background:#fff;
     box-shadow: 0px 1px 10px tgba(0,0,0,0.2);
     cursor:default;
     transition: all 400ms ease;
     background-color: white;
 
 }
+.tarjetaOfertas img{
+    width: 5rem;
+    height: 5rem;
+}
 
 .tituloOfertas{
-    
     font-size: 24px;
     width: 100%;
     margin: 1rem 0;
 }
 
-.tarjeta:hover{
+.tarjetaOfertas:hover{
     box-shadow: 5px 5px 20px tgba(0,0,0,0.2); 
     transform:translate(-3%);
-    
+}
+.tarjetaMain:hover{
+    box-shadow: 5px 5px 20px tgba(0,0,0,0.2); 
+    transform:translate(-3%);
 }
 
 .categorias{
     display: flex;
 }
 
-.tarjeta img {
 
-    width: 100%;
-}
-
-.tarjeta .contenido{
+.tarjetaMain .contenido{
     padding: 15px;
     text-align: center;
 }
-
-
-.tarjeta .contenido p{
+.tarjetaMain .contenido p{
  line-height: 1.5; 
  color: #6a6a6a;
+}
+.tarjetaMain img{
+    border: #330a0a 5px solid;
+    border-radius: 3px;
 }
 
 
@@ -316,6 +323,20 @@ footer a{
         align-items: center;
         width: 45%;
         list-style: none;
+    }
+
+
+    .contenedor{
+        flex-direction: row;
+        
+    }
+    .tarjetaOfertas img{
+        width: 20rem;
+        height: 10rem;
+    }
+    .tarjetaOfertas{
+        display: block;
+        margin: 1rem;
     }
     
 }
