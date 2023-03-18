@@ -6,13 +6,13 @@ const productsController = {
     detalle: (req, res) => {
         // En req.params tenemos el parametro que definimos en el enrutador (en este caso con la palabra num)
         let idProducto = req.params.idProducto;
-        res.send(path.join(__dirname, "src/views/detalleProducto.html"));
+        res.send(path.join(__dirname, "./src/views/detalleProducto.html"));
     },
     carrito: (req, res) => {
-        res.send(path.join(__dirname, "src/views/carrito.html"))
+        res.send(path.join(__dirname, "./src/views/carrito.html"))
     },
     productos: (req, res) => {
-        res.send(path.join(__dirname, "src/views/productos.html"))
+        res.send(path.join(__dirname, "./src/views/productos.html"))
     },
 }
 
