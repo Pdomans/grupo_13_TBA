@@ -32,6 +32,6 @@ app.get("/quienes-somos", (req, res) => {
 
 
 app.listen(3500,() => {
-    console.log ("Servidor corriendo en el puerto 3500");
+    console.log ("Servidor corriendo en el puerto http://localhost:3500");
 });
 
