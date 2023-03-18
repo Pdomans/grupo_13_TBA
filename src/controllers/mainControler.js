@@ -8,22 +8,22 @@ const mainController = {
     inicio: (req, res) => {
         // comunicarse con el modelo, conseguir información
         res.sendFile(path.resolve(__dirname, "../views/inicio.html"))
-    }
+    },
     carrito: (req, res) => {
         res.sendFile(path.resolve(__dirname, "../views/carrito.html"))
-    }
+    },
     login: (req, res) => {
         res.sendFile(path.resolve(__dirname, "../views/login.html"))
-    }
+    },
     productos: (req, res) => {
         res.sendFile(path.resolve(__dirname, "../views/productos.html"))
-    }
+    },
     quiensomos: (req, res) => {
         res.sendFile(path.resolve(__dirname, "../views/quiensomos.html"))
-    }
+    },
     registro: (req, res) => {
         res.sendFile(path.resolve(__dirname, "../views/registro.html"))
-    }
+    },
     detalleProducto: (req, res) => {
         res.sendFile(path.resolve(__dirname, "../views/detalleProducto.html"))
     }
