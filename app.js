@@ -2,9 +2,6 @@ const express = require ("express");
 const path = require("path");
 const app = express();
 
-const { inicio, carrito, productos, quiensomos, detalleProducto } = require("./src/controllers/mainController");
-
-
 app.use(express.static('public'));
 
 
