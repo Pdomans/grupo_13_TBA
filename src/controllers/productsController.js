@@ -1,11 +1,6 @@
 // Creamos el objeto literal con los métodos a exportar
 const productsController = {
 
-    // Manejo del pedido get con ruta /productos/compra
-    compra: (req, res) => {
-        res.send("Compra exitosa")
-    },
-
     // Manejo del pedido get con ruta /productos/venta
     venta: (req, res) => {
         res.send("Venta exitosa")
