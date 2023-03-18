@@ -26,6 +26,9 @@ const mainController = {
     },
     detalleProducto: (req, res) => {
         res.sendFile(path.resolve(__dirname, "../views/detalleProducto.html"))
+    },
+    admin: (req, res) => {
+        res.sendFile(path.resolve(__dirname, "../views/admin.html"))
     }
 }
 
