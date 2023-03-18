@@ -15,9 +15,6 @@ const mainController = {
     quiensomos: (req, res) => {
         res.sendFile(path.resolve(__dirname, "../views/quiensomos.html"))
     },
-    registro: (req, res) => {
-        res.sendFile(path.resolve(__dirname, "../views/registro.html"))
-    }
     
 }
 
