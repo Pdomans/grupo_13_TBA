@@ -14,6 +14,9 @@ const productsController = {
     productos: (req, res) => {
         res.send(path.join(__dirname, "./src/views/productos.html"))
     },
+    detalle: (req, res) => {
+        res.send(path.join(__dirname, "./src/views/detalleProducto.html"))
+    },
 }
 
 // Exportamos el objeto literal con los distintos metodos, que se usará en el enrutador de productos

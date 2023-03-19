@@ -13,6 +13,7 @@ app.use(express.static('public'));
 app.use("/",mainRouter);
 app.use("/productos", productsRouter);
 app.use("/usuario", userRouter);
+app.use("/detalleProducto", userRouter);
 
 
 app.listen(3500,() => {
