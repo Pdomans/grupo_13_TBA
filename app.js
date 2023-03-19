@@ -14,7 +14,7 @@ app.set("view engine", "ejs");
 app.use(express.static('public'));
 
 //indicamamos donde se encuentran las vistas ( en views)
-app.set('views', path.resolve(__dirname,"views"));
+app.set('views', path.resolve(__dirname,"src/views"));
 
 // Usando los enrutadores importados
 app.use("/",mainRouter);
