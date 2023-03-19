@@ -10,7 +10,7 @@ const userRouter = require("./src/routes/userRouter.js")
 app.use(express.static('public'));
 
 // Usando los enrutadores importados
-app.use("/", mainRouter);
+app.use("/",mainRouter);
 app.use("/productos", productsRouter);
 app.use("/usuario", userRouter);
 
