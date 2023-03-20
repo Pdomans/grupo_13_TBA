@@ -3,6 +3,11 @@
 // Creamos el objeto literal con los métodos a exportar
 const userController = {
 
+
+    /* usuario: (req, res) => {
+        res.render("usuario");
+    },
+     */
     // Manejo del pedido get con ruta /usuarios/conectarse
     login: (req, res) => {
         res.send(path.join(__dirname, "./views/login.html"))
@@ -10,7 +15,8 @@ const userController = {
 
     // Manejo del pedido get con ruta /usuarios/registrarse
     registro: (req, res) => {
-        res.send(path.join(__dirname, "./views/registro.html"))
+        res.render("registro");
+        /* res.send(path.join(__dirname, "./views/registro.html")) */
     }
 }
 
