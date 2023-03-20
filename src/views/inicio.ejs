@@ -14,8 +14,37 @@
     </head>
 <body>
 <!-- COPIAR HEADERS -->
+<<<<<<< HEAD:src/views/inicio.ejs
 <!-- vista parcial  -->
 <%-include("./partials/header.ejs") %>
+=======
+<header>
+    <section id="logo-busqueda">
+        <img class="logo" src="/img/LOGO.png" alt="logo">
+        <div class="busqueda">
+            <input id="barraBusqueda" type="text" placeholder="Buscar productos, marcas">
+            <a href="#" id="botonLupa"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+        
+    </section>
+    <nav class="navFlex">
+            <ul class="lista1flex">
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/productos">Productos</a></li>
+                <li><a href="/carrito">Carrito</a></li>
+            </ul>
+            <ul class="lista2flex">
+                <li><a href="/registro">Creá tu cuenta</a><i id="iconos" class="far fa-id-card"></i></li> 
+                <li><a href="/login">Ingresar</a><i id="iconos" class="fas fa-sign-in-alt"></i></li>
+                <li><a href="/detalleProducto">detalleProducto</a><i id="iconos" class="fas fa-sign-in-alt"></i></li>
+                <li><a href="/quienes-somos">Sobre Nosotros</a></li>
+            </ul>
+        </nav>
+        <div class="burger-menu">  
+            <i class="fa-solid fa-bars"></i>
+        </div>
+</header>
+>>>>>>> 11ce93eaf15c4db3065e7b6220d6617a3586fda6:src/views/inicio.html
 <!-- COPIAR HEADERS -->
 <!-- MAIN -->
 <main>
