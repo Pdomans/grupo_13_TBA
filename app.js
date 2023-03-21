@@ -21,7 +21,7 @@ app.use("/",mainRouter);
 app.use("/productos", productsRouter);
 /* app.use("/carrito", productsRouter); */
 app.use("/usuario", userRouter);
-app.use("/detalleProducto", userRouter);
+
 
 //esucchando en el puerto 3000
 app.listen(3500,() => {
