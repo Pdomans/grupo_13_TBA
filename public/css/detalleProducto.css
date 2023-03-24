@@ -17,14 +17,14 @@
 }
 .seleccion{
     transition: .5 ease;
-    opacity: 0;
+  /*   opacity: 0; */
     width: 0;
     border: 1px solid #ccc;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    overflow: hidden;
+   /*  overflow: hidden; */
 }
 .cerrar{
     position: absolute;
