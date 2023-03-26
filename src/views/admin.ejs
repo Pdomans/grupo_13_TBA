@@ -6,8 +6,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="/css/admin.css">  
 </head>
 <body>
-    <p> esta es la pagina admin</p>
+     <!-- COPIAR HEADERS -->
+ <%-include("./partials/header.ejs") %>
+ <!-- COPIAR HEADERS -->
+    
+
+ <!DOCTYPE html>
+ <html>
+   <head>
+     <title>Alta de Producto</title>
+   </head>
+   
+   <body>
+     <h1>Alta de Producto</h1>
+     <form action="submit_product.php" method="POST" enctype="multipart/form-data">
+       <label for="name">Nombre del Producto:</label>
+       <input type="text" name="name" required><br><br>
+       
+       <label for="description">Descripción:</label>
+       <textarea name="description" rows="5" cols="40"></textarea><br><br>
+       
+       <label for="image">Imagen:</label>
+       <input type="file" name="image" accept="image/*"><br><br>
+       
+       <label for="category">Categoría:</label>
+       <select name="category">
+         <option value="ropa">Ropa</option>
+         <option value="tecnologia">Tecnología</option>
+         <option value="hogar">Hogar</option>
+       </select><br><br>
+       
+       <label for="colors">Colores:</label>
+       <input type="text" name="colors"><br><br>
+       
+       <label for="price">Precio:</label>
+       <input type="number" name="price" min="0" step="0.01" required><br><br>
+       
+       <input type="submit" value="Guardar">
+     
+    </form>
+   </body>
+ </html>
+ 
+
+
+
+
+
+
+
+<!----------INICIO DE FOOTER--------------------------------------------------------------------------------------------->
+<%-include("./partials/footer.ejs") %>
+<!----------FIN DE FOOTER--------------------------------------------------------------------------------------------->
+
 </body>
+
+
+
 </html>
