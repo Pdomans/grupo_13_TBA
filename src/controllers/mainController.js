@@ -11,7 +11,8 @@ const mainController = {
        
     },
     admin: (req, res) => {
-        res.sendFile(path.resolve(__dirname, "../views/admin.html"))
+        res.render("admin");
+        /* res.sendFile(path.resolve(__dirname, "../views/admin.html")) */
     },
     quiensomos: (req, res) => {
         res.render("quiensomos");
