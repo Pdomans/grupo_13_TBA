@@ -8,13 +8,14 @@ const mainController = {
     inicio: (req, res) => {
     // comunicarse con el modelo, conseguir información
         res.render("inicio");
-        /* res.sendFile(path.resolve(__dirname, "../views/inicio.html")) */
+       
     },
     admin: (req, res) => {
         res.sendFile(path.resolve(__dirname, "../views/admin.html"))
     },
     quiensomos: (req, res) => {
-        res.sendFile(path.resolve(__dirname, "../views/quiensomos.html"))
+        res.render("quiensomos");
+       
     },
     
 }
