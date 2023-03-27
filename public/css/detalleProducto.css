@@ -192,3 +192,50 @@ footer a{
 
 
 /* ------------------------------------------------TEST FOOTER */
+
+/* --------------------------------------------media query---------------------------------  */
+/* ----------------------TABLET---------------------------- */
+@media (min-width: 768px){
+    .burger-menu{
+        display: none;
+    }
+    nav{
+        display: flex;
+    }
+    .navFlex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 40px;
+    }
+    .lista1flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 45%;
+        list-style: none;
+    }
+    .lista2flex{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 45%;
+        list-style: none;
+    }
+
+
+    .contenedor{
+        flex-direction: row;
+        
+    }
+    .tarjetaOfertas img{
+        width: 20rem;
+        height: 10rem;
+    }
+    .tarjetaOfertas{
+        display: block;
+        margin: 1rem;
+    }
+    
+}
+/* -------------------------------------------------------- */
