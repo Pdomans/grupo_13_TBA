@@ -5,27 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Agregar Producto</title>
 
     <link rel="stylesheet" href="/css/admin.css">  
 </head>
 <body>
-     <!-- COPIAR HEADERS -->
+  <!-- COPIAR HEADERS -->
  <%-include("./partials/header.ejs") %>
  <!-- COPIAR HEADERS -->
-    
 
- <!DOCTYPE html>
- <html>
-   <head>
-     <title>Alta de Producto</title>
-   </head>
-   
-   <body>
-     <h1>Alta de Producto</h1>
-     <form action="submit_product.php" method="POST" enctype="multipart/form-data">
-       <label for="name">Nombre del Producto:</label>
-       <input type="text" name="name" required><br><br>
+ <section class="producto-form">
+    <h1>Alta de Producto</h1>
+    
+    
+    <form  action="submit_product.php" method="POST" enctype="multipart/form-data">
+      <label for="name">Nombre del Producto:</label>
+      <input type="text" name="name" required><br><br>
        
        <label for="description">Descripción:</label>
        <textarea name="description" rows="5" cols="40"></textarea><br><br>
@@ -49,9 +44,7 @@
        <input type="submit" value="Guardar">
      
     </form>
-   </body>
- </html>
- 
+ </section>
 
 
 
