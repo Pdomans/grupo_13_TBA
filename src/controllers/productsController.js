@@ -4,12 +4,12 @@ const productsController = {
 
     // Procesa el pedido get con ruta /productos/numeroProducto
     // Ruta parametrizada!!
-    detalle1: (req, res) => {
+    /* detalle1: (req, res) => {
         // En req.params tenemos el parametro que definimos en el enrutador (en este caso con la palabra num)
-        let idProducto = req.params.idProducto;
+        let idProducto = req.params.idProducto; */
        
         /* res.send(path.join(__dirname, "./src/views/detalleProducto.html")); */
-    },
+    /* }, */
     carrito: (req, res) => {
         res.send(path.join(__dirname, "../views/carrito.ejs"))
     },

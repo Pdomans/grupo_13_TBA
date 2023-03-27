@@ -10,7 +10,8 @@ const userController = {
      */
     // Manejo del pedido get con ruta /usuarios/conectarse
     login: (req, res) => {
-        res.send(path.join(__dirname, "./views/login.html"))
+       res.render("login")
+        /*  res.send(path.join(__dirname, "./views/login.html")) */
     },
 
     // Manejo del pedido get con ruta /usuarios/registrarse
