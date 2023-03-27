@@ -11,8 +11,7 @@ const productsController = {
         /* res.send(path.join(__dirname, "./src/views/detalleProducto.html")); */
     },
     carrito: (req, res) => {
-        res.render("carrito");
-        /*  res.send(path.join(__dirname, "./src/views/carrito.html")) */
+        res.send(path.join(__dirname, "../views/carrito.ejs"))
     },
     
     
