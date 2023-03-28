@@ -106,12 +106,12 @@ nav a {
 .seleccion{
     transition: .5 ease;
   /*   opacity: 0; */
-    width: 0;
+   /*  width: 0;
     border: 1px solid #ccc;
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; */
    /*  overflow: hidden; */
 }
 .cerrar{
@@ -122,11 +122,12 @@ nav a {
 }
 .info{
     padding: 20px;
+    
 }
 .info img{
     display: block;
-    margin: 30px;
     width: 80%;
+    
 }
 .info h2{
     color: #707070;
@@ -161,9 +162,14 @@ nav a {
 .info .fila button{
     height: 40px;
     border: none;
-    padding: 0 10px;
+    padding: 0 ;
     color: #fff;
     background-color: #f85151;
+}
+.product1 {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
 }
 
 
@@ -184,6 +190,89 @@ footer a{
     text-decoration: none;
     color: var(--Blanco);
 }
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+  }
+  
+  .it1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+    width: 45%;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px #d9d9d9;
+  }
+  
+  /* IMAGEN */
+  
+  .it1 .division {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    
+  }
+  
+  .it1 .division:hover img {
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  /* BOTON DE COMPRA */
+  
+  .it1 .division button {
+    position: absolute;
+    bottom: 10px;
+    
+    border: none;
+    border-radius: 5px;
+    background-color: #292929;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .it1 .division button:hover {
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  /* DESCRIPCION DEL PRODUCTO */
+  
+  .it1 .seleccion {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px #d9d9d9;
+    
+  }
+  
+  .it1:hover .seleccion {
+    display: block;
+  }
+  
+
+  .it1 .seleccion .info {
+    padding: 20px;
+  }
+  
+  .it1 .seleccion .info img {
+    width: 100%;
+    
+  }
+  
+  .it1 .seleccion .info h2 {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
 
 
 /* ------------------------------------------------TEST FOOTER */
@@ -231,6 +320,6 @@ footer a{
         display: block;
         margin: 1rem;
     }
-    
 }
+
 /* -------------------------------------------------------- */
