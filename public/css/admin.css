@@ -109,6 +109,7 @@ main {
 
 
 /* CIERRE MAIN */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -121,7 +122,7 @@ body {
   }
   
 .producto-form {
-    max-width: 600px;
+    max-width: 400px;
     margin: 0 auto;
     padding: 2rem;
     border-radius: 5px;
@@ -166,10 +167,117 @@ form input[type="submit"] {
     transition: all 0.3s ease-in-out;
   }
   
-  form input[type="submit"]:hover {
+form input[type="submit"]:hover {
     background-color: #fff;
     color: #000;
   }
+
+  /* Estilos para dispositivos con un ancho de pantalla de 600px o menos */
+@media only screen and (max-width: 600px) {
+
+    .producto-form {
+      padding: 20px;
+    }
+  
+    .producto-form h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  
+    .producto-form label {
+      font-size: 16px;
+    }
+  
+    .producto-form input[type="text"],
+    .producto-form input[type="number"],
+    .producto-form input[type="file"],
+    .producto-form select,
+    .producto-form textarea {
+      margin-bottom: 10px;
+      padding: 5px;
+      font-size: 14px;
+    }
+  
+    .producto-form input[type="submit"] {
+      margin-top: 10px;
+      font-size: 16px;
+      padding: 10px;
+    }
+  
+  }
+  
+  /* Estilos para dispositivos con un ancho de pantalla entre 600px y 900px */
+  @media only screen and (min-width: 601px) and (max-width: 900px) {
+  
+    .producto-form {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 30px;
+    }
+  
+    .producto-form h1 {
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+  
+    .producto-form label {
+      font-size: 18px;
+    }
+  
+    .producto-form input[type="text"],
+    .producto-form input[type="number"],
+    .producto-form input[type="file"],
+    .producto-form select,
+    .producto-form textarea {
+      margin-bottom: 15px;
+      padding: 7px;
+      font-size: 16px;
+    }
+  
+    .producto-form input[type="submit"] {
+      margin-top: 15px;
+      font-size: 18px;
+      padding: 12px;
+    }
+  
+  }
+  
+  /* Estilos para dispositivos con un ancho de pantalla mayor a 900px */
+  @media only screen and (min-width: 901px) {
+  
+    .producto-form {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+    }
+  
+    .producto-form h1 {
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+  
+    .producto-form label {
+      font-size: 20px;
+    }
+  
+    .producto-form input[type="text"],
+    .producto-form input[type="number"],
+    .producto-form input[type="file"],
+    .producto-form select,
+    .producto-form textarea {
+      margin-bottom: 20px;
+      padding: 10px;
+      font-size: 18px;
+    }
+  
+    .producto-form input[type="submit"] {
+      margin-top: 20px;
+      font-size: 20px;
+      padding: 15px;
+    }
+  
+  }
+  
 
 /* FOOTER */
 footer{
