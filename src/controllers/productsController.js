@@ -6,6 +6,12 @@ const productsFilePath = path.join(__dirname, "../data/productosDataBase.json");
 
 const productsController = {
 
+    productos: (req, res) => {
+        const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
+        res.render("productos", {products});
+       /*  res.send(path.join(__dirname, "./src/views/productos.html")) */
+    },
+
     // Procesa el pedido get con ruta /productos/numeroProducto
     // Ruta parametrizada!!
     /* detalle1: (req, res) => {
@@ -20,12 +26,7 @@ const productsController = {
     },
     
     
-    productos: (req, res) => {
-        const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
-        res.render("productos", {products});
-       /*  res.send(path.join(__dirname, "./src/views/productos.html")) */
-    },
-    detalle: (req, res) => {
+   detalle: (req, res) => {
         res.render("detalleProducto");
      /*    res.send(path.join(__dirname, "./src/views/detalleProducto.html")) */
     },
