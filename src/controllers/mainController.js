@@ -1,11 +1,14 @@
 // Requerimos path para poder enviar los archivos HTML
 const path = require("path");
+const fs = require ("fs");
+
 
 // Creamos el objeto literal con los métodos a exportar
 const mainController = {
 
     // Manejo del pedido get con ruta
     inicio: (req, res) => {
+
     // comunicarse con el modelo, conseguir información
         res.render("inicio");
        

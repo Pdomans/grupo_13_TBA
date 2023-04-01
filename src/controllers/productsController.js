@@ -1,4 +1,8 @@
 // Creamos el objeto literal con los métodos a exportar
+const path = require("path");
+const fs= require ("fs");
+
+const productsFilePath = path.join(__dirname, "../data/productosDataBase.json");
 
 const productsController = {
 
@@ -17,7 +21,8 @@ const productsController = {
     
     
     productos: (req, res) => {
-        res.render("productos");
+        const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
+        res.render("productos", {products});
        /*  res.send(path.join(__dirname, "./src/views/productos.html")) */
     },
     detalle: (req, res) => {
