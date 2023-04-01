@@ -27,12 +27,13 @@
             <div class="division">
                 <div>
                     <a href="/productos/detalle/??">
-                     <img src="/img/??" alt="Imagen 1">
+                     <img src="/img/<%= product.image %>" alt="Imagen">
                      <div class="iconoenvio"><i class="fa-solid fa-truck"></i></div>
-                     <span class="precios">DESCUENTO % OFF</span>
-                     <h2>PRECIO FINAL</h2>
-                     <p class="precios"><% product.price %></p>
-                     <p class="descripciones">Product name</p>
+                     <span class="precios">DESCUENTO <%= product.discount %> OFF</span>
+                     
+                     <p class="precios">PRECIO FINAL</p>
+                     <h2><%= product.price %></h2>
+                     <p class="descripciones"><%= product.name %></p>
                      <div class="iconocarrito"><i class="fa-solid fa-cart-shopping"></i></div>
                     </a>
                 </div>
