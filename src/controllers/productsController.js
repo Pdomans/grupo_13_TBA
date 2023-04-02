@@ -27,6 +27,8 @@ const productsController = {
     vender: (req, res) => {
         res.render("vender");
     },
+
+    
     
     
    detalle: (req, res) => {
@@ -38,6 +40,33 @@ const productsController = {
         res.render("detalleProducto",{product: productToSend});
      /*    res.send(path.join(__dirname, "./src/views/detalleProducto.html")) */
     },
+
+    create: (req,res) => {
+        const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
+
+        res.render("/productos")
+    },
+
+    store: (req,res)=>{
+        const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
+        console.log(req.body);
+        let productoNuevo = {
+            id: 17,
+            name: "vulputate nonummy maecenas tincidunt",
+            other_name: "Barleria cristata L.",
+            mage: "4.jpg",
+            description: "sapien arcu sed augue aliquam erat volutpat in congue etiam justo etiam pretium iaculis justo in hac habitasse platea",
+            features: "pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer",
+            price: 6972.8,
+            discount: "10%",
+            categoria: "Mas vendido"
+        };
+        
+        products.push(productoNuevo);
+        let productsJSON = JSON.stringify(products, null, " ");
+        fs.writeFileSync(productsFilePath, productsJSON);
+        res.redirect("/productos")
+        },
 
     
 

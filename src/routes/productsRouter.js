@@ -12,6 +12,10 @@ const productsController = require("../controllers/productsController.js")
 // Procesa el pedido get con ruta /productos/numeroProducto
 // Ruta parametrizada!!
 router.get("/", productsController.productos);
+
+router.get("/create", productsController.create);
+router.post("/",productsController.store);
+
 router.get("/carrito", productsController.carrito);
 router.get("/detalleProducto", productsController.detalle);
 
