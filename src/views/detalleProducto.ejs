@@ -31,12 +31,12 @@
                 <div class="cerrar">
                 </div>
                 <div class="info">
-                <img class= "product1" src="/img/1.jpg" alt="Imagen 1">
-                <h2 id="modelo">TRAINING BAR 20KG 2.20MTS A BUJE</h2>
-                <p id="descripcion">DESCRIPCION</p>
-                <p id="descripcion2">Peso 20kg, Longitud 2.20mts, Tipo Buje, Zincado Brillante, Garantia 1 año. </p>
+                <img class= "product1" src="/img/<%= product.image %>" alt="Imagen 1">
+                <h2 id="modelo"> <%= product.name %></h2>
+                <p id="descripcion"> <%= product.description %> </p>
+                <p id="descripcion2"><%= product.discount %> </p>
 
-                <span class="precio" id="precio">$57.000</span>
+                <span class="precio" id="precio"> <%= product.price %> </span>
                 
                 <div class="fila">
                     <div class="size">

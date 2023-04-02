@@ -27,7 +27,12 @@ const productsController = {
     
     
    detalle: (req, res) => {
-        res.render("detalleProducto");
+    let id = req.params.idProducto
+    const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
+    const productToSend = products.find(product => {
+        return product.id == id
+    })
+        res.render("detalleProducto",{product: productToSend});
      /*    res.send(path.join(__dirname, "./src/views/detalleProducto.html")) */
     },
 
