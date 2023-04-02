@@ -24,6 +24,9 @@ const productsController = {
         res.render("carrito");
         /*   res.send(path.join(__dirname, "../views/carrito.ejs")) */
     },
+    vender: (req, res) => {
+        res.render("vender");
+    },
     
     
    detalle: (req, res) => {

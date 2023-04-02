@@ -5,13 +5,13 @@ const fs = require ("fs");
 
 // Creamos el objeto literal con los métodos a exportar
 const mainController = {
-
+    vender: (req, res) => {
+        res.render("vender");
+    },
     // Manejo del pedido get con ruta
     inicio: (req, res) => {
-
     // comunicarse con el modelo, conseguir información
-        res.render("inicio");
-       
+        res.render("inicio");     
     },
     admin: (req, res) => {
         res.render("admin");
