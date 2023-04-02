@@ -17,24 +17,24 @@
     <%-include("./partials/header.ejs") %>
 <!-- COPIAR HEADERS -->
 <main> 
-    <form id="registrocuadro" action="/vender" method="post" >
-        <h1>Vender un producto (agregar)</h1>
-            <label for="name">Name</label>           
-                <input type="text" name="name" id="name" placeholder="...">
+    <form id="registrocuadro" action="/productos" method="post" >
+        <h1>Vender  producto</h1>
+            <label for="name">Nombre</label>           
+                <input type="text" name="name" id="name" placeholder="Ej:Zapatillas">
                     <br>
-            <label for="descripcion">description</label>
+            <label for="descripcion">Descripcion</label>
                 <input type="text" name="descripcion" id="descripcion" placeholder="...">
                     <br>
-            <label for="price">Price</label>
+            <label for="price">Precio</label>
                 <input type="number" name="price" id="price" placeholder="...">
                     <br>
-            <label for="discount">discount</label>
+            <label for="discount">Descuento</label>
                 <input type="text" name="discount" id="discount" placeholder="...">
                     <br>
 
             
             
-            <button class="boton-reg" type="post"><a href="/productos">Guardar producto</a></button> 
+            <button class="boton-reg" type="post"><a href="/productos">Crear producto</a></button> 
     </form>
 </main>
 <!----------INICIO DE FOOTER--------------------------------------------------------------------------------------------->
