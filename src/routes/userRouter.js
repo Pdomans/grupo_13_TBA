@@ -16,8 +16,7 @@ router.get("/",userController.registro)
 
 // Procesa el pedido get con ruta /usuarios/conectarse
 router.get("/login", userController.login)
-// Procesa el pedido get con ruta /usuarios/registrarse
-router.get("/registro", userController.registro)
+
 
 
 // Exportamos la variable router ya con todas las rutas "guardadas", que se usará en app.js
