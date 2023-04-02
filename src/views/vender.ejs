@@ -16,8 +16,8 @@
     <!-- COPIAR HEADERS -->
     <%-include("./partials/header.ejs") %>
 <!-- COPIAR HEADERS -->
-<main>
-    <form id="registrocuadro" action="/registro" method="post" >
+<main> 
+    <form id="registrocuadro" action="/vender" method="post" >
         <h1>Vender un producto (agregar)</h1>
             <label for="name">Name</label>           
                 <input type="text" name="name" id="name" placeholder="...">
@@ -34,7 +34,7 @@
 
             
             
-            <button class="boton-reg" type="submit"><a href="/">Guardar producto</a></button> 
+            <button class="boton-reg" type="post"><a href="/productos">Guardar producto</a></button> 
     </form>
 </main>
 <!----------INICIO DE FOOTER--------------------------------------------------------------------------------------------->
