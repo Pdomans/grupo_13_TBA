@@ -11,6 +11,10 @@ const userRouter = require("./src/routes/userRouter.js")
 //configuramos el motor de plantillas con ejs 
 app.set("view engine", "ejs");
 
+//para  poder llevar acabo el metodo post 
+app.use(express.urlencoded({extended:true}));
+app.use(express.json());//recibe  el body  de los formularios
+
 app.use(express.static('public'));
 
 //indicamamos donde se encuentran las vistas ( en views)
@@ -22,9 +26,7 @@ app.use("/productos", productsRouter);
 /* app.use("/carrito", productsRouter); */
 app.use("/usuario", userRouter);
 
-//para  poder llevar acabo el metodo post 
-app.use(express.urlencoded({extended:false}));
-app.use(express.json());//recibe  el body  de los formularios
+
 
 //esucchando en el puerto 3000
 app.listen(3500,() => {

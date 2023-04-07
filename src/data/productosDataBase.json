@@ -1,150 +1,177 @@
-[{
-    "id": 1,
-    "name": "Barra de 10 kg",
-    "other_name": "Dissanthelium californicum (Nutt.) Benth.",
-    "image": "banco2.jpg",
-    "description": "ipsum praesent blandit lacinia erat vestibulum sed magna at nunc commodo placerat praesent blandit nam nulla integer pede justo lacinia eget tincidunt eget tempus vel pede morbi porttitor lorem id ligula suspendisse ornare consequat lectus in est risus auctor sed tristique in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum felis sed",
-    "features": "odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus sit amet erat nulla tempus vivamus in felis eu sapien cursus vestibulum proin eu mi nulla ac enim in tempor turpis nec euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula",
-    "price": 6381.57,
-    "discount": "10%",
-    "categoria": "Oferta"
-  }, {
-    "id": 2,
-    "name": "Barra de 15 kg",
-    "other_name": "Randia L.",
-    "image": "banco1.jpg",
-    "description": "felis fusce posuere felis sed lacus morbi sem mauris laoreet ut rhoncus aliquet pulvinar sed nisl nunc rhoncus dui vel sem sed sagittis nam",
-    "features": "turpis eget elit sodales scelerisque mauris sit amet eros suspendisse accumsan tortor quis turpis sed ante vivamus tortor",
-    "price": 6916.82,
-    "discount": "12%"
-  }, {
-    "id": 3,
-    "name": "Colchoneta 2 mts",
-    "other_name": "Phlox multiflora A. Nelson ssp. multiflora",
-    "image": "colchoneta.png",
-    "description": "ut blandit non interdum in ante vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae duis faucibus accumsan",
-    "features": "ac nibh fusce lacus purus aliquet at feugiat non pretium quis lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in hac",
-    "price": 8829.59,
-    "discount": "15%",
-    "categoria": "Oferta"
-  }, {
-    "id": 4,
-    "name": "banco plano",
-    "other_name": "Decodon verticillatus (L.) Elliott",
-    "image": "banco1.jpg",
-    "description": "semper sapien a libero nam dui proin leo odio porttitor id consequat in consequat ut nulla sed accumsan felis ut at dolor",
-    "features": "sed vestibulum sit amet cursus id turpis integer aliquet massa id lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula vehicula consequat morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis",
-    "price": 9168.71,
-    "discount": "17%",
-    "categoria": "Oferta"
-  }, {
-    "id": 5,
-    "name": "ketbell 5 kg",
-    "other_name": "Lysimachia clethroides Duby",
-    "image": "KETTBELL.WEBP",
-    "description": "aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt ante vel ipsum praesent blandit lacinia erat vestibulum sed magna at nunc commodo placerat praesent blandit nam nulla integer pede justo lacinia eget tincidunt eget tempus vel pede morbi porttitor lorem id ligula suspendisse ornare consequat lectus in est risus auctor sed tristique in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim blandit mi in porttitor pede justo eu massa donec dapibus duis at velit eu est congue elementum in hac habitasse platea",
-    "features": "curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla tellus in sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet at feugiat non pretium quis",
-    "price": 1801.66,
-    "discount": "24%",
-    "categoria": "Nuevo ingreso"
-  }, {
-    "id": 6,
-    "name": "ketbell 10 kg",
-    "other_name": "Descurainia pinnata (Walter) Britton ssp. paysonii Detling",
-    "image": "bano3.jpg",
-    "description": "odio curabitur convallis duis consequat dui nec nisi volutpat eleifend donec ut dolor morbi vel lectus in quam fringilla rhoncus mauris enim leo rhoncus sed vestibulum sit amet cursus id turpis integer aliquet massa id",
-    "features": "auctor sed tristique in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim blandit mi in porttitor pede justo eu massa donec dapibus duis at velit eu est congue elementum in hac habitasse platea dictumst morbi vestibulum velit id pretium iaculis diam erat fermentum justo nec condimentum neque sapien placerat ante nulla justo aliquam quis turpis eget elit sodales scelerisque mauris sit amet eros suspendisse accumsan tortor quis turpis sed ante vivamus",
-    "price": 8252.08,
-    "discount": "19%",
-    "categoria": "Nuevo ingreso"
-  }, {
-    "id": 7,
-    "name": "platea dictumst morbi vestibulum velit id",
-    "other_name": "Curculigo capitulata (Lour.) Kuntze",
-    "image": "12.jpg",
-    "description": "justo pellentesque viverra pede ac diam cras pellentesque volutpat dui maecenas tristique est et tempus semper est quam pharetra magna ac consequat metus sapien ut nunc vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti nullam porttitor lacus at turpis donec posuere metus vitae ipsum aliquam non mauris morbi non lectus aliquam sit amet diam in magna bibendum imperdiet nullam orci pede venenatis non sodales sed tincidunt",
-    "features": "integer aliquet massa id lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula vehicula consequat morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla ultrices aliquet maecenas leo odio condimentum id luctus nec molestie sed justo pellentesque viverra pede ac diam cras pellentesque volutpat dui maecenas tristique est et tempus",
-    "price": 5677.37,
-    "discount": "25%",
-    "categoria": "Nuevo ingreso"
-  }, {
-    "id": 8,
-    "name": "nunc purus phasellus in felis",
-    "other_name": "Tectaria trifoliata (L.) Cav.",
-    "image": "1.jpg",
-    "description": "aliquam erat volutpat in congue etiam justo etiam pretium iaculis justo in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt lacus at velit vivamus vel nulla eget eros elementum pellentesque quisque porta volutpat erat quisque erat eros viverra",
-    "features": "nibh in lectus pellentesque at nulla suspendisse potenti cras in purus eu magna vulputate luctus cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien",
-    "price": 3709.59,
-    "discount": "30%",
-    "categoria": "Nuevo ingreso"
-  }, {
-    "id": 9,
-    "name": "lectus",
-    "other_name": "Quercus parvula Greene var. shrevei (C.H. Mull.) Nixon",
-    "image": "2.jpg",
-    "description": "amet diam in magna bibendum imperdiet nullam orci pede venenatis non sodales sed tincidunt eu felis fusce posuere felis sed lacus morbi sem mauris laoreet ut rhoncus aliquet pulvinar sed nisl nunc rhoncus dui vel sem sed sagittis nam congue risus semper porta volutpat quam pede lobortis ligula sit amet eleifend pede libero quis orci nullam molestie nibh in lectus pellentesque at nulla suspendisse potenti cras in purus eu magna vulputate luctus cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque penatibus",
-    "features": "augue luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt ante vel ipsum praesent blandit lacinia erat vestibulum sed magna at nunc commodo placerat praesent blandit nam nulla integer pede justo lacinia eget tincidunt eget tempus vel pede morbi porttitor lorem id ligula suspendisse ornare consequat lectus in est risus auctor sed tristique in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum felis sed interdum venenatis",
-    "price": 2299.68,
-    "discount": "35%",
-    "categoria": "Nuevo ingreso"
-  }, {
-    "id": 10,
-    "name": "pede lobortis",
-    "other_name": "Cynoglossum amabile Stapf & J.R. Drumm.",
-    "image": "pesas.webp",
-    "description": "sit amet cursus id turpis integer aliquet massa id lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula vehicula consequat morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla ultrices aliquet maecenas leo odio condimentum id luctus nec molestie sed justo pellentesque viverra pede ac diam cras pellentesque volutpat dui maecenas tristique est et tempus semper est quam pharetra magna ac consequat metus sapien ut nunc vestibulum ante ipsum primis in faucibus",
-    "features": "elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus sit amet erat nulla tempus vivamus in felis eu sapien cursus vestibulum proin eu mi nulla ac enim in tempor turpis nec euismod scelerisque quam turpis adipiscing lorem vitae mattis",
-    "price": 9937.1,
-    "discount": "40%",
-    "categoria": "Oferta"
-  }, {
-    "id": 11,
-    "name": "sapien urna pretium nisl",
-    "other_name": "Eriobotrya japonica (Thunb.) Lindl.",
-    "image": "4.jpg",
-    "description": "donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla tellus in sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet at feugiat non pretium quis lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas ut massa",
-    "features": "pede justo lacinia eget tincidunt eget tempus vel pede morbi porttitor lorem id ligula suspendisse ornare consequat lectus in est risus auctor sed tristique in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim blandit mi in porttitor",
-    "price": 1310.38,
-    "discount": "59%",
-    "categoria": "Nuevo ingreso"
-  }, {
-    "id": 12,
-    "name": "quis orci nullam molestie",
-    "other_name": "Arctostaphylos tomentosa (Pursh) Lindl. ssp. rosei (Eastw.) P.V. Wells",
-    "image": "4.jpg",
-    "description": "convallis nulla neque libero convallis eget eleifend luctus ultricies eu nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae nulla dapibus dolor vel est donec odio",
-    "features": "justo pellentesque viverra pede ac diam cras pellentesque volutpat dui maecenas tristique est et tempus semper est quam pharetra magna ac consequat metus sapien ut nunc vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti nullam porttitor lacus at turpis donec posuere metus vitae ipsum aliquam non mauris",
-    "price": 3744.19,
-    "discount": "34%",
-    "categoria": "Mas vendido"
-  }, {
-    "id": 13,
-    "name": "nibh quisque id justo sit",
-    "other_name": "Hydnocarpus anthelminticus Pierre ex Lanessan",
-    "image": "4.jpg",
-    "description": "fusce congue diam id ornare imperdiet sapien urna pretium nisl ut volutpat sapien arcu sed augue aliquam erat volutpat in congue etiam justo etiam pretium iaculis justo in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt lacus at velit vivamus vel nulla eget eros elementum",
-    "features": "blandit mi in porttitor pede justo eu massa donec dapibus duis at velit eu est congue elementum in hac habitasse platea dictumst morbi vestibulum velit id pretium iaculis diam erat fermentum justo nec condimentum neque sapien placerat ante nulla justo aliquam quis turpis eget elit sodales scelerisque mauris sit amet eros suspendisse accumsan tortor quis turpis sed ante vivamus tortor duis mattis egestas metus aenean fermentum donec ut mauris eget massa tempor convallis nulla neque libero convallis eget eleifend",
-    "price": 4443.8,
-    "discount": "24%",
-    "categoria": "Mas vendido"
-  }, {
-    "id": 14,
-    "name": "lacus",
-    "other_name": "Carex heterostachya Bung",
-    "image": "4.jpg",
-    "description": "integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla ultrices aliquet maecenas leo odio condimentum id luctus nec",
-    "features": "pulvinar lobortis est phasellus sit amet erat nulla tempus vivamus in felis eu sapien cursus vestibulum proin eu mi nulla ac enim in tempor turpis nec euismod scelerisque quam turpis adipiscing",
-    "price": 5789.06,
-    "discount": "14%",
-    "categoria": "Mas vendido"
-  }, {
-    "id": 15,
-    "name": "vulputate nonummy maecenas tincidunt",
-    "other_name": "Barleria cristata L.",
-    "image": "4.jpg",
-    "description": "sapien arcu sed augue aliquam erat volutpat in congue etiam justo etiam pretium iaculis justo in hac habitasse platea",
-    "features": "pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer",
-    "price": 6972.8,
-    "discount": "10%",
-    "categoria": "Mas vendido"
-  }]
+[
+ {
+  "id": 1,
+  "name": "Barra de 10 kg",
+  "other_name": "Dissanthelium californicum (Nutt.) Benth.",
+  "image": "banco2.jpg",
+  "description": "ipsum praesent blandit lacinia erat vestibulum sed magna at nunc commodo placerat praesent blandit nam nulla integer pede justo lacinia eget tincidunt eget tempus vel pede morbi porttitor lorem id ligula suspendisse ornare consequat lectus in est risus auctor sed tristique in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum felis sed",
+  "features": "odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus sit amet erat nulla tempus vivamus in felis eu sapien cursus vestibulum proin eu mi nulla ac enim in tempor turpis nec euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula",
+  "price": 6381.57,
+  "discount": "10%",
+  "categoria": "Oferta"
+ },
+ {
+  "id": 2,
+  "name": "Barra de 15 kg",
+  "other_name": "Randia L.",
+  "image": "banco1.jpg",
+  "description": "felis fusce posuere felis sed lacus morbi sem mauris laoreet ut rhoncus aliquet pulvinar sed nisl nunc rhoncus dui vel sem sed sagittis nam",
+  "features": "turpis eget elit sodales scelerisque mauris sit amet eros suspendisse accumsan tortor quis turpis sed ante vivamus tortor",
+  "price": 6916.82,
+  "discount": "12%"
+ },
+ {
+  "id": 3,
+  "name": "Colchoneta 2 mts",
+  "other_name": "Phlox multiflora A. Nelson ssp. multiflora",
+  "image": "colchoneta.png",
+  "description": "ut blandit non interdum in ante vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae duis faucibus accumsan",
+  "features": "ac nibh fusce lacus purus aliquet at feugiat non pretium quis lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in hac",
+  "price": 8829.59,
+  "discount": "15%",
+  "categoria": "Oferta"
+ },
+ {
+  "id": 4,
+  "name": "banco plano",
+  "other_name": "Decodon verticillatus (L.) Elliott",
+  "image": "banco1.jpg",
+  "description": "semper sapien a libero nam dui proin leo odio porttitor id consequat in consequat ut nulla sed accumsan felis ut at dolor",
+  "features": "sed vestibulum sit amet cursus id turpis integer aliquet massa id lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula vehicula consequat morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis",
+  "price": 9168.71,
+  "discount": "17%",
+  "categoria": "Oferta"
+ },
+ {
+  "id": 5,
+  "name": "ketbell 5 kg",
+  "other_name": "Lysimachia clethroides Duby",
+  "image": "KETTBELL.WEBP",
+  "description": "aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt ante vel ipsum praesent blandit lacinia erat vestibulum sed magna at nunc commodo placerat praesent blandit nam nulla integer pede justo lacinia eget tincidunt eget tempus vel pede morbi porttitor lorem id ligula suspendisse ornare consequat lectus in est risus auctor sed tristique in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim blandit mi in porttitor pede justo eu massa donec dapibus duis at velit eu est congue elementum in hac habitasse platea",
+  "features": "curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla tellus in sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet at feugiat non pretium quis",
+  "price": 1801.66,
+  "discount": "24%",
+  "categoria": "Nuevo ingreso"
+ },
+ {
+  "id": 6,
+  "name": "ketbell 10 kg",
+  "other_name": "Descurainia pinnata (Walter) Britton ssp. paysonii Detling",
+  "image": "bano3.jpg",
+  "description": "odio curabitur convallis duis consequat dui nec nisi volutpat eleifend donec ut dolor morbi vel lectus in quam fringilla rhoncus mauris enim leo rhoncus sed vestibulum sit amet cursus id turpis integer aliquet massa id",
+  "features": "auctor sed tristique in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim blandit mi in porttitor pede justo eu massa donec dapibus duis at velit eu est congue elementum in hac habitasse platea dictumst morbi vestibulum velit id pretium iaculis diam erat fermentum justo nec condimentum neque sapien placerat ante nulla justo aliquam quis turpis eget elit sodales scelerisque mauris sit amet eros suspendisse accumsan tortor quis turpis sed ante vivamus",
+  "price": 8252.08,
+  "discount": "19%",
+  "categoria": "Nuevo ingreso"
+ },
+ {
+  "id": 7,
+  "name": "platea dictumst morbi vestibulum velit id",
+  "other_name": "Curculigo capitulata (Lour.) Kuntze",
+  "image": "12.jpg",
+  "description": "justo pellentesque viverra pede ac diam cras pellentesque volutpat dui maecenas tristique est et tempus semper est quam pharetra magna ac consequat metus sapien ut nunc vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti nullam porttitor lacus at turpis donec posuere metus vitae ipsum aliquam non mauris morbi non lectus aliquam sit amet diam in magna bibendum imperdiet nullam orci pede venenatis non sodales sed tincidunt",
+  "features": "integer aliquet massa id lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula vehicula consequat morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla ultrices aliquet maecenas leo odio condimentum id luctus nec molestie sed justo pellentesque viverra pede ac diam cras pellentesque volutpat dui maecenas tristique est et tempus",
+  "price": 5677.37,
+  "discount": "25%",
+  "categoria": "Nuevo ingreso"
+ },
+ {
+  "id": 8,
+  "name": "nunc purus phasellus in felis",
+  "other_name": "Tectaria trifoliata (L.) Cav.",
+  "image": "1.jpg",
+  "description": "aliquam erat volutpat in congue etiam justo etiam pretium iaculis justo in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt lacus at velit vivamus vel nulla eget eros elementum pellentesque quisque porta volutpat erat quisque erat eros viverra",
+  "features": "nibh in lectus pellentesque at nulla suspendisse potenti cras in purus eu magna vulputate luctus cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien",
+  "price": 3709.59,
+  "discount": "30%",
+  "categoria": "Nuevo ingreso"
+ },
+ {
+  "id": 9,
+  "name": "lectus",
+  "other_name": "Quercus parvula Greene var. shrevei (C.H. Mull.) Nixon",
+  "image": "2.jpg",
+  "description": "amet diam in magna bibendum imperdiet nullam orci pede venenatis non sodales sed tincidunt eu felis fusce posuere felis sed lacus morbi sem mauris laoreet ut rhoncus aliquet pulvinar sed nisl nunc rhoncus dui vel sem sed sagittis nam congue risus semper porta volutpat quam pede lobortis ligula sit amet eleifend pede libero quis orci nullam molestie nibh in lectus pellentesque at nulla suspendisse potenti cras in purus eu magna vulputate luctus cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque penatibus",
+  "features": "augue luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt ante vel ipsum praesent blandit lacinia erat vestibulum sed magna at nunc commodo placerat praesent blandit nam nulla integer pede justo lacinia eget tincidunt eget tempus vel pede morbi porttitor lorem id ligula suspendisse ornare consequat lectus in est risus auctor sed tristique in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum felis sed interdum venenatis",
+  "price": 2299.68,
+  "discount": "35%",
+  "categoria": "Nuevo ingreso"
+ },
+ {
+  "id": 10,
+  "name": "pede lobortis",
+  "other_name": "Cynoglossum amabile Stapf & J.R. Drumm.",
+  "image": "pesas.webp",
+  "description": "sit amet cursus id turpis integer aliquet massa id lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula vehicula consequat morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla ultrices aliquet maecenas leo odio condimentum id luctus nec molestie sed justo pellentesque viverra pede ac diam cras pellentesque volutpat dui maecenas tristique est et tempus semper est quam pharetra magna ac consequat metus sapien ut nunc vestibulum ante ipsum primis in faucibus",
+  "features": "elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus sit amet erat nulla tempus vivamus in felis eu sapien cursus vestibulum proin eu mi nulla ac enim in tempor turpis nec euismod scelerisque quam turpis adipiscing lorem vitae mattis",
+  "price": 9937.1,
+  "discount": "40%",
+  "categoria": "Oferta"
+ },
+ {
+  "id": 11,
+  "name": "sapien urna pretium nisl",
+  "other_name": "Eriobotrya japonica (Thunb.) Lindl.",
+  "image": "4.jpg",
+  "description": "donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla tellus in sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet at feugiat non pretium quis lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas ut massa",
+  "features": "pede justo lacinia eget tincidunt eget tempus vel pede morbi porttitor lorem id ligula suspendisse ornare consequat lectus in est risus auctor sed tristique in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim blandit mi in porttitor",
+  "price": 1310.38,
+  "discount": "59%",
+  "categoria": "Nuevo ingreso"
+ },
+ {
+  "id": 12,
+  "name": "quis orci nullam molestie",
+  "other_name": "Arctostaphylos tomentosa (Pursh) Lindl. ssp. rosei (Eastw.) P.V. Wells",
+  "image": "4.jpg",
+  "description": "convallis nulla neque libero convallis eget eleifend luctus ultricies eu nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae nulla dapibus dolor vel est donec odio",
+  "features": "justo pellentesque viverra pede ac diam cras pellentesque volutpat dui maecenas tristique est et tempus semper est quam pharetra magna ac consequat metus sapien ut nunc vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti nullam porttitor lacus at turpis donec posuere metus vitae ipsum aliquam non mauris",
+  "price": 3744.19,
+  "discount": "34%",
+  "categoria": "Mas vendido"
+ },
+ {
+  "id": 13,
+  "name": "nibh quisque id justo sit",
+  "other_name": "Hydnocarpus anthelminticus Pierre ex Lanessan",
+  "image": "4.jpg",
+  "description": "fusce congue diam id ornare imperdiet sapien urna pretium nisl ut volutpat sapien arcu sed augue aliquam erat volutpat in congue etiam justo etiam pretium iaculis justo in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt lacus at velit vivamus vel nulla eget eros elementum",
+  "features": "blandit mi in porttitor pede justo eu massa donec dapibus duis at velit eu est congue elementum in hac habitasse platea dictumst morbi vestibulum velit id pretium iaculis diam erat fermentum justo nec condimentum neque sapien placerat ante nulla justo aliquam quis turpis eget elit sodales scelerisque mauris sit amet eros suspendisse accumsan tortor quis turpis sed ante vivamus tortor duis mattis egestas metus aenean fermentum donec ut mauris eget massa tempor convallis nulla neque libero convallis eget eleifend",
+  "price": 4443.8,
+  "discount": "24%",
+  "categoria": "Mas vendido"
+ },
+ {
+  "id": 14,
+  "name": "lacus",
+  "other_name": "Carex heterostachya Bung",
+  "image": "4.jpg",
+  "description": "integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla ultrices aliquet maecenas leo odio condimentum id luctus nec",
+  "features": "pulvinar lobortis est phasellus sit amet erat nulla tempus vivamus in felis eu sapien cursus vestibulum proin eu mi nulla ac enim in tempor turpis nec euismod scelerisque quam turpis adipiscing",
+  "price": 5789.06,
+  "discount": "14%",
+  "categoria": "Mas vendido"
+ },
+ {
+  "id": 15,
+  "name": "vulputate nonummy maecenas tincidunt",
+  "other_name": "Barleria cristata L.",
+  "image": "4.jpg",
+  "description": "sapien arcu sed augue aliquam erat volutpat in congue etiam justo etiam pretium iaculis justo in hac habitasse platea",
+  "features": "pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer",
+  "price": 6972.8,
+  "discount": "10%",
+  "categoria": "Mas vendido"
+ },
+ {
+  "id": 18,
+  "name": "vulputate nonummy maecenas tincidunt",
+  "other_name": "Barleria cristata L.",
+  "mage": "4.jpg",
+  "description": "sapien arcu sed augue aliquam erat volutpat in congue etiam justo etiam pretium iaculis justo in hac habitasse platea",
+  "features": "pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer",
+  "price": 6972.8,
+  "discount": "10%",
+  "categoria": "Mas vendido"
+ }
+]

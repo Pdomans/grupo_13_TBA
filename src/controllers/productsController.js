@@ -1,4 +1,5 @@
 // Creamos el objeto literal con los métodos a exportar
+const { json } = require('express');
 const path = require("path");
 const fs= require ("fs");
 
@@ -49,17 +50,19 @@ const productsController = {
 
     store: (req,res)=>{
         const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
+        //console.log(products);
         console.log(req.body);
+
         let productoNuevo = {
-            id: 17,
-            name: "vulputate nonummy maecenas tincidunt",
-            other_name: "Barleria cristata L.",
+            id: products[products.length -1].id+1,
+            name:req.body.name,
+            other_name: req.body.other_name,
             mage: "4.jpg",
-            description: "sapien arcu sed augue aliquam erat volutpat in congue etiam justo etiam pretium iaculis justo in hac habitasse platea",
-            features: "pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer",
-            price: 6972.8,
-            discount: "10%",
-            categoria: "Mas vendido"
+            description:req.body.description,
+            features:req.body.features,
+            price:req.body.price,
+            discount:req.body.discount,
+            categoria:req.body.categoria,
         };
         
         products.push(productoNuevo);
@@ -68,6 +71,21 @@ const productsController = {
         res.redirect("/productos")
         },
 
+    //  borrar un producto de la bd 
+	borrar : (req, res) => {
+		let id = req.params.id;
+        const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
+        
+        let finalProducts=products.filter(product =>{
+            return product.id != id;
+        })
+
+        let productsJSON = JSON.stringify(finalProducts, null, " ");
+        fs.writeFileSync(productsFilePath, productsJSON);
+       // res.redirect("/productos");
+
+        res.send(200) //ok de http
+	}
     
 
 

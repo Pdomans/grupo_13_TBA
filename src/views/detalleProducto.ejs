@@ -52,7 +52,10 @@
                     
                     <button>EDITAR PRODUCTO</button>
                     
-                    <button>BORRAR PRODUCTO</button>
+                   <!--<button>BORRAR PRODUCTO</button>-->
+                   <!-- sugerencia hacer un boton que en el onclick llame a una funcion js que  haga fetch(consulta http) a delete -->
+                  
+                    <button onclick=deleteProduct(<%= product.id %>)>ELIMINAR</button>
                 </div>
                 </div>
             </div>
@@ -62,4 +65,15 @@
 <%-include("./partials/footer.ejs") %>
 <!----------FIN DE FOOTER--------------------------------------------------------------------------------------------->
 </body>
+
+<script>
+    async function deleteProduct(id){
+        //llama a delete de la api
+        const res=await fetch("/productos/delete/"+id,{method:"delete",redirect:"follow"})
+        //redirecciona  a productos una vez que obtuvo la resputa res.send200
+        window.location.href = "/productos"
+    }
+
+</script>
+
 </html>
