@@ -154,14 +154,34 @@ nav a {
       margin-bottom: 10px;
     }
     
-    button {
+    .button1 {
       width: 100%;
       background-color: red;
       color: #fff;
       border: none;
       padding: 10px;
       border-radius: 5px;
+      margin-right: 20px;
     }
+  }
+  .button2 {
+    width: 100%;
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .button3 {
+    width: 100%;
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 20px;
   }
   
   /* Estilos para las resoluciones más grandes */

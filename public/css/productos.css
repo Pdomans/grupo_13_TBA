@@ -138,8 +138,7 @@ article{
 }
 
 
-.it1,
-.it2 {
+.it1 img{
     width: 100%;
     display: flex;
     flex-direction: row;
