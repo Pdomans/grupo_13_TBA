@@ -11,7 +11,7 @@ const userRouter = require("./src/routes/userRouter.js")
 //configuramos el motor de plantillas con ejs 
 app.set("view engine", "ejs");
 
-//para  poder llevar acabo el metodo post 
+//para  poder procesar los formularios 
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());//recibe  el body  de los formularios
 

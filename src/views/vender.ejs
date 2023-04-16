@@ -17,7 +17,7 @@
     <%-include("./partials/header.ejs") %>
 <!-- COPIAR HEADERS -->
 <main> 
-    <form id="registrocuadro" action="/productos" method="post" >
+    <form id="registrocuadro" action="/productos" method="post" enctype="multipart/form-data">
         <h1>Vender  producto</h1>
             <label for="name">Nombre</label>           
                 <input type="text" name="name" id="name" placeholder="Ej:Zapatillas">
@@ -32,7 +32,8 @@
                 <input type="text" name="discount" id="discount" placeholder="...">
                     <br>
 
-            
+            <label for="ImagenProducto">imagen del producto </label>
+            <input type="file" name ="ImagenProducto"> 
             
             <button  type="submit" class="boton-reg">crear producto</button> 
     </form>

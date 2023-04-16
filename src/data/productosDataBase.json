@@ -164,14 +164,85 @@
   "categoria": "Mas vendido"
  },
  {
-  "id": 18,
-  "name": "vulputate nonummy maecenas tincidunt",
-  "other_name": "Barleria cristata L.",
+  "id": 16,
+  "name": "miñon",
   "mage": "4.jpg",
-  "description": "sapien arcu sed augue aliquam erat volutpat in congue etiam justo etiam pretium iaculis justo in hac habitasse platea",
-  "features": "pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer",
-  "price": 6972.8,
-  "discount": "10%",
-  "categoria": "Mas vendido"
+  "price": "1000",
+  "discount": "1"
+ },
+ {
+  "id": 17,
+  "name": "ejemplo14",
+  "mage": "4.jpg",
+  "price": "1000",
+  "discount": "10"
+ },
+ {
+  "id": 18,
+  "name": "prueba15",
+  "mage": "4.jpg",
+  "price": "199",
+  "discount": "10"
+ },
+ {
+  "id": 19,
+  "name": "miñon",
+  "mage": "4.jpg",
+  "price": "1000",
+  "discount": "10"
+ },
+ {
+  "id": 20,
+  "name": "1",
+  "mage": "4.jpg",
+  "price": "1",
+  "discount": "1"
+ },
+ {
+  "id": 21,
+  "name": "1",
+  "price": "1",
+  "discount": "1"
+ },
+ {
+  "id": 22,
+  "name": "2",
+  "price": "2",
+  "discount": "2"
+ },
+ {
+  "id": 23,
+  "name": "4",
+  "mage": {
+   "fieldname": "ImagenProducto",
+   "originalname": "12121212.jpg",
+   "encoding": "7bit",
+   "mimetype": "image/jpeg",
+   "destination": "C:\\Users\\one\\OneDrive\\Desktop\\Nueva carpeta (4)\\digital_house2\\grupo_13_TBA-2-copia\\public\\img",
+   "filename": "imagen-1681622604608.jpg",
+   "path": "C:\\Users\\one\\OneDrive\\Desktop\\Nueva carpeta (4)\\digital_house2\\grupo_13_TBA-2-copia\\public\\img\\imagen-1681622604608.jpg",
+   "size": 56762
+  },
+  "price": "4",
+  "discount": "4"
+ },
+ {
+  "id": 24,
+  "name": "5",
+  "price": "5",
+  "discount": "5"
+ },
+ {
+  "id": 25,
+  "name": "6",
+  "price": "6",
+  "discount": "6"
+ },
+ {
+  "id": 26,
+  "name": "7",
+  "mage": "imagen-1681623227645.jpg",
+  "price": "6",
+  "discount": "6"
  }
 ]
