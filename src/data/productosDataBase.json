@@ -241,8 +241,15 @@
  {
   "id": 26,
   "name": "7",
-  "mage": "imagen-1681623227645.jpg",
+  "image": "imagen-1681623227645.jpg",
   "price": "6",
   "discount": "6"
+ },
+ {
+  "id": 27,
+  "name": "asd",
+  "mage": "imagen-1681776649177.jpg",
+  "price": "1",
+  "discount": "1"
  }
 ]
