@@ -18,7 +18,7 @@ const userController = {
     registro: (req, res) => {
         res.render("registro");
         /* res.send(path.join(__dirname, "./views/registro.html")) */
-    }
+    }   
 }
 
 // Exportamos el objeto literal con los distintos metodos, que se usará en el enrutador de usuarios
