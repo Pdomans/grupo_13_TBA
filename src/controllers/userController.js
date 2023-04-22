@@ -4,10 +4,10 @@
 const userController = {
 
 
-    /* usuario: (req, res) => {
-        res.render("usuario");
+     usuario: (req, res) => {
+        res.render("usuarios");
     },
-     */
+     
     // Manejo del pedido get con ruta /usuarios/conectarse
     login: (req, res) => {
        res.render("login")

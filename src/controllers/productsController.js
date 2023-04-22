@@ -9,7 +9,7 @@ const productsController = {
 
     productos: (req, res) => {
         const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
-        res.render("productos", {products});
+        res.render("productos/productos", {products});
        /*  res.send(path.join(__dirname, "./src/views/productos.html")) */
     },
 
@@ -22,11 +22,11 @@ const productsController = {
         /* res.send(path.join(__dirname, "./src/views/detalleProducto.html")); */
     /* }, */
     carrito: (req, res) => {
-        res.render("carrito");
+        res.render("productos/carrito");
         /*   res.send(path.join(__dirname, "../views/carrito.ejs")) */
     },
     vender: (req, res) => {
-        res.render("vender");
+        res.render("productos/cargar");
     },
 
     
