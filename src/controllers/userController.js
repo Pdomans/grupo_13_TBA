@@ -5,18 +5,18 @@ const userController = {
 
 
      usuario: (req, res) => {
-        res.render("usuarios");
+        res.render("user/usuarios");
     },
      
     // Manejo del pedido get con ruta /usuarios/conectarse
     login: (req, res) => {
-       res.render("login")
+       res.render("user/login")
         /*  res.send(path.join(__dirname, "./views/login.html")) */
     },
 
     // Manejo del pedido get con ruta /usuarios/registrarse
     registro: (req, res) => {
-        res.render("registro");
+        res.render("user/registro");
         /* res.send(path.join(__dirname, "./views/registro.html")) */
     }   
 }
