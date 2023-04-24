@@ -171,6 +171,11 @@ main{
     text-align: center;
 }
 
+#password{
+    border-radius: 5px;
+    border: solid white 5px
+}
+
 /* FIN DEL MAIN---------------------------------------------------------------------- */
 
 /* INICIO DEL FOOTER -------------------------------------------------------------------*/

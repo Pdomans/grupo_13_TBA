@@ -241,6 +241,7 @@ input[id="3"]:checked ~ .pagination-item[for="3"]{
 }
 
 .tituloOfertas{
+    text-align: center;
     font-size: 24px;
     width: 100%;
     margin: 1rem 0;
@@ -271,6 +272,11 @@ input[id="3"]:checked ~ .pagination-item[for="3"]{
 .tarjetaMain img{
     border: #330a0a 5px solid;
     border-radius: 3px;
+}
+
+.contenido{
+    text-align: center;
+    border-bottom: solid var(--Blanco) 5px;
 }
 
 
