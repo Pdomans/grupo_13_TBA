@@ -18,7 +18,31 @@ const userController = {
     registro: (req, res) => {
         res.render("user/registro");
         /* res.send(path.join(__dirname, "./views/registro.html")) */
-    }   
+    },
+    
+  
+
+
+    store: (req,res)=>{
+        const usuarios = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
+        //console.log(products);
+        console.log(req.body);
+
+        let UsuarioNuevo = {
+            id: usuarios[usuarios.length -1].id+1,
+            name:req.body.name,
+            last_name: req.body.other_name,
+            email:req.body.email,
+            password:req.body.password,
+            image:req.file.filename,
+            
+        };
+        
+        usuarios.push(UsuarioNuevo);
+        let UsuariosJSON = JSON.stringify(usuarios, null, " ");
+        fs.writeFileSync(productsFilePath, usuariosJSON);
+        res.redirect("/productos")
+        }
 }
 
 // Exportamos el objeto literal con los distintos metodos, que se usará en el enrutador de usuarios
