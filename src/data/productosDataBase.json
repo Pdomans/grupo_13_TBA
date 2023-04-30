@@ -1,16 +1,5 @@
 [
  {
-  "id": 1,
-  "name": "Barra de 10 kg",
-  "other_name": "Dissanthelium californicum (Nutt.) Benth.",
-  "image": "banco2.jpg",
-  "description": "ipsum praesent blandit lacinia erat vestibulum sed magna at nunc commodo placerat praesent blandit nam nulla integer pede justo lacinia eget tincidunt eget tempus vel pede morbi porttitor lorem id ligula suspendisse ornare consequat lectus in est risus auctor sed tristique in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum felis sed",
-  "features": "odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus sit amet erat nulla tempus vivamus in felis eu sapien cursus vestibulum proin eu mi nulla ac enim in tempor turpis nec euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula",
-  "price": 6381.57,
-  "discount": "10%",
-  "categoria": "Oferta"
- },
- {
   "id": 2,
   "name": "Barra de 15 kg",
   "other_name": "Randia L.",
@@ -265,12 +254,5 @@
   "image": "imagen-1682893202053.jpg",
   "price": "9",
   "discount": "9"
- },
- {
-  "id": 30,
-  "name": "pepe",
-  "image": "imagen-1682894158584.jpg",
-  "price": "123654",
-  "discount": "123"
  }
 ]
