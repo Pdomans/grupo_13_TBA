@@ -57,7 +57,7 @@ const productsController = {
             id: products[products.length -1].id+1,
             name:req.body.name,
             other_name: req.body.other_name,
-            mage:req.file.filename,
+            image:req.file.filename,
             description:req.body.description,
             features:req.body.features,
             price:req.body.price,

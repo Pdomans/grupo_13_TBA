@@ -251,5 +251,26 @@
   "mage": "imagen-1681776649177.jpg",
   "price": "1",
   "discount": "1"
+ },
+ {
+  "id": 28,
+  "name": "10",
+  "image": "imagen-1682893126636.jpg",
+  "price": "1",
+  "discount": "12"
+ },
+ {
+  "id": 29,
+  "name": "9",
+  "image": "imagen-1682893202053.jpg",
+  "price": "9",
+  "discount": "9"
+ },
+ {
+  "id": 30,
+  "name": "pepe",
+  "image": "imagen-1682894158584.jpg",
+  "price": "123654",
+  "discount": "123"
  }
 ]
