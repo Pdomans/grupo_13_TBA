@@ -38,7 +38,7 @@ const productsController = {
     const productToSend = products.find(product => {
         return product.id == id
     })
-        res.render("detalleProducto",{product: productToSend});
+        res.render("productos/detalleProducto",{product: productToSend});
      /*    res.send(path.join(__dirname, "./src/views/detalleProducto.html")) */
     },
 
@@ -82,7 +82,7 @@ const productsController = {
 
         let productsJSON = JSON.stringify(finalProducts, null, " ");
         fs.writeFileSync(productsFilePath, productsJSON);
-       // res.redirect("/productos");
+        //res.redirect("/productos");
 
         res.send(200) //ok de http
 	}
