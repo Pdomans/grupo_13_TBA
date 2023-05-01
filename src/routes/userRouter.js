@@ -11,6 +11,7 @@ const userController = require("../controllers/userController.js");
 
 // revisar antes de pushear
 router.get("/",userController.registro)
+router.post("/",userController.store)
 
 // revisar antes de pushear
 

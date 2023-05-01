@@ -35,25 +35,28 @@ const userController = {
 
     store: (req,res)=>{
         const usuarios = JSON.parse(fs.readFileSync(userFilePath, "utf-8"));
-        //console.log(products);
-        console.log(req.body);
+
 
         let UsuarioNuevo = {
             id: usuarios[usuarios.length -1].id+1,
+            email:req.body.email,
+            usuario:req.body.usuario,
             name:req.body.name,
             last_name: req.body.other_name,
-            email:req.body.email,
             password:req.body.password,
-            image:req.file.filename,
+            //image:req.file.filename,
             
         };
         
         usuarios.push(UsuarioNuevo);
         let UsuariosJSON = JSON.stringify(usuarios, null, " ");
-        fs.writeFileSync(productsFilePath, usuariosJSON);
+        fs.writeFileSync(userFilePath, UsuariosJSON);
         res.redirect("/")
-        }
+        
+    
+    }
 }
+
 
 // Exportamos el objeto literal con los distintos metodos, que se usará en el enrutador de usuarios
 module.exports = userController;
