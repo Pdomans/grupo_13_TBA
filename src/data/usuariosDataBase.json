@@ -379,5 +379,14 @@
   "firstName": "Pablo",
   "last_name": "Domañski",
   "image": "imagen-1682952385044.jpg"
+ },
+ {
+  "id": 57,
+  "email": "pablodomanski90@gmail.com",
+  "usuario": "pdoma3",
+  "password": "$2a$10$stA3YyNckbeiZ2GRkss/Q.ZEOaqmZXAN1B.7pnHBhcWehbzwbvtsK",
+  "firstName": "Pablo",
+  "last_name": "Domanski",
+  "image": "imagen-1682978093281.jpg"
  }
 ]
