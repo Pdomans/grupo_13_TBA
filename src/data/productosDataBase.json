@@ -254,5 +254,12 @@
   "image": "imagen-1682893202053.jpg",
   "price": "9",
   "discount": "9"
+ },
+ {
+  "id": 30,
+  "name": "Pablo",
+  "image": "imagen-1682920468019.PNG",
+  "price": "12",
+  "discount": "1000"
  }
 ]

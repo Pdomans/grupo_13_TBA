@@ -2,10 +2,9 @@
 const { json } = require('express');
 const path = require("path");
 const fs= require ("fs");
+const { Console } = require('console');
 
 const userFilePath = path.join(__dirname, "../data/usuariosDataBase.json");
-
-
 
 
 
@@ -35,25 +34,24 @@ const userController = {
 
     store: (req,res)=>{
         const usuarios = JSON.parse(fs.readFileSync(userFilePath, "utf-8"));
-
+        console.log("body recibido",req.body)
 
         let UsuarioNuevo = {
             id: usuarios[usuarios.length -1].id+1,
             email:req.body.email,
             usuario:req.body.usuario,
-            name:req.body.name,
-            last_name: req.body.other_name,
-            password:req.body.password,
+            password:req.body.contraseña,
+            firstName:req.body.nombre,
+            last_name: req.body.apellido,
             //image:req.file.filename,
-            
         };
         
+       
         usuarios.push(UsuarioNuevo);
-        let UsuariosJSON = JSON.stringify(usuarios, null, " ");
+        let UsuariosJSON = JSON.stringify(usuarios,null, " ");
         fs.writeFileSync(userFilePath, UsuariosJSON);
         res.redirect("/")
         
-    
     }
 }
 
