@@ -1,7 +1,10 @@
 // Requerimos express y guardamos la ejecución del método Router, que usaremos en el archivo.
 const express = require("express");
+
+
 const router = express.Router();
 const multer = require ("multer");
+const path= require("path");
 
 
 const storage =multer.diskStorage({
@@ -14,11 +17,16 @@ const storage =multer.diskStorage({
     filename:(req,file,cb)=>{
         console.log(file);
         const NombreArchivo='imagen-'+ Date.now()+path.extname(file.originalname);
+       
         cb(null,NombreArchivo);
     }
 });
 // ejecucion de multer 
 const  upload  =multer({storage})
+
+
+
+
 
 
 
@@ -34,7 +42,7 @@ const userController = require("../controllers/userController.js");
 
 // revisar antes de pushear
 router.get("/",userController.registro)
-router.post("/",upload.single('ImagenUsuario'),userController.store)
+router.post("/",upload.single("ImagenUsuario"),userController.store)
 
 // revisar antes de pushear
 
