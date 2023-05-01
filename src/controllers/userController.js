@@ -43,7 +43,8 @@ const userController = {
             password:req.body.contraseña,
             firstName:req.body.nombre,
             last_name: req.body.apellido,
-            //image:req.file.filename,
+            image:req.file.filename,
+            
         };
         
        

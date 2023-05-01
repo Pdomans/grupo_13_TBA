@@ -336,5 +336,13 @@
   "password": "asd",
   "firstName": "Pablo",
   "last_name": "Domanski"
+ },
+ {
+  "id": 52,
+  "email": "pablodomanski91@gmail.com",
+  "usuario": "pdoma1",
+  "password": "asd",
+  "firstName": "Pablo",
+  "last_name": "Domanski"
  }
 ]
