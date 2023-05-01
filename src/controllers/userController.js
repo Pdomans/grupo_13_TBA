@@ -6,6 +6,8 @@ const { Console } = require('console');
 
 const userFilePath = path.join(__dirname, "../data/usuariosDataBase.json");
 
+//paquete para hacer la encriptacion 
+const bcrypt=require('bcryptjs');
 
 
 
@@ -35,12 +37,25 @@ const userController = {
     store: (req,res)=>{
         const usuarios = JSON.parse(fs.readFileSync(userFilePath, "utf-8"));
         console.log("body recibido",req.body)
+        var pass =req.body.contraseña.toString;
+        // PRUEBA 1 CON UNA FUNCION 
+        /* function sal(pass){
+            const salvueltas=10;
+            const salt=bcrypt.genSaltSync(salvueltas);
+            let passhas=bcrypt.hashSync(pass,salt);
+            return passhas
+        }
+ */
+        // PRUEBA 2  CONVERTIR LA PASS A STRING 
+        
+
 
         let UsuarioNuevo = {
+            
             id: usuarios[usuarios.length -1].id+1,
             email:req.body.email,
             usuario:req.body.usuario,
-            password:req.body.contraseña,
+            password:bcrypt.hashSync (req.body.contraseña, 10), //password:bcrypt.hashSync(req.body.contraseña, 10),sal(req.body.contraseña)
             firstName:req.body.nombre,
             last_name: req.body.apellido,
             image:req.file.filename,

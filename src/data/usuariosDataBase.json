@@ -352,5 +352,32 @@
   "firstName": "Pablo",
   "last_name": "Domañski",
   "image": "imagen-1682949180430.jpg"
+ },
+ {
+  "id": 54,
+  "email": "pablodomanski90@gmail.com",
+  "usuario": "pdomas",
+  "password": "$2a$10$rrT96FljpRH77bBgei4sNuFOzONoLcUjPFtRyWcd8SXbb2017tC9i",
+  "firstName": "Pablo",
+  "last_name": "Domanski",
+  "image": "imagen-1682951799482.jpg"
+ },
+ {
+  "id": 55,
+  "email": "pablodomanski90@gmail.com",
+  "usuario": "pdoma",
+  "password": "$2a$10$Uq.C0jH.0ACNWejIfK3AZO1H8XusoUAwEDdhBKPmDqIFWeh1FFI56",
+  "firstName": "Pablo",
+  "last_name": "Domañski",
+  "image": "imagen-1682952206836.jpg"
+ },
+ {
+  "id": 56,
+  "email": "pablodomanski90@gmail.com",
+  "usuario": "pdoma3",
+  "password": {},
+  "firstName": "Pablo",
+  "last_name": "Domañski",
+  "image": "imagen-1682952385044.jpg"
  }
 ]
