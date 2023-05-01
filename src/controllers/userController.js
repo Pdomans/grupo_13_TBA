@@ -1,3 +1,13 @@
+// Creamos el objeto literal con los métodos a exportar
+const { json } = require('express');
+const path = require("path");
+const fs= require ("fs");
+
+const userFilePath = path.join(__dirname, "../data/usuariosDataBase.json");
+
+
+
+
 
 
 // Creamos el objeto literal con los métodos a exportar
@@ -24,7 +34,7 @@ const userController = {
 
 
     store: (req,res)=>{
-        const usuarios = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
+        const usuarios = JSON.parse(fs.readFileSync(userFilePath, "utf-8"));
         //console.log(products);
         console.log(req.body);
 
@@ -41,7 +51,7 @@ const userController = {
         usuarios.push(UsuarioNuevo);
         let UsuariosJSON = JSON.stringify(usuarios, null, " ");
         fs.writeFileSync(productsFilePath, usuariosJSON);
-        res.redirect("/productos")
+        res.redirect("/")
         }
 }
 
