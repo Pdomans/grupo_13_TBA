@@ -7,6 +7,9 @@ const mainRouter = require("./src/routes/mainRouter.js")
 const productsRouter = require("./src/routes/productsRouter.js")
 const userRouter = require("./src/routes/userRouter.js")
 
+// para el put y delete 
+const methodOverride=require('method-override');
+app.use(methodOverride('_method'));
 
 //configuramos el motor de plantillas con ejs 
 app.set("view engine", "ejs");
