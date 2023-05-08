@@ -31,6 +31,8 @@ app.use("/usuario", userRouter);
 
 
 
+
+
 //esucchando en el puerto 3000
 app.listen(3500,() => {
     console.log ("Servidor corriendo en el puerto http://localhost:3500");

@@ -21,6 +21,11 @@ const mainController = {
         res.render("quiensomos");
        
     },
+
+
+    adminpost: (req,res)=>{
+        
+    }
     
 }
 
