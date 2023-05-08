@@ -1,6 +1,7 @@
 const express = require ("express");
 const app = express();
 const path=require("path");
+const middlewares=require("./src/middlewares/global/middle.js");
 
 // Importamos los distintos enrutadores
 const mainRouter = require("./src/routes/mainRouter.js")
@@ -20,6 +21,8 @@ app.use(express.json());//recibe  el body  de los formularios
 
 app.use(express.static('public'));
 
+
+
 //indicamamos donde se encuentran las vistas ( en views)
 app.set('views', path.resolve(__dirname,"./src/views"));
 
@@ -30,6 +33,8 @@ app.use("/productos", productsRouter);
 app.use("/usuario", userRouter);
 
 
+// ejecucion middleware global 
+app.use(middlewares);
 
 
 
