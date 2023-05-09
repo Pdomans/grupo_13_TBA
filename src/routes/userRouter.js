@@ -23,8 +23,10 @@ const storage =multer.diskStorage({
 });
 // ejecucion de multer 
 const  upload  =multer({storage})
-
-
+// procesar el login 
+router.get('/login', userController.loginProcess);
+// perfil usuario
+router.get('/profile/',userController.profile);
 
 
 

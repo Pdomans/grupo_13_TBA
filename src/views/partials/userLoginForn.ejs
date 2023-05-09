@@ -1,0 +1,37 @@
+
+
+
+
+
+
+--login form--
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <h2> formulario de login</h2>
+
+            <form method="POST" action="/user/login">
+                <div class="row">
+                    <div class="col-md-6 my2">
+                        <div class="form-group">
+                            <label><b>correo electronico:</b></label>
+                            <input type="text" name="email" class="form-control">
+                            <% if (locals.errors && errors.email) { %>
+                            <div class="text-danger">
+                                <%= errors.password.msg %>
+                            </div>
+                            <% } %>
+                        </div>
+                    </div>
+                    <div class="col-md-6 my2">
+                        <div class="form-group">
+                            <label><b>Password:</b></label>
+                            <input type="Password" name="Password" class="form-control">
+                            <div class="invalid-feedback"></div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

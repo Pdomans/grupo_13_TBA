@@ -24,6 +24,26 @@ const userController = {
        res.render("user/login")
         /*  res.send(path.join(__dirname, "./views/login.html")) */
     },
+    // procesamiento del formulario 
+    loginProcess: (req, res) => {
+        let userToLogin = user.findByField('email', req.body.email);
+        
+        if(userToLogin) {
+            let isOkThePassword = bcryptjs.compareSync(req.body.password, userToLogin.password);
+            if (isOkThePassword) {
+                return res.send ('user/profile');
+            }
+
+        }
+
+        return res.render('userLoginForm', {
+            errors: {
+                email: {
+                    msg: 'las credenciales son invalidas'
+                }
+            }
+        });
+    },
 
     // Manejo del pedido get con ruta /usuarios/registrarse
     registro: (req, res) => {
