@@ -2,10 +2,9 @@
 const express = require("express");
 // Router con R mayuscula
 const router = express.Router();
-
 const multer = require ("multer");
 const path= require("path");
-
+//const middlewares=require("../src/middlewares/global/middle.js")
 
 // donde va a guardar y con que nombre  los archivos 
 const storage =multer.diskStorage({
