@@ -31,7 +31,10 @@ const userController = {
         if(userToLogin) {
             let isOkThePassword = bcryptjs.compareSync(req.body.password, userToLogin.password);
             if (isOkThePassword) {
-                return res.send ('user/profile');
+                // se hace la eliminacion de la contraseña por seguridad
+                delete userToLogin.password;
+                req.session.userLogged = userToLogin;
+                return res.send ('user/profile'); 
             }
 
         }
@@ -43,6 +46,22 @@ const userController = {
                 }
             }
         });
+        
+        return res.render('userLoginForm', {
+            errors: {
+                 email: {
+                    msg: 'no se encuentra este email'
+                }
+            }
+        });
+    },
+    profile:(req,res) => {
+        //hacemos para ver como estas siendo redirigido 
+        //console.log("estas en profile");
+        // console.log"req.session;
+        return res.render(userProfile);
+        // la vista conocera esta variable
+        user: req.session.userLogged;
     },
 
     // Manejo del pedido get con ruta /usuarios/registrarse

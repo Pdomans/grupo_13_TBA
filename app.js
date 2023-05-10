@@ -1,5 +1,14 @@
 const express = require ("express");
+const session = require ("express-session"); 
+
 const app = express();
+// pasamos un middleware de aplicacion y configuracion de sesiones 
+app.use(session({
+    secret: "esto es secreto",
+    resave: false,
+    saveUninitialized: false,
+}));
+
 const path=require("path");
 const middlewares=require("./src/middlewares/global/middle.js");
 

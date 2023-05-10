@@ -21,6 +21,14 @@ const storage =multer.diskStorage({
         cb(null,NombreArchivo);
     }
 });
+//middlewares
+const guestMiddleware = require("../middlewares/guestMiddleware");
+// formulario de registro 
+router.get("/register", guestMiddleware,userController.register);
+// procesar de registro 
+router.post("/register", uploadFile.single("avatar"), validations, userController.processRegister);
+// formulario de login 
+router.get('/login', userController.login);
 // ejecucion de multer 
 const  upload  =multer({storage})
 // procesar el login 
