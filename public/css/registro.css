@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* COPIAR TODO AL INICIO */
+:root{
+    --rojoOscuro: #620707;
+    --vinoTinto: #330a0a;
+    --negro: #000000;
+    --GrisOscuro: rgb(30, 29, 29);
+    --Blanco: #ffffff; 
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+header{
+    background-color: var(--vinoTinto);
+}
+#logo-busqueda{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--vinoTinto);
+}
+.logo{
+    width: 30%;
+}
+
+.busqueda {
+    text-align: left;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 0;
+    margin-right: 2rem;
+
+}
+
+#barraBusqueda {
+    width: 100%;
+    height: 2.2rem;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    ;
+    padding-left: 0.5rem;
+    background-color: var(--Blanco);
+}
+
+.fa-solid.fa-magnifying-glass{
+    color: grey;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.4rem;
+}
+
+#botonLupa {
+    background-color: var(--Blanco);
+    border-left: 1px solid var(--Blanco);
+    border-radius: 0 4px 4px 0;
+    align-self: stretch;
+}
+
+nav {display: none;}
+
+nav li {margin: 0 5px;}
+nav a {
+    color: var(--Blanco);
+    display: inline-block;
+    text-decoration: none;
+    padding: 3px 0;
+    font-size: 14px;
+}
+
+.burger-menu {
+    background-color: var(--negro);
+    color: var(--Blanco);
+    display: block;
+    max-width: 40px;
+    text-align: center;
+    border-radius: 15%;
+    padding: 10px 0;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.fa-bars {font-size: 20px;}
+
+#iconos {
+    color: var(--Blanco);
+}
+/* HASTA ACÁ */
+
+
+/* MAIN */
+
+
+
+#registrocuadro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--rojoOscuro);
+    margin: 2rem 15%;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    border: solid 3px var(--vinoTinto);
+}
+#registrocuadro h1{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: var(--Blanco);
+    font-weight: bold;
+    font-size: 35px;
+}
+#registrocuadro a{
+    color: var(--Blanco);
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#registrocuadro label{
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    color: var(--Blanco);
+    font-weight: bold;
+    font-size: 15px;
+}
+#registrocuadro input{
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    border: solid 5px var(--Blanco);
+}
+button{
+    text-align: center;
+    margin: 0;
+    padding: 0%;
+    margin-bottom: 2rem;
+}
+.boton-reg{
+    margin-top: 3px;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    border: solid 5px blue;
+    transition: all .5s;
+}
+/* FIN DE MAIN*/
+
+/* INICIO DEL FOOTER -------------------------------------------------------------------*/
+
+footer{
+    background-color: var(--vinoTinto);
+    color: var(--Blanco);
+    text-align: center;
+    align-items: center; 
+    border-top: solid var(--rojoOscuro) 10px;  
+}
+
+.socials a i{
+    color: blue;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--Blanco);
+}
+/* FIN DEL FOOTER ----------------------------------------------------------------------- */
+
+/* ----------------------TABLET---------------------------- */
+@media (min-width: 768px){
+    .burger-menu{
+        display: none;
+    }
+    nav{
+        display: flex;
+    }
+    .navFlex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 40px;
+    }
+    .lista1flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 45%;
+        list-style: none;
+    }
+    .lista2flex{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 45%;
+        list-style: none;
+    }
+    
+}
+/* -------------------------------------------------------- */

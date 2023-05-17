@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* COPIAR TODO AL INICIO */
+:root{
+    --rojoOscuro: #620707;
+    --vinoTinto: #330a0a;
+    --negro: #000000;
+    --GrisOscuro: rgb(30, 29, 29);
+    --Blanco: #ffffff; 
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+header{
+    background-color: var(--vinoTinto);
+}
+#logo-busqueda{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--vinoTinto);
+}
+.logo{
+    width: 30%;
+}
+
+.busqueda {
+    text-align: left;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 0;
+    margin-right: 2rem;
+
+}
+
+#barraBusqueda {
+    width: 100%;
+    height: 2.2rem;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    ;
+    padding-left: 0.5rem;
+    background-color: var(--Blanco);
+}
+
+.fa-solid.fa-magnifying-glass{
+    color: grey;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.4rem;
+}
+
+#botonLupa {
+    background-color: var(--Blanco);
+    border-left: 1px solid var(--Blanco);
+    border-radius: 0 4px 4px 0;
+    align-self: stretch;
+}
+
+nav {display: none;}
+
+nav li {margin: 0 5px;}
+nav a {
+    color: var(--Blanco);
+    display: inline-block;
+    text-decoration: none;
+    padding: 3px 0;
+    font-size: 14px;
+}
+
+.burger-menu {
+    background-color: var(--negro);
+    color: var(--Blanco);
+    display: block;
+    max-width: 40px;
+    text-align: center;
+    border-radius: 15%;
+    padding: 10px 0;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.fa-bars {font-size: 20px;}
+
+#iconos {
+    color: var(--Blanco);
+}
+/* HASTA ACÁ */
+/* estilo del slide  */
+img{
+    max-width: 100%;
+}
+
+.container-all{
+    display:flex;
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+    
+    
+}
+
+.slide{
+display:flex;
+justify-content: space-between;
+transform: translate3d(0,0,0);
+transition: all 600ms;
+animation-name: autoplay;
+animation-duration:6,5s ;
+animation-direction: alternate;
+animation-fill-mode: forwards;
+animation-iteration-count: infinite;
+
+
+}
+
+.item-slide{
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+
+}
+
+.pagination{
+position: absolute;
+bottom: 20px;
+left:0;
+display:flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+width: 100%;
+
+}
+
+.pagination-item{
+display:flex;
+flex-direction: column;
+align-items: center;
+border:2px solid white;
+width: 16px;
+height: 16px;
+border-radius: 4px;
+overflow: hidden;
+cursor:pointer;
+background: rgba(255, 255, 255, 0.5);
+margin: 0 10px;
+transition: all 600ms;
+
+}
+
+.pagination-item:hover {
+transform:scale(2);
+}
+
+.pagination-item img {
+    display:inline-block ;
+    max-width:none ;
+    height: 100%;
+    transform: scale(1);
+    opacity: 0;
+    transition: all 300ms;
+
+}
+
+
+
+.pagination-item:hover img {
+    opacity:1;
+    transform:scale(1) ;
+
+}
+
+input[id="1"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(0,0,0);
+}
+
+input[id="1"]:checked ~ .pagination-item[for="1"]{
+    background: #fff;
+}
+
+input[id="2"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100%*1),0,0);
+}
+
+input[id="2"]:checked ~ .pagination-item[for="2"]{
+    background: #fff;
+}
+
+input[id="3"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100%*2),0,0);
+}
+
+input[id="3"]:checked ~ .pagination-item[for="3"]{
+    background: #fff;
+}
+
+/* fin del estilo del  estilo del slide  */
+
+.contenedor{
+    width: 100%;
+    background-color: var(--GrisOscuro);
+    margin-bottom: 1rem;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    border: solid var(--vinoTinto) 5px;
+}
+
+.tarjetaOfertas{
+    display: flex;
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 6px;
+    box-shadow: 0px 1px 10px tgba(0,0,0,0.2);
+    cursor:default;
+    transition: all 400ms ease;
+    background-color: white;
+
+}
+.tarjetaOfertas img{
+    width: 5rem;
+    height: 5rem;
+}
+
+.tituloOfertas{
+    text-align: center;
+    font-size: 24px;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.tarjetaOfertas:hover{
+    box-shadow: 5px 5px 20px tgba(0,0,0,0.2); 
+    transform:translate(-3%);
+}
+.tarjetaMain:hover{
+    box-shadow: 5px 5px 20px tgba(0,0,0,0.2); 
+    transform:translate(-3%);
+}
+
+.categorias{
+    display: flex;
+}
+
+
+.tarjetaMain .contenido{
+    padding: 15px;
+    text-align: center;
+}
+.tarjetaMain .contenido p{
+ line-height: 1.5; 
+ color: #6a6a6a;
+}
+.tarjetaMain img{
+    border: #330a0a 5px solid;
+    border-radius: 3px;
+}
+
+.contenido{
+    text-align: center;
+    border-bottom: solid var(--Blanco) 5px;
+}
+
+
+/* INICIO DEL FOOTER -------------------------------------------------------------------*/
+
+footer{
+    background-color: var(--vinoTinto);
+    color: var(--Blanco);
+    text-align: center;
+    align-items: center; 
+    border-top: solid var(--rojoOscuro) 10px;  
+}
+
+.socials a i{
+    color: blue;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--Blanco);
+}
+
+
+/* FIN DEL FOOTER ----------------------------------------------------------------------- */
+
+/* ----------------------TABLET---------------------------- */
+@media (min-width: 768px){
+    .burger-menu{
+        display: none;
+    }
+    nav{
+        display: flex;
+    }
+    .navFlex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 40px;
+    }
+    .lista1flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 45%;
+        list-style: none;
+    }
+    .lista2flex{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 45%;
+        list-style: none;
+    }
+
+
+    .contenedor{
+        flex-direction: row;
+        
+    }
+    .tarjetaOfertas img{
+        width: 20rem;
+        height: 10rem;
+    }
+    .tarjetaOfertas{
+        display: block;
+        margin: 1rem;
+    }
+    
+}
+/* -------------------------------------------------------- */

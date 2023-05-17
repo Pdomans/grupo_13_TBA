@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+        <link rel="stylesheet" href="/css/inicio.css">
+    
+        <title>FitHouse</title>
+    </head>
+<body>
+<!-- vista parcial  -->
+<%-include("./partials/header.ejs") %>
+<!-- MAIN -->
+<main>
+<div class="banner">
+    <img src="/img/banner.png" width="100%">
+    </div>
+<!--     <section class="container-all">
+        <input type="radio" id="1" name="image-slide" hidden/>
+        <input type="radio" id="2" name="image-slide" hidden/>
+        <input type="radio" id="3" name="image-slide" hidden/>
+   
+
+
+
+        <section  class="pagination">
+            <label class="pagination-item" for ="1">
+                <img  src="img/1.jpg" alt="foto1">
+            </label>
+
+            
+            <label class="pagination-item" for ="2">
+                    <img  src="img/2.jpg" alt="foto2">
+            </label>
+
+            
+            <label class="pagination-item" for ="3">
+                        <img  src="img/3.jpg" alt="foto3">
+            </label>
+
+        </section>
+
+    </section>  
+ -->    
+    
+
+    <div class="tituloOfertas">OFERTAS SEMANALES</div>
+    <div class="contenedor" >
+        <section class="tarjetaOfertas">
+            <img src="img/barra1.jpg" alt="">
+            <div class="contenido">
+                <h3>Barra para pesas</h3>
+                <P >40% OFF</P>
+                <a href="#">Comprar </a>
+            </div>
+        </section>
+
+        <section class="tarjetaOfertas">
+            <img  src="img/banco1.jpg" alt="">
+            <div class="contenido">
+                <h3>Banco de musculación</h3>
+                <P >40% OFF</P>
+                <a href="#">Comprar </a>
+            </div>
+        </section>
+        
+        <section class="tarjetaOfertas">
+            <img src="img/KETTBELL.webp" alt="">
+             <div class="contenido">
+                <h3>Ketbell 8KG</h3>
+                <P >40% OFF</P>
+                <a href="#">Comprar </a>
+            </div>
+        </section>
+    </div>
+
+    <section class="categorias"></section>
+        <article class="tarjetaMain">
+            <img src="img/categoriaK.avif" alt="">
+                <div class="contenido">
+                    <h3>Categoría Ketbells </h3>
+                    <a href="#">Detalle </a>
+        </article>
+        <article class="tarjetaMain">
+            <img src="img/barra.jpeg" alt="">
+                <div class="contenido">
+                    <h3>Categoría Barras </h3>
+                    <a href="#">Detalle </a>
+        </article>
+        <article class="tarjetaMain">
+            <img src="img/colchoneta.jpeg" alt="">
+                <div class="contenido">
+                    <h3>Categoría Colchonetas </h3>
+                    <a href="#">Detalle </a>
+        </article>
+        <article class="tarjetaMain">
+            <img src="img/pelotamedicinal.jpeg" alt="">
+                <div class="contenido">
+                    <h3>Categoría Pelotas medicionales  </h3>
+                    <a href="#">Detalle </a>
+        </article>
+
+        
+</main>
+<!----------INICIO DE FOOTER--------------------------------------------------------------------------------------------->
+<%-include("./partials/footer.ejs") %>
+<!----------FIN DE FOOTER--------------------------------------------------------------------------------------------->
+</body>
+</html>

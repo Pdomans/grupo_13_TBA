@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        rel="stylesheet" />
+        <link rel="stylesheet" href="/css/carrito.css">  
+        
+        <title>FitH - Carrito</title>
+    </head>
+<body>
+ <!-- COPIAR HEADERS -->
+ <%-include("../partials/header.ejs") %>
+<!-- COPIAR HEADERS -->
+<!-- MAIN -->
+<div class="banner">
+    <img src="/img/banner.png" width="100%">
+    </div>
+    <main class="formulario">
+        <section class="tituloCarrito">
+            <h1 class="h1">CARRITO</h1>
+        </section>
+        <section class="sectionProductosCarrito">
+            <div class="fotoProducto">
+                <img src="/img/kettbell.webp"> 
+            </div>
+            <section class="descripcionProducto">
+                <section class="precioDescripcionProducto">
+                    <ul>
+                        <li>KETTBELL 10 KG</li>
+                        <li>Precio unitario: AR$ 3500</li>
+                    </ul>
+                </section>
+            </section>
+            <br>
+            <section class="cantidadYvalorProducto">
+                <ul>
+                    <li><button><i id="restar" class="fa-solid fa-minus"></i></button>   Cantidad: 3  <button><i id="sumar" class="fa-solid fa-plus"></i></button></li>
+                    <li>Total: AR$ 150.000</li>  
+                </ul>
+            </section>
+        </section>  
+        <section class="sectionProductosCarrito">
+            <div class="fotoProducto">
+                <img src="/img/pesas.webp"> 
+            </div>
+            <section class="descripcionProducto">
+                <section class="precioDescripcionProducto">
+                    <ul>
+                        <li>MANCUERNAS 2 x 5KG</li>
+                        <li>Precio del par: AR$ 1500</li>
+                    </ul>
+                </section>
+            </section>
+            <br>
+            <section class="cantidadYvalorProducto">
+                <ul>
+                    <li><button><i id="restar" class="fa-solid fa-minus"></i></button>   Cantidad: 1   <button><i id="sumar" class="fa-solid fa-plus"></i></button></li>
+                    <li>Total: AR$ 1.5000</li>  
+                </ul>
+            </section>
+        </section> 
+        <section class="sectionProductosCarrito">
+            <div class="fotoProducto">
+                <img src="/img/COLCHONETA.PNG"> 
+            </div>
+            <section class="descripcionProducto">
+                <section class="precioDescripcionProducto">
+                    <ul>
+                        <li>COLCHONETA</li>
+                        <li>Precio: AR$ 6500</li>
+                    </ul>
+                </section>
+            </section>
+            <br>
+            <section class="cantidadYvalorProducto">
+                <ul>
+                    <li><button><i id="restar" class="fa-solid fa-minus"></i></button>   Cantidad: 1   <button><i id="sumar" class="fa-solid fa-plus"></i></button></li>
+                    <li>Total: AR$ 6.500</li>  
+                </ul>
+            </section>
+        </section> 
+        
+        <section class="sectionDetalleCompra">
+            <ul>
+                <li><h3>DETALLE DE LA COMPRA</h3></li>
+                <li>Código promocional:<INput></INput></li>
+                <li>Envio:<INput></INput></li>             
+                <li>Total con impuestos:<INput></INput></li>                           
+            </ul>
+            
+        </section>
+            <section class="botonCompra"><button>Confirmar compra</button></section>
+            <br>
+
+</main>
+<!-- FIN DE MAIN -->
+<!----------INICIO DE FOOTER--------------------------------------------------------------------------------------------->
+<%-include("../partials/footer.ejs") %>
+<!----------FIN DE FOOTER--------------------------------------------------------------------------------------------->
+</body>
+</html>

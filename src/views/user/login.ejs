@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="/css/login.css">
+
+    <title>FitH - Ingresar</title>
+</head>
+
+<!-------------------------------------------------------------------------------------------------------------------->
+
+<body>
+    
+<!----------INICIO DE HEADER------------------------------------------------------------------------------------------>
+<%-include("../partials/header.ejs") %>
+<!----------FIN DE HEADER--------------------------------------------------------------------------------------------->
+
+<!----------INICIO DE MAIN-------------------------------------------------------------------------------------------->
+
+    <main>
+
+        <div class="login-box">
+
+            <h1>login</h1>
+            <br>
+            <form action="/" method="post">
+
+                <!-- USEREMAIL -->
+                <label for="useremail">EMAIL</label>
+                <br>
+                <input type="email" name="EMAIL" id="EMAIL" class="cdi" placeholder="example@FitH.com">
+                <br>
+
+                <!-- PASSWORD -->
+                <label for="password">CONTRASEÑA</label>
+                <br>
+                <input type="password" name="password" id="password" class="cdi2" placeholder="CONTRASEÑA">
+                <br>
+
+                <!-- CHECKBOX RECORDARME -->
+                <input type="checkbox" name="check" id="check" class="checked">
+                <label for="recordar-datod">Recordar Datos</label>
+
+            <div class="cdb-padre">
+                <!-- BOTON -->
+                <a href="/"><input type="submit" name="submit" id="submit" value="CONTINUAR" class="cdb"></a>
+                <br>
+            </div>
+            <div class="contenedorDeA">
+                <br>
+                <a href="#">Olvido su contraseña?</a>
+                <br>
+                <a href="/registro">Aun no esta registrado?</a>
+            </div>
+            </form>
+
+        </div>
+
+    </main>
+
+<!----------FIN DE MAIN----------------------------------------------------------------------------------------------->
+
+<!----------INICIO DE FOOTER--------------------------------------------------------------------------------------------->
+<%-include("../partials/footer.ejs") %>
+<!----------FIN DE FOOTER--------------------------------------------------------------------------------------------->

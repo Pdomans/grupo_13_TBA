@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+        <link rel="stylesheet" href="/css/detalleProducto.css">
+        
+    
+        <title>FitHouse</title>
+    </head>
+<body>
+<!-- COPIAR HEADERS -->
+<%-include("../partials/header.ejs") %>
+<!--CONTENEDOR DEL ITEM DESCRIPCION PRODUCTO -->
+<main>
+    <article class="it1">
+        <div class="division" id="division">
+            <div class="fila"></div>
+            <div class="item"></div> 
+            <div>
+                 
+            </div>
+            </div>
+            <!--CONTENEDOR DEL ITEM DESCRIPCION PRODUCTO -->
+            <div class="seleccion" id="seleccion">
+                <div class="cerrar">
+                </div>
+                <div class="info">
+                <img class= "product1" src="/img/<%= product.image %>" alt="Imagen 1">
+                <h2 id="modelo"> <%= product.name %></h2>
+                <p id="descripcion"> <%= product.description %> </p>
+                <p id="descripcion2"><%= product.discount %> </p>
+
+                <span class="precio" id="precio"> <%= product.price %> </span>
+                
+                <div class="fila">
+                    <div class="size">
+                        <label for="">CANTIDAD</label>
+                        <select name="" id="">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>                        
+                        </select>
+                    </div>
+                    <button class="button1">ADD TO CART</button>
+                    
+                    <button class="button2">EDITAR PRODUCTO</button>
+                    
+                   <!--<button>BORRAR PRODUCTO</button>-->
+                   <!-- sugerencia hacer un boton que en el onclick llame a una funcion js que  haga fetch(consulta http) a delete -->
+                  
+                    <button class="button3" onclick=deleteProduct(<%= product.id %>)>ELIMINAR</button>
+                </div>
+                </div>
+            </div>
+    </article>
+</main>
+
+<%-include("../partials/footer.ejs") %>
+<!----------FIN DE FOOTER--------------------------------------------------------------------------------------------->
+</body>
+
+<script>
+    async function deleteProduct(id){
+        //llama a delete de la api
+        const res=await fetch("/productos/delete/"+id,{method:"delete",redirect:"follow"})
+        //redirecciona  a productos una vez que obtuvo la resputa res.send200
+        window.location.href = "/productos"
+    }
+
+</script>
+
+</html>

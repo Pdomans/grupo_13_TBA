@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* COPIAR TODO AL INICIO */
+
+
+
+
+:root{
+    --rojoOscuro: #620707;
+    --vinoTinto: #330a0a;
+    --negro: #000000;
+    --GrisOscuro: rgb(30, 29, 29);
+    --Blanco: #ffffff; 
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+header{
+    background-color: var(--vinoTinto);
+}
+#logo-busqueda{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--vinoTinto);
+}
+.logo{
+    width: 30%;
+}
+
+.busqueda {
+    text-align: left;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 0;
+    margin-right: 2rem;
+
+}
+
+#barraBusqueda {
+    width: 100%;
+    height: 2.2rem;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    ;
+    padding-left: 0.5rem;
+    background-color: var(--Blanco);
+}
+
+.fa-solid.fa-magnifying-glass{
+    color: grey;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.4rem;
+}
+
+#botonLupa {
+    background-color: var(--Blanco);
+    border-left: 1px solid var(--Blanco);
+    border-radius: 0 4px 4px 0;
+    align-self: stretch;
+}
+
+nav {display: none;}
+
+nav li {margin: 0 5px;}
+nav a {
+    color: var(--Blanco);
+    display: inline-block;
+    text-decoration: none;
+    padding: 3px 0;
+    font-size: 14px;
+}
+
+.burger-menu {
+    background-color: var(--negro);
+    color: var(--Blanco);
+    display: block;
+    max-width: 40px;
+    text-align: center;
+    border-radius: 15%;
+    padding: 10px 0;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.fa-bars {font-size: 20px;}
+
+#iconos {
+    color: var(--Blanco);
+}
+
+/* CIERRE HEADER */
+/* MAIN */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* CIERRE MAIN */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+.producto-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+form label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+form input[type="text"],
+form input[type="number"],
+form select {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  
+form textarea {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  
+form input[type="submit"] {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+form input[type="submit"]:hover {
+    background-color: #fff;
+    color: #000;
+  }
+
+  /* Estilos para dispositivos con un ancho de pantalla de 600px o menos */
+@media only screen and (max-width: 600px) {
+
+    .producto-form {
+      padding: 20px;
+    }
+  
+    .producto-form h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  
+    .producto-form label {
+      font-size: 16px;
+    }
+  
+    .producto-form input[type="text"],
+    .producto-form input[type="number"],
+    .producto-form input[type="file"],
+    .producto-form select,
+    .producto-form textarea {
+      margin-bottom: 10px;
+      padding: 5px;
+      font-size: 14px;
+    }
+  
+    .producto-form input[type="submit"] {
+      margin-top: 10px;
+      font-size: 16px;
+      padding: 10px;
+    }
+  
+  }
+  
+  /* Estilos para dispositivos con un ancho de pantalla entre 600px y 900px */
+  @media only screen and (min-width: 601px) and (max-width: 900px) {
+  
+    .producto-form {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 30px;
+    }
+  
+    .producto-form h1 {
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+  
+    .producto-form label {
+      font-size: 18px;
+    }
+  
+    .producto-form input[type="text"],
+    .producto-form input[type="number"],
+    .producto-form input[type="file"],
+    .producto-form select,
+    .producto-form textarea {
+      margin-bottom: 15px;
+      padding: 7px;
+      font-size: 16px;
+    }
+  
+    .producto-form input[type="submit"] {
+      margin-top: 15px;
+      font-size: 18px;
+      padding: 12px;
+    }
+  
+  }
+  
+  /* Estilos para dispositivos con un ancho de pantalla mayor a 900px */
+  @media only screen and (min-width: 901px) {
+  
+    .producto-form {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+    }
+  
+    .producto-form h1 {
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+  
+    .producto-form label {
+      font-size: 20px;
+    }
+  
+    .producto-form input[type="text"],
+    .producto-form input[type="number"],
+    .producto-form input[type="file"],
+    .producto-form select,
+    .producto-form textarea {
+      margin-bottom: 20px;
+      padding: 10px;
+      font-size: 18px;
+    }
+  
+    .producto-form input[type="submit"] {
+      margin-top: 20px;
+      font-size: 20px;
+      padding: 15px;
+    }
+  
+  }
+  
+
+/* FOOTER */
+footer{
+    background-color: var(--vinoTinto);
+    color: var(--Blanco);
+    text-align: center;
+    align-items: center; 
+    border-top: solid var(--rojoOscuro) 10px;  
+}
+
+.socials a i{
+    color: blue;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--Blanco);
+}
+
+
+/* FIN DEL FOOTER ----------------------------------------------------------------------- */
+
+
+/* ----------------------TABLET---------------------------- */
+@media (min-width: 768px){
+    .burger-menu{
+        display: none;
+    }
+    nav{
+        display: flex;
+    }
+    .navFlex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 40px;
+    }
+    .lista1flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 45%;
+        list-style: none;
+    }
+    .lista2flex{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 45%;
+        list-style: none;
+    }
+    
+}
+/* -------------------------------------------------------- */

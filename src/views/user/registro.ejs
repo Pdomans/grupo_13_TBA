@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="/css/registro.css">
+
+    <title>FitH - Registro</title>
+</head>
+<body>
+    <!-- COPIAR HEADERS -->
+    <%-include("../partials/header.ejs") %>
+<!-- COPIAR HEADERS -->
+<main>
+    <form id="registrocuadro" action="/usuario" method="post" enctype="multipart/form-data" >
+        <h1>Crear una cuenta</h1>
+            <label for="email">Correo electrónico</label>
+            <input type="email" name="email" id="email" placeholder="ej. fithouse@gmail.com">
+            <br>
+            <label for="usuario">Usuario</label>
+            <input type="text" name="usuario" id="nombre" placeholder="ej. Lifter50">
+            <br>
+            <label for="contrasena">Contraseña</label>
+            <input type="password" name="contrasena" id="contrasena" placeholder="ej. pablo123">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="...">
+            <br>
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" id="apellido" placeholder="...">
+            <br>
+
+            <label for="ImagenUsuario">imagen de perfil  </label>
+            <input type="file" name ="ImagenUsuario"> 
+
+            <label for="noticias"><input type="checkbox" value="si">Recibir novedades y ofertas</label>
+            <br>
+            <label for="terminos"><input type="checkbox" value="si">Aceptar términos y condiciones</label>
+            <br>
+            
+            
+            <button type="submit" class="boton-reg">REGISTRARSE</button> 
+            <a href="/login">Ya tenés una cuenta? Iniciá sesión!</a>
+    </form>
+</main>
+<!----------INICIO DE FOOTER--------------------------------------------------------------------------------------------->
+<%-include("../partials/footer.ejs") %>
+<!----------FIN DE FOOTER--------------------------------------------------------------------------------------------->
+</body>
