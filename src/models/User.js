@@ -27,7 +27,10 @@ FINDbYpK: function (id){
 generateId: function (){
     let allUsers = this.findAll();
     let lastUser = allUSers.pop();
-    return lastUser.id + 1;
+    if(lastUser){
+        return lastUser.id + 1;
+    }
+    return 1;
 },
 
 // busqueda por cualquier campo 
