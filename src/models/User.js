@@ -14,9 +14,6 @@ const user ={
 },
 
 
-create :function  (userData){
-
-},
 
 // busqueda por id 
 FINDbYpK: function (id){
@@ -27,10 +24,18 @@ FINDbYpK: function (id){
     
 },
 
+findByField: function (field, text){
+    let allUsers = this.findAll();
+    let userFound = allUsers.find(oneUser => [field] === text);
+    return userFound;
+},
 
+
+create :function(userData){
+}
 
 }
 // solo lee el ultimo  usuario creado ,  revisar porque no lee todo el json. 
 //console.log(user.findAll());
 
-//console.log(user.FINDbYpK(1));
+console.log(user.findByField());
