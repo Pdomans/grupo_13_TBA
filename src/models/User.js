@@ -23,12 +23,24 @@ FINDbYpK: function (id){
 
     
 },
-
+// busqueda por cualquier campo 
 findByField: function (field, text){
     let allUsers = this.findAll();
     let userFound = allUsers.find(oneUser => [field] === text);
     return userFound;
 },
+
+
+
+
+create : function (userData){
+    let allUsers=this.findAll(); 
+    allUsers.push(userData); 
+    fs.writeFileSync(this.filename,JSON.stringify(allUsers,null, ' '));
+    return true; 
+},
+
+
 
 
 create :function(userData){
@@ -38,4 +50,3 @@ create :function(userData){
 // solo lee el ultimo  usuario creado ,  revisar porque no lee todo el json. 
 //console.log(user.findAll());
 
-console.log(user.findByField());
