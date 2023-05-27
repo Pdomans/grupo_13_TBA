@@ -4,6 +4,8 @@ const path = require("path");
 const fs= require ("fs");
 const { Console } = require('console');
 
+const User=require("../models/User.js");
+
 const userFilePath = path.join(__dirname, "../data/usuariosDataBase.json");
 
 //paquete para hacer la encriptacion 
@@ -36,18 +38,7 @@ const userController = {
 
     store: (req,res)=>{
         const usuarios = JSON.parse(fs.readFileSync(userFilePath, "utf-8"));
-        console.log("body recibido",req.body)
         var pass =req.body.contrasena.toString;
-        // PRUEBA 1 CON UNA FUNCION 
-        /* function sal(pass){
-            const salvueltas=10;
-            const salt=bcrypt.genSaltSync(salvueltas);
-            let passhas=bcrypt.hashSync(pass,salt);
-            return passhas
-        }
- */
-        // PRUEBA 2  CONVERTIR LA PASS A STRING 
-        
 
 
         let UsuarioNuevo = {
@@ -74,6 +65,9 @@ const userController = {
 
 // Exportamos el objeto literal con los distintos metodos, que se usará en el enrutador de usuarios
 module.exports = userController;
+
+
+
 
 
 
