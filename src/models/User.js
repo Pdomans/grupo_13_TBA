@@ -8,11 +8,7 @@ const user ={
         return  JSON.parse(fs.readFileSync(this.filename,'utf-8'));
     },
 
-    generateId: function (){
-        let allUsers = this.findAll();
-        let lastUser = allUSers.pop();
-        return lastUser.id + 1;
-    },
+
 
     findAll: function (){
     return  JSON.parse(fs.readFileSync(this.filename,'utf-8'));
@@ -25,9 +21,15 @@ FINDbYpK: function (id){
     let allUsers=this.findAll();
     let userFound=allUsers.find(oneUser=>oneUser.id===id);
     return userFound;
-
-    
 },
+
+// generación de ID
+generateId: function (){
+    let allUsers = this.findAll();
+    let lastUser = allUSers.pop();
+    return lastUser.id + 1;
+},
+
 // busqueda por cualquier campo 
 findByField: function (field, text){
     let allUsers = this.findAll();
@@ -52,5 +54,5 @@ create :function(userData){
 
 }
 // solo lee el ultimo  usuario creado ,  revisar porque no lee todo el json. 
-//console.log(user.findAll());
+//console.log(user.generateId());
 
