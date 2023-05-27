@@ -397,5 +397,13 @@
   "firstName": "Pablo",
   "last_name": "Domañski",
   "image": "imagen-1685200705230.PNG"
+ },
+ {
+  "id": 59,
+  "password": "$2a$10$iV/aFj7B4m9yA3o.ZBzfgOr1CY2t3BcGEt30SQyo5T57Wm9UhoMj.",
+  "email": "pablodomanski90@gmail.com",
+  "usuario": "ASD",
+  "nombre": "Pablo",
+  "apellido": "Domañski"
  }
 ]

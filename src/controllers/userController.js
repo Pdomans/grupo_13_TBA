@@ -39,24 +39,24 @@ const userController = {
     store: (req,res)=>{
         const usuarios = JSON.parse(fs.readFileSync(userFilePath, "utf-8"));
         var pass =req.body.contrasena.toString;
-
-
-        let UsuarioNuevo = {
+        let userData =req.body;
+        User.create(userData);
+        // let UsuarioNuevo = {
             
-            id: usuarios[usuarios.length -1].id+1,
-            email:req.body.email,
-            usuario:req.body.usuario,
-            password:bcrypt.hashSync (req.body.contrasena, 10), //password:bcrypt.hashSync(req.body.contraseña, 10),sal(req.body.contraseña)
-            firstName:req.body.nombre,
-            last_name: req.body.apellido,
-            image:req.file.filename,
+        //     id: usuarios[usuarios.length -1].id+1,
+        //     email:req.body.email,
+        //     usuario:req.body.usuario,
+        //     password:bcrypt.hashSync (req.body.contrasena, 10), //password:bcrypt.hashSync(req.body.contraseña, 10),sal(req.body.contraseña)
+        //     firstName:req.body.nombre,
+        //     last_name: req.body.apellido,
+        //     image:req.file.filename,
             
-        };
+        // };
         
        
-        usuarios.push(UsuarioNuevo);
-        let UsuariosJSON = JSON.stringify(usuarios,null, " ");
-        fs.writeFileSync(userFilePath, UsuariosJSON);
+        // usuarios.push(UsuarioNuevo);
+        // let UsuariosJSON = JSON.stringify(usuarios,null, " ");
+        // fs.writeFileSync(userFilePath, UsuariosJSON);
         res.redirect("/")
         
     }
