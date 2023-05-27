@@ -42,7 +42,7 @@ findByField: function (field, text){
 
 
 
-
+// creacion de usuario 
 create : function (userData){
     let allUsers=this.findAll(); 
     let  newUser={
@@ -56,7 +56,7 @@ create : function (userData){
 },
 
 
-
+// borrado de usuario por id 
 delete : function (id){
     let allUsers =this.findAll();
     let finalUsers=allUsers.filter(oneUser=>oneUser.id !==id);
@@ -69,6 +69,8 @@ delete : function (id){
 
 
 }
+
+module.exports=User;
 // solo lee el ultimo  usuario creado ,  revisar porque no lee todo el json. 
-console.log(User.delete(1));
+//console.log(User.delete(1));
 
