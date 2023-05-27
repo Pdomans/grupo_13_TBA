@@ -45,15 +45,19 @@ findByField: function (field, text){
 
 create : function (userData){
     let allUsers=this.findAll(); 
-    allUsers.push(userData); 
+    let  newUser={
+        id:this.generateId(),
+        ...userData  
+    }
+   
+    allUsers.push(newUser); 
     fs.writeFileSync(this.filename,JSON.stringify(allUsers,null, ' '));
     return true; 
 },
 
 
 
-create :function(userData){
-}
+
 
 }
 // solo lee el ultimo  usuario creado ,  revisar porque no lee todo el json. 
