@@ -57,9 +57,18 @@ create : function (userData){
 
 
 
+delete : function (id){
+    let allUsers =this.findAll();
+    let finalUsers=allUsers.filter(oneUser=>oneUser.id !==id);
+    fs.writeFileSync(this.filename,JSON.stringify(finalUsers,null, ' '));
+    return true; 
+}
+
+
+
 
 
 }
 // solo lee el ultimo  usuario creado ,  revisar porque no lee todo el json. 
-//console.log(user.generateId());
+console.log(User.delete(1));
 
