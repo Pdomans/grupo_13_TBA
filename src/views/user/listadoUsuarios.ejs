@@ -24,6 +24,15 @@
  <form action="/login" method="POST">
   <label for="email">Email:</label>
   <input type="email" id="email" name="email" required>
+  
+
+  <h2 id="modelo"> <%= product.name %></h2>
+  <p id="descripcion"> <%= product.description %> </p>
+  <p id="descripcion2"><%= product.discount %> </p>
+
+  <span class="precio" id="precio"> <%= product.price %> </span>
+
+
   <br>
   <label for="password">Contraseña:</label>
   <input type="password" id="password" name="password" required>
