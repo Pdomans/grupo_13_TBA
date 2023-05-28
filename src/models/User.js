@@ -14,7 +14,7 @@ const User = {
   },
 
   // busqueda por id
-  FINDbYpK: function (id) {
+  findByPk: function (id) {
     let allUsers = this.findAll();
     let userFound = allUsers.find((oneUser) => oneUser.id === id);
     return userFound;
