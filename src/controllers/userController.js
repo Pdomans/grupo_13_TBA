@@ -69,11 +69,19 @@ const userController = {
         // fs.writeFileSync(userFilePath, UsuariosJSON);
         res.redirect("/")
         
-    }
+    },
 
 
     
-
+    detalle: (req, res) => {
+        let id = req.params.idUsurio
+        const users = JSON.parse(fs.readFileSync(userFilePath, "utf-8"));
+        const usersToSend = users.find(user => {
+            return user.id == id
+        })
+            res.render("usuarios/listadoUsuario",{user:usersToSend});
+         
+        },
 
 }
 
