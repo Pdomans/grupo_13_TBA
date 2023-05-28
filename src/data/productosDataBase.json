@@ -1,16 +1,5 @@
 [
  {
-  "id": 3,
-  "name": "Colchoneta 2 mts",
-  "other_name": "Phlox multiflora A. Nelson ssp. multiflora",
-  "image": "colchoneta.png",
-  "description": "ut blandit non interdum in ante vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae duis faucibus accumsan",
-  "features": "ac nibh fusce lacus purus aliquet at feugiat non pretium quis lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in hac",
-  "price": 8829.59,
-  "discount": "15%",
-  "categoria": "Oferta"
- },
- {
   "id": 4,
   "name": "banco plano",
   "other_name": "Decodon verticillatus (L.) Elliott",
