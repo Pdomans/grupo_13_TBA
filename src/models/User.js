@@ -65,3 +65,5 @@ const User = {
 module.exports = User;
 // solo lee el ultimo  usuario creado ,  revisar porque no lee todo el json.
 //console.log(User.delete(1));
+
+//console.log(User.create({nombre: "Javi", email: "javi@gmail.com"}))

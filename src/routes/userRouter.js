@@ -15,7 +15,7 @@ const storage =multer.diskStorage({
     },
   // el nombre que le vamos a dar al archivo 
     filename:(req,file,cb)=>{
-        console.log(file);
+        console.log(req.body);
         const NombreArchivo='imagen-'+ Date.now()+path.extname(file.originalname);
        
         cb(null,NombreArchivo);

@@ -41,6 +41,16 @@ const userController = {
         var pass =req.body.contrasena.toString;
         let userData =req.body;
         User.create(userData);
+        let userInDB = User.findByField("email", req.body.email);
+        if(userInDB){
+            return res.render("registro"),{
+                errors: {
+                    email: {
+                        msg: "Este email ya está registrado"
+                    }
+                }
+            }
+        }
         // let UsuarioNuevo = {
             
         //     id: usuarios[usuarios.length -1].id+1,

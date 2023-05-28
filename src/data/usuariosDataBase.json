@@ -405,5 +405,13 @@
   "usuario": "ASD",
   "nombre": "Pablo",
   "apellido": "Domañski"
+ },
+ {
+  "id": 60,
+  "password": "$2a$10$hyOXlxfeVoDjjBIhCeWDWuC5HhGYMc928bYBTPGUsvyDz04Sq0Ypi",
+  "email": "test@gmail.com",
+  "usuario": "eric",
+  "nombre": "eric",
+  "apellido": "pino"
  }
 ]
