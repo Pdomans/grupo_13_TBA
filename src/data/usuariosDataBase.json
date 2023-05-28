@@ -429,5 +429,13 @@
   "usuario": "eric",
   "nombre": "Eric",
   "apellido": "Pino"
+ },
+ {
+  "id": 63,
+  "password": "$2a$10$8rTl7CxMk5OtARi.cE/Q1OXMAjHrLgfC3yIjRMNmrTToUXfiB.AY.",
+  "email": "ericpinonajarro87@gmail.com",
+  "usuario": "adasdasd",
+  "nombre": "asdads",
+  "apellido": "adasd"
  }
 ]
