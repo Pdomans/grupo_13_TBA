@@ -18,7 +18,7 @@ const userController = {
 
 // pagina usuarios  que vamos a utilizar para relizar el borrado 
      usuario: (req, res) => {
-        res.render("user/usuarios");
+        res.render("user/listadoUsuarios");
     },
      
     // Manejo del pedido get con ruta /usuarios/conectarse
