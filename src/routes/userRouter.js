@@ -47,7 +47,8 @@ router.post("/",upload.single("ImagenUsuario"),userController.store)
 // revisar antes de pushear
 
 // Procesa el pedido get con ruta /usuarios/conectarse
-router.get("/login", userController.login)
+//router.get("/login", userController.login)
+router.post("/login", userController.login)
 
 
 

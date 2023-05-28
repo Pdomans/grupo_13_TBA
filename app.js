@@ -2,6 +2,8 @@ const express = require ("express");
 const app = express();
 const path=require("path");
 const middlewares=require("./src/middlewares/global/middle.js");
+const session = require ("express-session");
+
 
 // Importamos los distintos enrutadores
 const mainRouter = require("./src/routes/mainRouter.js")
