@@ -16,7 +16,7 @@ const bcrypt=require('bcryptjs');
 // Creamos el objeto literal con los métodos a exportar
 const userController = {
 
-
+// pagina usuarios  que vamos a utilizar para relizar el borrado 
      usuario: (req, res) => {
         res.render("user/usuarios");
     },
@@ -70,6 +70,11 @@ const userController = {
         res.redirect("/")
         
     }
+
+
+    
+
+
 }
 
 

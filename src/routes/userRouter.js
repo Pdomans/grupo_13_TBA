@@ -46,6 +46,9 @@ router.post("/",upload.single("ImagenUsuario"),userController.store)
 
 // revisar antes de pushear
 
+// ruta de usuarios para poder realizar el borrado
+router.get("/usuarios",userController.usuario)
+
 // Procesa el pedido get con ruta /usuarios/conectarse
 //router.get("/login", userController.login)
 router.post("/login", userController.login)

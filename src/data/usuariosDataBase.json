@@ -437,5 +437,13 @@
   "usuario": "adasdasd",
   "nombre": "asdads",
   "apellido": "adasd"
+ },
+ {
+  "id": 64,
+  "password": "$2a$10$JIAnWp/5wUG9WVKdmYNcd.XoHQ7ik4TQnm/TKh.yyX.chjsV/JIW6",
+  "email": "pablodoma@g",
+  "usuario": "pdoma3",
+  "nombre": "asd",
+  "apellido": "asd"
  }
 ]
