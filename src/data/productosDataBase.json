@@ -173,12 +173,6 @@
   "discount": "1"
  },
  {
-  "id": 22,
-  "name": "2",
-  "price": "2",
-  "discount": "2"
- },
- {
   "id": 23,
   "name": "4",
   "mage": {
