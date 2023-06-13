@@ -25,12 +25,6 @@ const storage =multer.diskStorage({
 const  upload  =multer({storage})
 
 
-
-
-
-
-
-
 // Importamos el controlador de usuarios
 
 const userController = require("../controllers/userController.js");
@@ -57,3 +51,17 @@ router.post("/login", userController.login)
 
 // Exportamos la variable router ya con todas las rutas "guardadas", que se usará en app.js
 module.exports = router;
+
+
+// --------------------------------- 13-06 Eric ----------------------------------------------//
+
+// const express = require("express");
+// const router = express.Router();
+
+// router.get("/, function(req,res,next"){
+//     res.send("responde con algo");
+// };
+
+//module.exports = router
+
+

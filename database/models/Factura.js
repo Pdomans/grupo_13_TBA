@@ -51,6 +51,7 @@ module.exports =function (sequelize,datatypes){
           Factura.belongsTo(models.User,{
             as: "user",
             foreignKey: "id_user"
+            
       })
 
     }
