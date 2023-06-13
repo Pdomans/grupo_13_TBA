@@ -1,7 +1,5 @@
 // Requerimos express y guardamos la ejecución del método Router, que usaremos en el archivo.
 const express = require("express");
-
-
 const router = express.Router();
 const multer = require ("multer");
 const path= require("path");
@@ -31,9 +29,6 @@ const userController = require("../controllers/userController.js");
 
 // En vez de app.get, utilizamos router.get. Esto va "guardando" en router las distintas rutas, que luego exportamos
 
-
-
-
 // revisar antes de pushear
 router.get("/",userController.registro)
 router.post("/",upload.single("ImagenUsuario"),userController.store)
@@ -46,8 +41,6 @@ router.get("/listadoUsuarios",userController.usuario)
 // Procesa el pedido get con ruta /usuarios/conectarse
 //router.get("/login", userController.login)
 router.post("/login", userController.login)
-
-
 
 // Exportamos la variable router ya con todas las rutas "guardadas", que se usará en app.js
 module.exports = router;
