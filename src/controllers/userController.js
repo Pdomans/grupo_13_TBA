@@ -91,7 +91,15 @@ module.exports = userController;
 
 
 
+// ------------------------------- 13-06 Eric ----------------------------- //
 
+// let db = require ("../database/models");
+
+// let userController = {
+//     crear: function(req,res){
+//         db.User
+//     }
+//  }
 
 
 

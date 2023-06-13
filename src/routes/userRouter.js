@@ -58,3 +58,4 @@ module.exports = router;
 //module.exports = router
 
 
+// router.get("/crear",userController.registro)
