@@ -2,7 +2,7 @@ module.exports={
   "development": {
     "username": "root",
     "password": "root",
-    "database": "tba_bd",
+    "database": "tba",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
@@ -21,3 +21,6 @@ module.exports={
     "dialect": "mysql"
   }
 }
+
+
+//-- conexion de la base de datos 
