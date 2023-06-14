@@ -3,7 +3,7 @@ module.exports =function (sequelize,datatypes){
 
     let cols = {
         
-   id : {
+   id_type_product: {
     type:datatypes.INTEGER,
     primaryKey:true,
 
