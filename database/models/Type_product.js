@@ -24,7 +24,7 @@ module.exports =function (sequelize,datatypes){
       let Type_product = sequelize.define(alias,cols,config);
   
       Type_product.associate = function (models){
-        Type_product.hasMany(models.Producto,{
+        Type_product.hasMany(models.Type_product,{
           as: "producto",
           foreignKey: " id_type_product"
   

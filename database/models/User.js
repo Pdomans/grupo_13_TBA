@@ -44,13 +44,20 @@ module.exports =function (sequelize,datatypes){
     let User = sequelize.define(alias,cols,config);
 
     User.associate = function (models){
+
       User.belongsTo(models.Category_user,{
         as: "categoria_usuario",
         foreignKey: "id_category"
 
       })
+    
+      User.hasMany(models.Factura,{
+        as: "factura",
+        foreignKey: "id_user"
+  
+        })
     }
-
+  
     return User;
 
 }

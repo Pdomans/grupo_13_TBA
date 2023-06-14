@@ -40,8 +40,16 @@ module.exports =function (sequelize,datatypes){
 
     }
 
-    let producto = sequelize.define(alias,cols,config);
+    let Producto = sequelize.define(alias,cols,config);
 
- return 
+    Producto.associate = function (models){
+        Producto.hasMany(models.Type_product,{
+          as: "tipoProducto",
+          foreignKey: " id_type_product"
+  
+        })
+      }
+
+ return Producto
 
 }
