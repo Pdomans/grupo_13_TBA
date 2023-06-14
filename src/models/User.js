@@ -60,6 +60,16 @@ const User = {
     fs.writeFileSync(this.filename, JSON.stringify(finalUsers, null, " "));
     return true;
   },
+  
+  detalle: (req, res) => {
+    let id = req.params.idUsurio
+    const users = JSON.parse(fs.readFileSync(userFilePath, "utf-8"));
+    const usersToSend = users.find(user => {
+        return user.id == id
+    })
+        res.render("usuarios/listadoUsuario",{user:usersToSend});
+     
+    },
 };
 
 module.exports = User;

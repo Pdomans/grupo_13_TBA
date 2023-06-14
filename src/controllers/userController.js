@@ -33,8 +33,6 @@ const userController = {
         /* res.send(path.join(__dirname, "./views/registro.html")) */
     },
     
-  
-
 
     store: (req,res)=>{
         const usuarios = JSON.parse(fs.readFileSync(userFilePath, "utf-8"));
@@ -70,18 +68,8 @@ const userController = {
         res.redirect("/")
         
     },
+   
 
-
-    
-    detalle: (req, res) => {
-        let id = req.params.idUsurio
-        const users = JSON.parse(fs.readFileSync(userFilePath, "utf-8"));
-        const usersToSend = users.find(user => {
-            return user.id == id
-        })
-            res.render("usuarios/listadoUsuario",{user:usersToSend});
-         
-        },
 
 }
 

@@ -445,5 +445,21 @@
   "usuario": "pdoma3",
   "nombre": "asd",
   "apellido": "asd"
+ },
+ {
+  "id": 65,
+  "password": "$2a$10$v9XbU4668pMDivduZhYdieIN2bpNw.TEPInVHGUOf6uKQSmnMCxBm",
+  "email": "ericpinonajarro87@gmail.com",
+  "usuario": "ejemplo122",
+  "nombre": "Ejemplo",
+  "apellido": "Vidal"
+ },
+ {
+  "id": 66,
+  "password": "$2a$10$qYFi00opWvDcGMnS5zc/je16qVj.kTRnbf/BQOkquWET30X1H36Da",
+  "email": "ericpinonajarro87@gmail.com",
+  "usuario": "ejemplo122",
+  "nombre": "Ejemplo",
+  "apellido": "Vidal"
  }
 ]

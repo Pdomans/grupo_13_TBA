@@ -51,6 +51,9 @@ module.exports = router;
 // const express = require("express");
 // const router = express.Router();
 
+
+// Creacion de pelicula: //
+
 // router.get("/, function(req,res,next"){
 //     res.send("responde con algo");
 // };
