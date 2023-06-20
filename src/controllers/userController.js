@@ -85,7 +85,7 @@ module.exports = userController;
 
 // let userController = {
 //     crear: function(req,res){
-//         db.User
+//         db.User.findAll
 //     }
 //  }
 
