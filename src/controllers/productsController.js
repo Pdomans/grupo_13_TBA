@@ -1,4 +1,4 @@
-let db = require ("database/models");
+//let db = require ("database/models");
 
 // Creamos el objeto literal con los métodos a exportar
 const { json } = require('express');
