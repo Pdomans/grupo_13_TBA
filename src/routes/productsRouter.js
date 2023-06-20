@@ -37,6 +37,7 @@ router.get("/create", productsController.create);
 router.post("/",upload.single('ImagenProducto'),productsController.store);
 
 router.get("/carrito", productsController.carrito);
+
 router.get("/detalleProducto", productsController.detalle);
 
 router.get("/:idProducto", productsController.detalle);

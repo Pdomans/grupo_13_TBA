@@ -43,11 +43,18 @@ module.exports =function (sequelize,datatypes){
     let Producto = sequelize.define(alias,cols,config);
 
     Producto.associate = function (models){
+
         Producto.hasMany(models.Type_product,{
           as: "tipoProducto",
           foreignKey: " id_type_product"
   
         })
+
+        Producto.hasMany(models.Factura,{
+            as: "factura",
+            foreignKey: " id_factura"
+    
+          })
       }
 
  return Producto
