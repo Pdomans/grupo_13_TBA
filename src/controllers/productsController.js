@@ -1,3 +1,5 @@
+let db = require ("database/models");
+
 // Creamos el objeto literal con los métodos a exportar
 const { json } = require('express');
 const path = require("path");
@@ -25,11 +27,15 @@ const productsController = {
         res.render("productos/carrito");
         /*   res.send(path.join(__dirname, "../views/carrito.ejs")) */
     },
-    vender: (req, res) => {
-        res.render("productos/cargar");
-    },
+    //crear: (req, res) => {
+    //    res.render("productos/crearProductos");
+    //},
 
-    
+    create: (req,res) => {
+        const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
+        
+        res.render("productos/crearProducto")
+    },
     
     
    detalle: (req, res) => {
@@ -42,11 +48,7 @@ const productsController = {
      /*    res.send(path.join(__dirname, "./src/views/detalleProducto.html")) */
     },
 
-    create: (req,res) => {
-        const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
-
-        res.render("/productos")
-    },
+    
 
     store: (req,res)=>{
         const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));

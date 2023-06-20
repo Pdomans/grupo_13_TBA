@@ -1,16 +1,5 @@
 [
  {
-  "id": 4,
-  "name": "banco plano",
-  "other_name": "Decodon verticillatus (L.) Elliott",
-  "image": "banco1.jpg",
-  "description": "semper sapien a libero nam dui proin leo odio porttitor id consequat in consequat ut nulla sed accumsan felis ut at dolor",
-  "features": "sed vestibulum sit amet cursus id turpis integer aliquet massa id lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula vehicula consequat morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis",
-  "price": 9168.71,
-  "discount": "17%",
-  "categoria": "Oferta"
- },
- {
   "id": 5,
   "name": "ketbell 5 kg",
   "other_name": "Lysimachia clethroides Duby",
@@ -132,75 +121,6 @@
   "categoria": "Mas vendido"
  },
  {
-  "id": 16,
-  "name": "miñon",
-  "mage": "4.jpg",
-  "price": "1000",
-  "discount": "1"
- },
- {
-  "id": 17,
-  "name": "ejemplo14",
-  "mage": "4.jpg",
-  "price": "1000",
-  "discount": "10"
- },
- {
-  "id": 18,
-  "name": "prueba15",
-  "mage": "4.jpg",
-  "price": "199",
-  "discount": "10"
- },
- {
-  "id": 19,
-  "name": "miñon",
-  "mage": "4.jpg",
-  "price": "1000",
-  "discount": "10"
- },
- {
-  "id": 20,
-  "name": "1",
-  "mage": "4.jpg",
-  "price": "1",
-  "discount": "1"
- },
- {
-  "id": 21,
-  "name": "1",
-  "price": "1",
-  "discount": "1"
- },
- {
-  "id": 23,
-  "name": "4",
-  "mage": {
-   "fieldname": "ImagenProducto",
-   "originalname": "12121212.jpg",
-   "encoding": "7bit",
-   "mimetype": "image/jpeg",
-   "destination": "C:\\Users\\one\\OneDrive\\Desktop\\Nueva carpeta (4)\\digital_house2\\grupo_13_TBA-2-copia\\public\\img",
-   "filename": "imagen-1681622604608.jpg",
-   "path": "C:\\Users\\one\\OneDrive\\Desktop\\Nueva carpeta (4)\\digital_house2\\grupo_13_TBA-2-copia\\public\\img\\imagen-1681622604608.jpg",
-   "size": 56762
-  },
-  "price": "4",
-  "discount": "4"
- },
- {
-  "id": 24,
-  "name": "5",
-  "price": "5",
-  "discount": "5"
- },
- {
-  "id": 25,
-  "name": "6",
-  "price": "6",
-  "discount": "6"
- },
- {
   "id": 26,
   "name": "7",
   "image": "imagen-1681623227645.jpg",
@@ -208,31 +128,10 @@
   "discount": "6"
  },
  {
-  "id": 27,
-  "name": "asd",
-  "mage": "imagen-1681776649177.jpg",
-  "price": "1",
-  "discount": "1"
- },
- {
   "id": 28,
   "name": "10",
   "image": "imagen-1682893126636.jpg",
   "price": "1",
   "discount": "12"
- },
- {
-  "id": 29,
-  "name": "9",
-  "image": "imagen-1682893202053.jpg",
-  "price": "9",
-  "discount": "9"
- },
- {
-  "id": 30,
-  "name": "Pablo",
-  "image": "imagen-1682920468019.PNG",
-  "price": "12",
-  "discount": "1000"
  }
 ]
