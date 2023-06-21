@@ -11,27 +11,27 @@ module.exports =function (sequelize,datatypes){
       },
 
       firstname:{
-      type :datatypes.string,
+      type :datatypes.STRING,
       },
 
       lastname:{
-      type :datatypes.string,   
+      type :datatypes.STRING,   
       },
 
       mail:{
-      type :datatypes.string,
+      type :datatypes.STRING,
       },
 
       password:{
-      type :datatypes.string,
+      type :datatypes.STRING,
       },
 
       image :{
-      type :datatypes.string,
+      type :datatypes.STRING,
       },
     
       id_category:{
-      type :datatypes.string,
+      type :datatypes.STRING,
       },
     }
 
@@ -43,7 +43,7 @@ module.exports =function (sequelize,datatypes){
 
     let User = sequelize.define(alias,cols,config);
 
-    User.associate = function (models){
+   /*  User.associate = function (models){
 
       User.belongsTo(models.Category_user,{
         as: "categoria_usuario",
@@ -56,7 +56,7 @@ module.exports =function (sequelize,datatypes){
         foreignKey: "id_user"
   
         })
-    }
+    } */
   
     return User;
 

@@ -13,6 +13,7 @@ const userController = require("../controllers/userController.js");
 // Procesa el pedido get con ruta /
 
 router.get("/", mainController.inicio);
+
 router.get("/admin", mainController.admin);
 router.get("/quienSomos", mainController.quiensomos);
 

@@ -10,11 +10,11 @@ module.exports =function (sequelize,datatypes){
         autoIncrement: true,
         },
   
-        name_category:{
-        type :datatypes.string,
-        },
+        //name_category:{
+        //type :datatypes.string,
+        //},
 
-      }
+      };
       
         let config = {
           tableName: "users",
@@ -24,13 +24,13 @@ module.exports =function (sequelize,datatypes){
   
       let Category_user = sequelize.define(alias,cols,config);
 
-      Category_user.associate = function (models){
+/*       Category_user.associate = function (models){
         Category_user.hasMany(models.User,{
           as: "usuario",
           foreignKey: "id_category"
         })
 
-      }
+      } */
 
       return Category_user;
   

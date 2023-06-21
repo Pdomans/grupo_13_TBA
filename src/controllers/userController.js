@@ -1,3 +1,5 @@
+let db = require ("../../database/models/User");
+
 // Creamos el objeto literal con los métodos a exportar
 const { json } = require('express');
 const path = require("path");

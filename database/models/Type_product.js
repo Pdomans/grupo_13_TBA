@@ -11,7 +11,7 @@ module.exports =function (sequelize,datatypes){
         },
         
         name_product :{
-        type :datatypes.string
+        type :datatypes.STRING
         }
       }
   
@@ -23,13 +23,13 @@ module.exports =function (sequelize,datatypes){
   
       let Type_product = sequelize.define(alias,cols,config);
   
-      Type_product.associate = function (models){
-        Type_product.hasMany(models.Type_product,{
+     /*  Type_product.associate = function (models){
+        Type_product.hasMany(models.Producto,{
           as: "producto",
           foreignKey: " id_type_product"
   
         })
-      }
+      } */
   
       return Type_product;
   

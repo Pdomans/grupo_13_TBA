@@ -1,4 +1,4 @@
-//let db = require ("database/models");
+let db = require ("../../database/models/Producto");
 
 // Creamos el objeto literal con los métodos a exportar
 const { json } = require('express');
@@ -32,7 +32,7 @@ const productsController = {
     //},
 
     create: (req,res) => {
-        const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
+        //const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8")); --> Paso previo a base de datos
         
         res.render("productos/crearProducto")
     },
@@ -87,7 +87,18 @@ const productsController = {
         //res.redirect("/productos");
 
         res.send(200) //ok de http
-	}
+	},
+
+    guardado: (req, res) => {
+        db.Producto.create({
+            name_product: req.body.name,           
+            description_product: req.body.descripcion,
+            price : req.body.price,
+            discount: req.body.discount,
+            //image : req.body.ImagenProducto
+            })
+            res.redirect("productos");
+    }
     
 
 
