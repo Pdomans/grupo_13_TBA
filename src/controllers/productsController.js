@@ -5,6 +5,7 @@ const { json } = require('express');
 const path = require("path");
 const fs= require ("fs");
 
+
 const productsFilePath = path.join(__dirname, "../data/productosDataBase.json");
 
 const productsController = {
@@ -33,8 +34,11 @@ const productsController = {
 
     create: (req,res) => {
         //const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8")); --> Paso previo a base de datos
-        
-        res.render("productos/crearProducto")
+        tipoProducto.findAll()
+        then((tipoProducto)=>{
+            return res.render("productos/crearProducto",{tipoproducto})
+        })
+        //res.render("productos/crearProducto")
     },
     
     
