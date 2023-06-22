@@ -38,7 +38,7 @@ module.exports =function (sequelize,DataTypes){
     }
     let Producto = sequelize.define(alias,cols,config);
 
-   /*  Producto.associate = function (models){
+     Producto.associate = function (models){
 
         Producto.BelongsTo(models.Type_product,{
           as: "tipoProducto",
@@ -51,7 +51,7 @@ module.exports =function (sequelize,DataTypes){
             foreignKey: " id_factura"
     
           })
-      } */
+      } 
 
  return Producto
 

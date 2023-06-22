@@ -41,7 +41,7 @@ module.exports =function (sequelize,datatypes){
   
       let Factura = sequelize.define(alias,cols,config);
   
-/*       Factura.associate = function (models){
+       Factura.associate = function (models){
 
         Factura.belongsToMany(models.Producto,{
           as: "categoria_usuario",
@@ -54,7 +54,7 @@ module.exports =function (sequelize,datatypes){
             
       })
 
-    } */
+    } 
       return Factura;
   
 }
