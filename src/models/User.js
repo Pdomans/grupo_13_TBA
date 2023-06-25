@@ -10,7 +10,7 @@ const User = {
   },
 
   findAll: function () {
-    return JSON.parse(fs.readFileSync(this.filename, "utf-8"));
+    return this.getData();
   },
 
   // busqueda por id
@@ -30,10 +30,10 @@ const User = {
     return 1;
   },
 
-  // busqueda por cualquier campo
+  // busqueda por cualquier campo, pero siempre va a traer el primero que encuentre unicamente. 
   findByField: function (field, text) {
     let allUsers = this.findAll();
-    let userFound = allUsers.find((oneUser) => [field] === text);
+    let userFound = allUsers.find(oneUser => oneUser[field] === text);
     return userFound;
   },
 
@@ -50,7 +50,7 @@ const User = {
 
     allUsers.push(newUser);
     fs.writeFileSync(this.filename, JSON.stringify(allUsers, null, " "));
-    return true;
+    return newUser;
   },
 
   // borrado de usuario por id
@@ -77,3 +77,6 @@ module.exports = User;
 //console.log(User.delete(1));
 
 //console.log(User.create({nombre: "Javi", email: "javi@gmail.com"}))
+
+
+/* console.log(User.delete(40)); */

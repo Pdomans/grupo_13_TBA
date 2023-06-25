@@ -33,20 +33,21 @@ const productsController = {
     crear: (req,res) => {
         
         //const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8")); --> Paso previo a base de datos
-        tipoProducto.findAll()
-        then((tipoProducto)=>{
-            return res.render("productos/crearProducto",{tipoproducto})
-        })
+    /*     tipoProducto.findAll()
+        then((tipoProducto)=>{ */
+            return res.render("productos/crearProducto")
+        },
         //res.render("productos/crearProducto")
-    },
+    
 
 
     guardado: (req, res) => {
         db.Producto.crear({
-            name_product: req.body.name,           
-            description_product: req.body.descripcion,
+            name: req.body.name,           
+            descripcion: req.body.descripcion,
             price : req.body.price,
             discount: req.body.discount,
+            stock: req.body.stock
             //image : req.body.ImagenProducto
             })
             res.redirect("productos");

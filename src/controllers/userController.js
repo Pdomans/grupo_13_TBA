@@ -11,7 +11,7 @@ const User=require("../models/User.js");
 const userFilePath = path.join(__dirname, "../data/usuariosDataBase.json");
 
 //paquete para hacer la encriptacion 
-const bcrypt=require('bcryptjs');
+const bcryptjs=require('bcryptjs');
 
 
 
@@ -33,8 +33,21 @@ const userController = {
 /*         req.session.EMAIL = req.body.EMAIL;
         res.send(req.session);
         req.session.destroy();*/
-        res.cookie("email", req.body.email, {maxAge: (100 * 60) * 10}); 
-        res.send("cookie guardada")
+        /* res.cookie("email", req.body.email, {maxAge: (100 * 60) * 10}); 
+        res.send("cookie guardada") */
+        let contrasenia = req.body.password;
+        let contraseniaEncriptada = "$2a$10$pwDWpLe/69Zyp8vRu1wKuOSH1nR3TMdHl0VbMRlW0PCDYhUesWS72";
+        console.log(contrasenia);
+        let contraseniaHash = bcryptjs.hashSync(contrasenia,10);
+        console.log(contraseniaHash);
+
+        let resultado = bcryptjs.compareSync(contrasenia, contraseniaEncriptada);
+
+    
+        res.send("Contraseña encriptada" + resultado);
+ 
+        
+        
     },
     // Manejo del pedido get con ruta /usuarios/registrarse
     registro: (req, res) => {
@@ -50,7 +63,7 @@ const userController = {
         User.create(userData);
         let userInDB = User.findByField("email", req.body.email);
         if(userInDB){
-            return res.render("registro"),{
+            return res.render("user/registro"),{
                 errors: {
                     email: {
                         msg: "Este email ya está registrado"

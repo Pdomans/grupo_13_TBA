@@ -270,33 +270,6 @@
   "imagen": "/images/avatars/kipa.jpg"
  },
  {
-  "id": 31
- },
- {
-  "id": 32
- },
- {
-  "id": 33
- },
- {
-  "id": 34
- },
- {
-  "id": 35
- },
- {
-  "id": 36
- },
- {
-  "id": 37
- },
- {
-  "id": 38
- },
- {
-  "id": 39
- },
- {
   "id": 40
  },
  {
@@ -469,5 +442,77 @@
   "usuario": "dasdasd12",
   "nombre": "asdasd",
   "apellido": "aaaa"
+ },
+ {
+  "id": 68,
+  "password": "$2a$10$n/sBpwq9bcevtc2Jf4DQge.LlVh0uLzX0BXUEasPYKJWNQiU7QrMS",
+  "email": "j.rodriguez@lacasadelfitness.com",
+  "usuario": "ejemplo122",
+  "nombre": "aaa123",
+  "apellido": "aaa123"
+ },
+ {
+  "id": 69,
+  "password": "$2a$10$DX1NURlLz.uuaAGUeNZLrevEthUyd5ZhGsVhw/88VoE8LT/t8VgSW",
+  "email": "ericpinonajarro87@gmail.com",
+  "usuario": "eric",
+  "nombre": "eric",
+  "apellido": "pino"
+ },
+ {
+  "id": 70,
+  "password": "$2a$10$hKsdFzYbFZ8CMQhu7fxZy.vl0/uhiahMKRSiFyd.nJjoKSiEdgUiW",
+  "email": "ericpinonajarro87@gmail.com",
+  "usuario": "eric87",
+  "nombre": "eric1987",
+  "apellido": "pino"
+ },
+ {
+  "id": 71,
+  "password": "$2a$10$mupws2wYVVaWv.cgZSNfLuTQdeFwG5vQFGu5hVXTq8w3iOCjK90Nq",
+  "email": "nuevousuario@gmail.com",
+  "usuario": "nuevousuario",
+  "nombre": "nuevousuario87",
+  "apellido": "nuevo"
+ },
+ {
+  "id": 72,
+  "password": "$2a$10$uWNEHKra7/fDrM1gtQeoMu/CKKYV4GQ0690Tes4/qIFSjLevp0Hcm",
+  "email": "nueva@gmail.com",
+  "usuario": "nueva1",
+  "nombre": "nueva",
+  "apellido": "nueva"
+ },
+ {
+  "id": 73,
+  "password": "$2a$10$bjcgFLTcejSlSgbWlWzi/u46UYDSgl4C/eJJ48x1Cc88Semv/iTEO",
+  "email": "nueva@gmail.com",
+  "usuario": "nueva1",
+  "nombre": "nueva",
+  "apellido": "nueva"
+ },
+ {
+  "id": 74,
+  "password": "$2a$10$OxBjEEkpK0StjLF0GIGbYuIuonnKsKDycKYIXQ0AXwM3uPrIBKWn2",
+  "email": "nueva@gmail.com",
+  "usuario": "nueva2",
+  "nombre": "nueva2",
+  "apellido": "nueva2"
+ },
+ {
+  "id": 75,
+  "password": "$2a$10$Uj74.iQ5sqVcD03UVu0wU.2XxjMDHubIaKByGllLFvbxDAbyT8zEG",
+  "email": "nueva@gmail.com",
+  "usuario": "nueva3",
+  "nombre": "nueva3",
+  "apellido": "nueva3"
+ },
+ {
+  "id": 76,
+  "password": "$2a$10$c31u/ZlLb2W5OY/mMcu52enoC26XKDMhOcN6P9cAGlj.i3KCSfbFK",
+  "email": "nueva@gmail.com",
+  "usuario": "nueva3",
+  "nombre": "nueva3",
+  "apellido": "nueva3"
  }
 ]
