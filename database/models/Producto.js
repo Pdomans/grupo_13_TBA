@@ -2,11 +2,11 @@ module.exports =function (sequelize,DataTypes){
     let alias="Producto";
 
     let cols = {
-        
-   //id_type_product: {
-    //type:datatypes.INTEGER,
-    //primaryKey:true,
-   //},
+/*         
+   id_type_product: {
+    type:datatypes.INTEGER,
+    primaryKey:true,
+   }, */
 
    name :{
     type :DataTypes.STRING
@@ -21,13 +21,13 @@ module.exports =function (sequelize,DataTypes){
     discount:{
         type:DataTypes.INTEGER
     },              
-    //stock:{
-       // type:datatypes.integer },
-    //id_type_product :{
-        //type:datatypes.integer}
+    stock:{
+    type:datatypes.integer },
+    id_type_product :{
+    type:datatypes.integer}
         
     //image :{
-        //type:datatypes.integer },
+    //type:datatypes.integer },
 
 
 

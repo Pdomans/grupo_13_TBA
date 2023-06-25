@@ -20,6 +20,23 @@
         <img src="/img/banner.png" width="100%">
         </div>
 
+<!-- <form action="/productos/crearProducto" method="post">
+    <label for="name">name</label>
+    <input type="text" name="name">
+
+    <label for="descripcion">Descripcion</label>
+    <input type="text" name="descripcion">
+
+    <label for="price">Precio</label>
+    <input type="number" name="price">
+
+    <label for="discount">Descuento</label>
+    <input type="number" name="discount">
+
+    <label for="stock">Stock</label>
+    <input type="text" name="stock  ">
+</form> -->        
+
         <% products.forEach(product => { %>
             <h2 class="titulo"> </h2>
         </div>
@@ -39,10 +56,8 @@
                     </a>
                 </div>
             </div>
-
-
             <% }) %>
-        
+         
         </article>
     </section>
 </main>

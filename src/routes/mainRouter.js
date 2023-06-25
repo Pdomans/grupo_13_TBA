@@ -14,13 +14,13 @@ const userController = require("../controllers/userController.js");
 
 router.get("/", mainController.inicio);
 
-router.get("/admin", mainController.admin);
+//router.get("/admin", mainController.admin);
 router.get("/quienSomos", mainController.quiensomos);
 
 router.get("/login", userController.login);
-router.post("/login", userController.login);
+router.post("/login", userController.processForm);
 
-router.get("/crearProducto", productsController.create);
+//router.get("/crearProducto", productsController.crear);
 
 
 // Exportamos la variable router ya con todas las rutas "guardadas", que se usará en app.js

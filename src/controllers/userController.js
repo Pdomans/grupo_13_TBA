@@ -29,6 +29,13 @@ const userController = {
         /*  res.send(path.join(__dirname, "./views/login.html")) */
     },
 
+    processForm: (req, res) => {
+/*         req.session.EMAIL = req.body.EMAIL;
+        res.send(req.session);
+        req.session.destroy();*/
+        res.cookie("email", req.body.email, {maxAge: (100 * 60) * 10}); 
+        res.send("cookie guardada")
+    },
     // Manejo del pedido get con ruta /usuarios/registrarse
     registro: (req, res) => {
         res.render("user/registro");
@@ -78,18 +85,6 @@ const userController = {
 
 // Exportamos el objeto literal con los distintos metodos, que se usará en el enrutador de usuarios
 module.exports = userController;
-
-
-
-// ------------------------------- 13-06 Eric ----------------------------- //
-
-// let db = require ("../database/models");
-
-// let userController = {
-//     crear: function(req,res){
-//         db.User.findAll
-//     }
-//  }
 
 
 

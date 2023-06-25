@@ -461,5 +461,13 @@
   "usuario": "ejemplo122",
   "nombre": "Ejemplo",
   "apellido": "Vidal"
+ },
+ {
+  "id": 67,
+  "password": "$2a$10$e895GpKKCqzrlnvlWqvfWuaE2JgyIws.MkN8H9CqQxvXa9cPOA8Hy",
+  "email": "ericpinonajarro87@gmail.com",
+  "usuario": "dasdasd12",
+  "nombre": "asdasd",
+  "apellido": "aaaa"
  }
 ]
