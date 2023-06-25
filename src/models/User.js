@@ -41,7 +41,8 @@ const User = {
   create: function (userData) {
     let allUsers = this.findAll();
     let password=bcrypt.hashSync (userData.contrasena, 10) //password:bcrypt.  |
-    delete userData.contrasena;
+/*     imagen: req.file.filename;
+ */    delete userData.contrasena;
     let newUser = {
       id: this.generateId(),
       password:password,
@@ -70,6 +71,9 @@ const User = {
         res.render("usuarios/listadoUsuario",{user:usersToSend});
      
     },
+
+    
+
 };
 
 module.exports = User;
@@ -79,4 +83,4 @@ module.exports = User;
 //console.log(User.create({nombre: "Javi", email: "javi@gmail.com"}))
 
 
-/* console.log(User.delete(40)); */
+/*  console.log(User.findAll());  */

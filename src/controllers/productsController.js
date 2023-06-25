@@ -50,7 +50,7 @@ const productsController = {
             stock: req.body.stock
             //image : req.body.ImagenProducto
             })
-            res.redirect("productos");
+            res.redirect("/productos");
     },
     
     

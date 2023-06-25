@@ -514,5 +514,101 @@
   "usuario": "nueva3",
   "nombre": "nueva3",
   "apellido": "nueva3"
+ },
+ {
+  "id": 77,
+  "password": "$2a$10$QG/5rKfdSVW4yPy.RL8rje0vRT/AYWxQRYU8eDlrVK1uFhmEamLwa",
+  "email": "nueva@gmail.com",
+  "usuario": "nueva3",
+  "nombre": "nueva3",
+  "apellido": "nueva3"
+ },
+ {
+  "id": 78,
+  "password": "$2a$10$Phix46kRR28GkCffTcANXuyf2weeXhhcfqzhy6FtwsQz3mSNhPGOW",
+  "email": "hola@gmail.com",
+  "usuario": "hola",
+  "nombre": "hola",
+  "apellido": "hola"
+ },
+ {
+  "id": 79,
+  "password": "$2a$10$AMhgEt8A7FHUWF6FvIQc9.HFEl5zDQYc78zeQpjHvrrOBRi0/bsTy",
+  "email": "test@gmail.com",
+  "usuario": "test1",
+  "nombre": "test1",
+  "apellido": "test1"
+ },
+ {
+  "id": 80,
+  "password": "$2a$10$7L7Dt/yHlH6yOATsubqrP.w3BoAi3RTq0GfN7Wii4SAdTHdkibZvC",
+  "email": "test@gmail.com",
+  "usuario": "nuevo4",
+  "nombre": "nuevo4",
+  "apellido": "nuevo4"
+ },
+ {
+  "id": 81,
+  "password": "$2a$10$7VY94EMPz0ebA2Lj/ipUYeErfBZ8phqFmQwA7QNKr3e8Mlpg6Y3F6",
+  "email": "test@gmail.com",
+  "usuario": "nuevo5",
+  "nombre": "nuevo5",
+  "apellido": "nuevo5"
+ },
+ {
+  "id": 82,
+  "password": "$2a$10$MbyQ0.atjNPctQPq8Orp..i82KfXxswB7PTo7yerGiaNC0ogyxwya",
+  "email": "test@gmail.com",
+  "usuario": "nuevo6",
+  "nombre": "nuevo6",
+  "apellido": "nuevo6"
+ },
+ {
+  "id": 83,
+  "password": "$2a$10$ygM5wKcO1tC7NJ3IJIYAfOajGPfUQwNNm1PtejoxQsVN36BY58H8a",
+  "email": "test@gmail.com",
+  "usuario": "nuevo7",
+  "nombre": "nuevo7",
+  "apellido": "nuevo7"
+ },
+ {
+  "id": 84,
+  "password": "$2a$10$b.6r7Dl0oKdklVY9RCGWiuT0leC56IaVFr5Ek0MoE96MuCZSCVLDW",
+  "email": "nueva@gmail.com",
+  "usuario": "nuevaa",
+  "nombre": "nuevaa",
+  "apellido": "nuevaa"
+ },
+ {
+  "id": 85,
+  "password": "$2a$10$WGZqe2OPgg0KjPbnutxFwu9N4FIdQSDwpo9lsLjhTuTedCtRv1ggS",
+  "email": "nueva@gmail.com",
+  "usuario": "asd",
+  "nombre": "asd",
+  "apellido": "asd"
+ },
+ {
+  "id": 86,
+  "password": "$2a$10$KThlYeHJMkq0DpsS04XmYO0bBe3kFXbmc4W02eAbHYvZQ6bcBC9RW",
+  "email": "test@gmail.com",
+  "usuario": "abc",
+  "nombre": "abc",
+  "apellido": "abc"
+ },
+ {
+  "id": 87,
+  "password": "$2a$10$RgkV68l63rppBf8FQ1hRFOa6PgTBIq0lV/EWxyV6QJqBQ6To9ifl.",
+  "email": "test@gmail.com",
+  "usuario": "abc",
+  "nombre": "abc",
+  "apellido": "abc"
+ },
+ {
+  "id": 88,
+  "password": "$2a$10$8UoAY9Ol/m/htXSJIwlXveVhiDkXEhYWWSxyTvaTFnWI4QJWG06O6",
+  "email": "test@gmail.com",
+  "usuario": "aaa",
+  "nombre": "aaa",
+  "apellido": "aaa"
  }
 ]
