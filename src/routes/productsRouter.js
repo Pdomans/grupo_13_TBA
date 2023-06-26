@@ -37,9 +37,7 @@ router.get("/carrito", productsController.carrito);
 
 router.get("/detalleProducto", productsController.detalle);
 
-router.get("/crearProducto", productsController.crear);
-router.post("/crearProducto", productsController.guardado);
-
+router.get("/crearProducto", productsController.create);
 
 router.get("/:idProducto", productsController.detalle);
 
@@ -48,8 +46,7 @@ router.delete('/delete/:id',productsController.borrar);
 //router.get("/vender",productsController.vender);
 
 //crear producto
-//router.get("/crear", productsController.crear);
-//router.post("/crear", productsController.guardado);
+router.get("/crear", productsController.create);
 //router.post("/",upload.single('ImagenProducto'),productsController.store);
 
 

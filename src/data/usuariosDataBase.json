@@ -610,5 +610,29 @@
   "usuario": "aaa",
   "nombre": "aaa",
   "apellido": "aaa"
+ },
+ {
+  "id": 89,
+  "password": "$2a$10$sHobTXKvFDWdohSG2WeiOeTxgEyqrb3aFmHvGhf/7pY7b4UQ3Prj.",
+  "email": "ericpinonajarro87@gmail.com",
+  "usuario": "asdasd",
+  "nombre": "asdasd",
+  "apellido": "asdasd"
+ },
+ {
+  "id": 90,
+  "password": "$2a$10$IeWv6kQHiPhUWEp7Vuo9YuF0MObQ1EHjNkp5qksuM57TGyMqqCSf6",
+  "email": "ericpinonajarro87@gmail.com",
+  "usuario": "asdasd",
+  "nombre": "asdasd",
+  "apellido": "asdasd"
+ },
+ {
+  "id": 91,
+  "password": "$2a$10$E0KyhBUDrcpY76qKrtpd5uo79sefC3SlJRLFs9T/47vErSmgrL406",
+  "email": "",
+  "usuario": "ejemplo122",
+  "nombre": "asd",
+  "apellido": "asd"
  }
 ]

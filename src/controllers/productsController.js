@@ -28,29 +28,19 @@ const productsController = {
         res.render("productos/carrito");
         /*   res.send(path.join(__dirname, "../views/carrito.ejs")) */
     },
+    //crear: (req, res) => {
+    //    res.render("productos/crearProductos");
+    //},
 
-
-    crear: (req,res) => {
-        
+    create: (req,res) => {
         //const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8")); --> Paso previo a base de datos
-    /*     tipoProducto.findAll()
-        then((tipoProducto)=>{ */
-            return res.render("productos/crearProducto")
-        },
+       
+        // empezamos hacer el crud  20:15 class 39 21-jun
+        tipoProducto.findAll()
+        then((tipoProducto)=>{
+            return res.render("productos/crearProducto",{tipoproducto})
+        })
         //res.render("productos/crearProducto")
-    
-
-
-    guardado: (req, res) => {
-        db.Producto.crear({
-            name: req.body.name,           
-            descripcion: req.body.descripcion,
-            price : req.body.price,
-            discount: req.body.discount,
-            stock: req.body.stock
-            //image : req.body.ImagenProducto
-            })
-            res.redirect("/productos");
     },
     
     
@@ -105,6 +95,16 @@ const productsController = {
         res.send(200) //ok de http
 	},
 
+    guardado: (req, res) => {
+        db.Producto.create({
+            name_product: req.body.name,           
+            description_product: req.body.descripcion,
+            price : req.body.price,
+            discount: req.body.discount,
+            //image : req.body.ImagenProducto
+            })
+            res.redirect("productos");
+    }
     
 
 
