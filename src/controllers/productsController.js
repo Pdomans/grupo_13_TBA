@@ -104,6 +104,15 @@ const productsController = {
             //image : req.body.ImagenProducto
             })
             res.redirect("productos");
+    },
+
+
+    //---------------------------bd
+
+
+    mostrar:(req,res)=>{
+        res.render("productos/productosbd");
+        console.log("hola");
     }
     
 
