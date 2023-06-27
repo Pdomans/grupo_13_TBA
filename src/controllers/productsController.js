@@ -110,22 +110,19 @@ const productsController = {
     //---------------------------bd
 
 
-    mostrar:(req,res)=>{
+    mostrar: async(req,res)=>{
         db.Producto.findAll()
         .then((resultado)=>{
            res.send( resultado)
         })
-        .catch(error=>{
-            res.send(error)
-        })
+        
 
         res.render("productos/productosbd");
-        console.log("hola");
-    }
-    
+      
+    }}
 
 
-}
+
 
 
 
