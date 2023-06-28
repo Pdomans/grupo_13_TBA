@@ -16,6 +16,7 @@ module.exports =function (sequelize,datatypes){
 
         id_product: {
           type:datatypes.INTEGER,
+          
         },
   
         fecha:{
@@ -28,6 +29,7 @@ module.exports =function (sequelize,datatypes){
   
         precio:{
         type :datatypes.INTEGER,
+        
         }
   
        
@@ -43,15 +45,18 @@ module.exports =function (sequelize,datatypes){
   
        Factura.associate = function (models){
 
-        Factura.belongsToMany(models.Producto,{
-          as: "categoria_usuario",
-          foreignKey: "id_product"  
-        })
-
+        
           Factura.belongsTo(models.User,{
             as: "user",
             foreignKey: "id_user"
             
+      })
+
+
+
+      Factura.hasMany(models.DetalleFactura,{
+        as: "detalle_facturas",
+        foreignKey: " id_factura"
       })
 
     } 

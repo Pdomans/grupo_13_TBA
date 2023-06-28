@@ -1,22 +1,22 @@
-module.exports =function (sequelize,datatypes){
+module.exports =function (sequelize,DataTypes){
   
-    let alias="tipoProducto";
+    let alias="Type_product";
   
     let cols = {
   
         id_type_product: {
-            type:datatypes.INTEGER,
+            type:DataTypes.INTEGER,
             primaryKey:true,
-        
+         autoIncrement :true
         },
         
         name_product :{
-        type :datatypes.STRING
+        type :DataTypes.STRING
         }
       }
   
         let config = {
-          tableName: "tipoProducto",
+          tableName: "type_products",
           timestamps: false
         
     }
@@ -25,8 +25,8 @@ module.exports =function (sequelize,datatypes){
   
        Type_product.associate = function (models){
         Type_product.hasMany(models.Producto,{
-          as: "producto",
-          foreignKey: " id_type_product"
+          as: "products",
+          foreignKey: "id_type_product"
   
         })
       } 

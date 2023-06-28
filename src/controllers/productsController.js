@@ -1,4 +1,4 @@
-let db = require ("../../database/models/Producto");
+const db = require ("../../database/models");
 
 // Creamos el objeto literal con los métodos a exportar
 const { json } = require('express');
@@ -110,10 +110,10 @@ const productsController = {
     //---------------------------bd
 
 
-    mostrar: (req, res) => {
+    mostrar: (req, res) => {    
         db.Producto.findAll()
           .then((productos) => {
-            res.render("productosbd", { productos });
+            res.render("productos/productosbd", {productos});
           })
           .catch((error) => {
             console.log(error);
