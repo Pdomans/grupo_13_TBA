@@ -110,20 +110,19 @@ const productsController = {
     //---------------------------bd
 
 
-    mostrar: async(req,res)=>{
+    mostrar: (req, res) => {
         db.Producto.findAll()
-        .then((resultado)=>{
-           res.send( resultado)
-        })
-        
-
-        res.render("productos/productosbd");
-      
-    }}
-
-
+          .then((productos) => {
+            res.render("productosbd", { productos });
+          })
+          .catch((error) => {
+            console.log(error);
+            res.send("Error al obtener los productos de la base de datos");
+          });
+      },
 
 
+    }
 
 
 // Exportamos el objeto literal con los distintos metodos, que se usará en el enrutador de productos

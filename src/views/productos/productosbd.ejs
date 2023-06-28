@@ -23,6 +23,26 @@
 
         <H1>HOLA MUNDO</H1>
 
+
+        <section>
+           
+        
+            <h1>Lista de productos</h1>
+        
+            <ul>
+              <% productos.forEach((producto) => { %>
+                <li>
+                  <h3><%= producto.name %></h3>
+                  <p><%= producto.descripcion %></p>
+                  <p>Precio: <%= producto.price %></p>
+                </li>
+              <% }) %>
+            </ul>
+          </section>
+
+
+
+
     </section>
 </main>
 <!-- FIN DEL MAIN -->

@@ -10,18 +10,18 @@ module.exports={
   "test": {
     "username": "root",
     "password": null,
-    "database": "database_test",
+    "database": "tba",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "production": {
     "username": "root",
     "password": null,
-    "database": "database_production",
+    "database": "tba",
     "host": "127.0.0.1",
     "dialect": "mysql"
   }
 }
 
 
-//-- conexion de la base de datos 
+//-- conexion de la base de datoss
