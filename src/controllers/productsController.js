@@ -113,6 +113,7 @@ const productsController = {
     mostrar: (req, res) => {    
         db.Producto.findAll()
           .then((productos) => {
+            console.log(productos)
             res.render("productos/productosbd", {productos});
           })
           .catch((error) => {
