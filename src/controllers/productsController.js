@@ -4,35 +4,35 @@ const db = require ("../../database/models");
 const { json } = require('express');
 const path = require("path");
 const fs= require ("fs");
+const { brotliDecompress } = require("zlib");
 
 
 const productsFilePath = path.join(__dirname, "../data/productosDataBase.json");
 
 const productsController = {
 
-    productos: (req, res) => {
+    /*  productos: (req, res) => {
         const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
-        res.render("productos/productos", {products});
+        res.render("productos/productos", {products});}, */
        /*  res.send(path.join(__dirname, "./src/views/productos.html")) */
-    },
-
+    /* },  */
     // Procesa el pedido get con ruta /productos/numeroProducto
     // Ruta parametrizada!!
     /* detalle1: (req, res) => {
         // En req.params tenemos el parametro que definimos en el enrutador (en este caso con la palabra num)
         let idProducto = req.params.idProducto; */
        
-        /* res.send(path.join(__dirname, "./src/views/detalleProducto.html")); */
-    /* }, */
-    carrito: (req, res) => {
-        res.render("productos/carrito");
-        /*   res.send(path.join(__dirname, "../views/carrito.ejs")) */
+        /* res.send(path.join(__dirname, "./src/views/detalleProducto.html")); 
     },
+    /* carrito: (req, res) => {
+        res.render("productos/carrito"); */
+        /*   res.send(path.join(__dirname, "../views/carrito.ejs")) */
+  /*   }, */
     //crear: (req, res) => {
     //    res.render("productos/crearProductos");
     //},
 
-    create: (req,res) => {
+  /*   create: (req,res) => {
         //const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8")); --> Paso previo a base de datos
        
         // empezamos hacer el crud  20:15 class 39 21-jun
@@ -52,10 +52,10 @@ const productsController = {
     })
         res.render("productos/detalleProducto",{product: productToSend});
      /*    res.send(path.join(__dirname, "./src/views/detalleProducto.html")) */
-    },
+   /*  } */
 
     
-
+/* 
     store: (req,res)=>{
         const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
         //console.log(products);
@@ -77,10 +77,10 @@ const productsController = {
         let productsJSON = JSON.stringify(products, null, " ");
         fs.writeFileSync(productsFilePath, productsJSON);
         res.redirect("/productos")
-        },
+        }, */
 
     //  borrar un producto de la bd 
-	borrar : (req, res) => {
+/* 	borrar : (req, res) => {
 		let id = req.params.id;
         const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
         
@@ -94,17 +94,8 @@ const productsController = {
 
         res.send(200) //ok de http
 	},
-
-    guardado: (req, res) => {
-        db.Producto.create({
-            name_product: req.body.name,           
-            description_product: req.body.descripcion,
-            price : req.body.price,
-            discount: req.body.discount,
-            //image : req.body.ImagenProducto
-            })
-            res.redirect("productos");
-    },
+ */
+    
 
 
     //---------------------------bd
@@ -123,8 +114,35 @@ const productsController = {
       },
 
 
+
+      create2: (req, res) => {
+         
+            res.render("productos/crearProducto");
+    },
+
+    
+    crearProducto :(req,res)=>{
+        db.Producto.create({
+            name_product: req.body.name,           
+            description_product: req.body.descripcion,
+            price : req.body.price,
+            discount: req.body.discount,
+            stock:req.body.stock
+            //image : req.body.ImagenProducto
+            })
+            
+
+            .then(producto => {
+                res.redirect('/productos');
+             })
     }
 
 
+}
+
+    
+
+
+  
 // Exportamos el objeto literal con los distintos metodos, que se usará en el enrutador de productos
 module.exports = productsController;

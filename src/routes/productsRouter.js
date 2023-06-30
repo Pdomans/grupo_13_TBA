@@ -34,24 +34,26 @@ const productsController = require("../controllers/productsController.js")
 
 //--------------------------bd
 
-router.get("/productos2",productsController.mostrar);
-//--------------------------bd
-router.get("/", productsController.productos);
 
-router.get("/carrito", productsController.carrito);
+
+router.get("/crearProducto",productsController.create2);
+router.get("/", productsController.mostrar);
+router.post("/crearProducto", productsController.crearProducto);
+//--------------------------bd
+
+
+/* router.get("/carrito", productsController.carrito);
 
 router.get("/detalleProducto", productsController.detalle);
 
-router.get("/crearProducto", productsController.create);
-
 router.get("/:idProducto", productsController.detalle);
 
-router.delete('/delete/:id',productsController.borrar);
-
+router.delete('/delete/:id',productsController.borrar); */
+ 
 //router.get("/vender",productsController.vender);
 
 //crear producto
-router.get("/crear", productsController.create);
+/* router.get("/crear", productsController.create); */
 //router.post("/",upload.single('ImagenProducto'),productsController.store);
 
 

@@ -22,11 +22,11 @@
         </div>
 
 
-        <H1>HOLA MUNDO</H1>
+        
 
 
         <section>
-           
+          <H1>listar</H1>
             <h1>Lista de productos</h1>
         
             <ul>
@@ -35,10 +35,17 @@
                   <h3><%= producto.name_product %></h3>
                   <p><%= producto.description_product %></p>
                   <p>Precio: <%= producto.price %></p>
+                  <p>Precio: <%= producto.disctount %></p>
+                  <p>stock: <%= producto.stock %></p>
+
                 </li>
               <% }) %>
             </ul>
           </section>
+
+
+
+
 
 
 
