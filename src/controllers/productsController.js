@@ -122,17 +122,18 @@ const productsController = {
 
     
     crearProducto :(req,res)=>{
+      
         db.Producto.create({
             name_product: req.body.name,           
             description_product: req.body.descripcion,
             price : req.body.price,
-            discount: req.body.discount,
+            disctount: req.body.discount,
             stock:req.body.stock
             //image : req.body.ImagenProducto
             })
             
 
-            .then(producto => {
+            .then (Producto => {
                 res.redirect('/productos');
              })
     }
