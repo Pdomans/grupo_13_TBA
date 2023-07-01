@@ -139,12 +139,16 @@ const productsController = {
              })
     },
 
-    detalleProducto:(req,res)=>{
+    detalleProductobd:(req,res)=>{
         db.Producto.findByPk(req.params.id)
         .then(function(producto){
-            res.render("/detalleProductobd", {producto:producto});
+            res.render("productos/detalleProductobd", {producto});
         })
 
+        
+        .catch(error =>{
+            res.send(error)
+        })
     } 
 
 

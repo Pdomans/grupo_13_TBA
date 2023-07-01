@@ -36,10 +36,11 @@ const productsController = require("../controllers/productsController.js")
 
 
 
+
 router.get("/crearProducto",productsController.create2);
-router.get("/", productsController.mostrar);
 router.post("/crearProducto", productsController.crearProducto);
-router.get("/:id", productsController.detalleProducto); 
+router.get("/:id", productsController.detalleProductobd); 
+router.get("/", productsController.mostrar);
 
 //--------------------------bd
 

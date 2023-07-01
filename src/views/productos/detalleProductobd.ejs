@@ -18,13 +18,20 @@
 <%-include("../partials/header.ejs") %>
 <!--CONTENEDOR DEL ITEM DESCRIPCION PRODUCTO -->
 <main>
-    
-  <p> <%= productos.name_product %></p>
-  <p>Descripcion: <%= productos.description_product %></p>
-  <p>Precio: <%= productos.price %></p>
-  <p>Descuento: <%= productos.disctount %></p>
-  <p>Stock <%= productos.stock %></p>
-
+    <section>
+      <div class="banner">
+        <img src="/img/banner.png" width="100%">
+      </div>  
+      <section>
+        <h1>Detalle del producto</h1>
+        <h3>Nombre: <%= producto.name_product %></h3>
+        <p>Descripción: <%= producto.description_product %></p>
+        <p>Precio: <%= producto.price %></p>
+        <p>Descuento: <%= producto.disctount %></p>
+        <p>Stock: <%= producto.stock %></p>
+      </section>
+    </section>
+  </main>
 
 <%-include("../partials/footer.ejs") %>
 <!----------FIN DE FOOTER--------------------------------------------------------------------------------------------->
