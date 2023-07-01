@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="/css/registro.css">
+
+    <title>FitH - Editar Producto </title>
+</head>
+<body>
+    <!-- COPIAR HEADERS -->
+    <%-include("../partials/header.ejs") %>
+<!-- COPIAR HEADERS -->
+<main> 
+
+    <form id="registrocuadro" action="/productos/edicionProductobd/<%= producto.id_product %>" method="POST" >
+        <h1>Crear Producto </h1>
+            <label for="name_product">Nombre: </label>           
+                <input type="text" name="name_product" id="name_product" value="<%= producto.name_product %>">
+                    <br>
+            <label for="description_product">Descripcion: </label>
+                <input type="text" name="description_product" id="description_product" value="<%= producto.description_product %>">
+                    <br>
+            <label for="price">Precio: </label>
+                <input type="number" name="price" id="price" value="<%= producto.price %>">
+                    <br>
+            <label for="discount">Descuento: </label>
+                <input type="text" name="discount" id="discount" value="<%= producto.disctount %>">
+                    <br>
+            <label for="stock">Stock: </label>
+                <input type="number" name="stock" id="stock" value="<%= producto.stock %>">
+                    <br>                    
+
+            <!-- <label for="ImagenProducto">imagen del producto </label>
+            <input type="file" name ="ImagenProducto">  -->
+            
+            <button  type="submit" class="boton-reg">Editar producto</button> 
+    </form>
+</main>
+<!----------INICIO DE FOOTER--------------------------------------------------------------------------------------------->
+<%-include("../partials/footer.ejs") %>
+<!----------FIN DE FOOTER--------------------------------------------------------------------------------------------->
+</body>

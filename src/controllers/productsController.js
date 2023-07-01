@@ -149,9 +149,31 @@ const productsController = {
         .catch(error =>{
             res.send(error)
         })
-    } 
+    } ,
 
+    editarId:(req,res)=>{
+        db.Producto.findByPk(req.params.id)
+        .then(function(producto){
+        res.render("productos/edicionProductobd", {producto});
 
+    })
+},
+
+actualizarId: (req,res)=>{
+    db.Producto.update({
+        'name_product': req.body.name_product,           
+        'description_product': req.body.description_product,
+        'price' : req.body.price,
+        'disctount': req.body.discount,
+        'stock':req.body.stock
+        //image : req.body.ImagenProducto
+    },{
+        where:{
+            id_product: req.params.id
+        }
+    });
+    res.redirect("/productos/" + req.params.id)
+}
 }
 
     
