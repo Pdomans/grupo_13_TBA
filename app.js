@@ -18,7 +18,7 @@ app.use(methodOverride('_method'));
 app.set("view engine", "ejs");
 
 //para  poder procesar los formularios 
-app.use(express.urlencoded({extended:true}));
+app.use(express.urlencoded({extended:false}));
 app.use(express.json());//recibe  el body  de los formularios
 app.use(session({secret:"nuestro mensaje secreto"}))
 app.use(express.static('public'));

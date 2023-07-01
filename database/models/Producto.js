@@ -11,14 +11,14 @@ module.exports =function (sequelize,DataTypes){
     autoIncrement: true 
    }, 
 
-   name_product :{
+   name_product:{
     type :DataTypes.STRING 
     },
 
     description_product:{
         type:DataTypes.STRING
     }, 
-    price :{
+    price:{
         type:DataTypes.INTEGER
     },
     disctount:{

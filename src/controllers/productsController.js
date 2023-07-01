@@ -122,9 +122,10 @@ const productsController = {
 
     
     crearProducto :(req,res)=>{
+        
       
         db.Producto.create({
-            name_product: req.body.name,           
+            'name_product': req.body.name_product,           
             description_product: req.body.descripcion,
             price : req.body.price,
             disctount: req.body.discount,
