@@ -32,11 +32,11 @@
             <ul>
               <% productos.forEach((producto) => { %>
                 <li>
-                  <h3>nombre<%= producto.name_product %></h3>
-                  <p>descripcion<%= producto.description_product %></p>
-                  <p>precio<%= producto.price %></p>
-                  <p>descuento<%= producto.disctount %></p>
-                  <p>stock<%= producto.stock %></p>
+                  <h3>Nombre: <%= producto.name_product %></h3>
+                  <p>Descripcion: <%= producto.description_product %></p>
+                  <p>Precio: <%= producto.price %></p>
+                  <p>Descuento: <%= producto.disctount %></p>
+                  <p>Stock <%= producto.stock %></p>
 
                 </li>
               <% }) %>
