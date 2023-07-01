@@ -33,13 +33,11 @@
                     <%= productos.name_product %>
                 </a></h3>
                   </li>
-                  <li>
+                  <li>                  
+                 
+                  <p>Precio: AR$<%= productos.price %></p>
+                  <p>Descuento: %<%= productos.disctount %></p>
                   
-                  
-                  <p>Descripcion: <%= productos.description_product %></p>
-                  <p>Precio: <%= productos.price %></p>
-                  <p>Descuento: <%= productos.disctount %></p>
-                  <p>Stock <%= productos.stock %></p>
 
                 </li>
               <% }) %>
