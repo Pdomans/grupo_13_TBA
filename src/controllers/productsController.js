@@ -126,10 +126,10 @@ const productsController = {
       
         db.Producto.create({
             'name_product': req.body.name_product,           
-            description_product: req.body.descripcion,
-            price : req.body.price,
-            disctount: req.body.discount,
-            stock:req.body.stock
+            'description_product': req.body.description_product,
+            'price' : req.body.price,
+            'disctount': req.body.discount,
+            'stock':req.body.stock
             //image : req.body.ImagenProducto
             })
             
