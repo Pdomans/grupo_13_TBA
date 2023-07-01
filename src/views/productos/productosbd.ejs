@@ -19,37 +19,32 @@
     <section>
         <div class="banner">
         <img src="/img/banner.png" width="100%">
-        </div>
-
-
-        
-
+        </div>  
 
         <section>
-          <H1>listar</H1>
+        
             <h1>Lista de productos</h1>
         
             <ul>
-              <% productos.forEach((producto) => { %>
+              <% productos.forEach((productos) => { %>
                 <li>
-                  <h3>Nombre: <%= producto.name_product %></h3>
-                  <p>Descripcion: <%= producto.description_product %></p>
-                  <p>Precio: <%= producto.price %></p>
-                  <p>Descuento: <%= producto.disctount %></p>
-                  <p>Stock <%= producto.stock %></p>
+                  
+                  <h3><a href="/productos/<%= productos.id_product %>">
+                    <%= productos.name_product %>
+                </a></h3>
+                  </li>
+                  <li>
+                  
+                  
+                  <p>Descripcion: <%= productos.description_product %></p>
+                  <p>Precio: <%= productos.price %></p>
+                  <p>Descuento: <%= productos.disctount %></p>
+                  <p>Stock <%= productos.stock %></p>
 
                 </li>
               <% }) %>
             </ul>
           </section>
-
-
-
-
-
-
-
-
     </section>
 </main>
 <!-- FIN DEL MAIN -->

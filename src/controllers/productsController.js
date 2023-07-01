@@ -137,7 +137,15 @@ const productsController = {
             .then (Producto => {
                 res.redirect('/productos');
              })
-    }
+    },
+
+    detalleProducto:(req,res)=>{
+        db.Producto.findByPk(req.params.id)
+        .then(function(producto){
+            res.render("/detalleProductobd", {producto:producto});
+        })
+
+    } 
 
 
 }

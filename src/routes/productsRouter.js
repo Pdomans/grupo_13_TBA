@@ -39,6 +39,8 @@ const productsController = require("../controllers/productsController.js")
 router.get("/crearProducto",productsController.create2);
 router.get("/", productsController.mostrar);
 router.post("/crearProducto", productsController.crearProducto);
+router.get("/:id", productsController.detalleProducto); 
+
 //--------------------------bd
 
 
