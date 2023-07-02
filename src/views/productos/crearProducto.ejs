@@ -18,11 +18,13 @@
 <!-- COPIAR HEADERS -->
 <main> 
 
-    <form id="registrocuadro" action="/productos/crearProducto" method="POST" >
+    <form id="registrocuadro" action="/productos/crearProducto" method="POST"  >
         <h1>Crear Producto </h1>
             <label for="name_product">Nombre: </label>           
                 <input type="text" name="name_product" id="name_product" placeholder="Ej:Zapatillas">
                     <br>
+                    <label for="imagenProducto">Imagen del producto</label>
+                    <input type="file" name="imagenProducto">
             <label for="description_product">Descripcion: </label>
                 <input type="text" name="description_product" id="description_product" placeholder="Ej:Calzado">
                     <br>

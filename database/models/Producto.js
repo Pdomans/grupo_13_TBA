@@ -15,6 +15,10 @@ module.exports =function (sequelize,DataTypes){
     type :DataTypes.STRING 
     },
 
+    image: {
+      type : DataTypes.STRING
+    },
+
     description_product:{
         type:DataTypes.STRING
     }, 

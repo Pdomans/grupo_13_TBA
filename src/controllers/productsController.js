@@ -5,7 +5,7 @@ const { json } = require('express');
 const path = require("path");
 const fs= require ("fs");
 const { brotliDecompress } = require("zlib");
-
+const multer = require('multer');
 
 const productsFilePath = path.join(__dirname, "../data/productosDataBase.json");
 
@@ -122,15 +122,14 @@ const productsController = {
 
     
     crearProducto :(req,res)=>{
-        
-      
+    
         db.Producto.create({
-            'name_product': req.body.name_product,           
+            'name_product': req.body.name_product,      
+            'image' : req.body.imagenProducto,                 
             'description_product': req.body.description_product,
             'price' : req.body.price,
             'disctount': req.body.discount,
             'stock':req.body.stock
-            //image : req.body.ImagenProducto
             })
             
 

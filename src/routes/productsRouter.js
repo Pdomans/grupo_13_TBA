@@ -10,7 +10,7 @@ const path= require("path");
 const storage =multer.diskStorage({
     // lugar donde vamos a guardar el archivo 
     destination:(req,file,cb)=>{
-        cb(null,'public/img')
+        cb(null,path.join(__dirname,'../public/img'))
         //cb(null,path.join(__dirname,'../../public/img'))
     },
   // el nombre que le vamos a dar al archivo 

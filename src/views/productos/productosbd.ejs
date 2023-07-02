@@ -27,13 +27,13 @@
         <br>
             <ul>
               <% productos.forEach((productos) => { %>
-                <li>
-                  
+                <li>                  
                   <h3><a href="/productos/<%= productos.id_product %>">
-                    <%= productos.name_product %>
-                </a></h3>
-                  </li>
-                  <li>                  
+                  <%= productos.name_product %>
+                  </a></h3>
+                </li>
+                  <li>     
+                    <img src="../public/img/<%= productos.image %>">             
                  
                   <p>Precio: AR$<%= productos.price %></p>                  
                   <p>Descuento: %<%= productos.disctount %></p>
