@@ -173,10 +173,18 @@ actualizarId: (req,res)=>{
         }
     });
     res.redirect("/productos/" + req.params.id)
-}
-}
+},
+    borrarId: (req,res)=>{
+        db.Producto.destroy({
+            where:{
+                id_product: req.params.id
+            }
+        })
+    res.redirect("/productos")
 
-    
+    }
+
+}
 
 
   

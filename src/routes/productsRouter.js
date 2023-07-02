@@ -43,6 +43,7 @@ router.get("/:id", productsController.detalleProductobd);
 router.get("/", productsController.mostrar);
 router.get("/edicionProductobd/:id", productsController.editarId);
 router.post("/edicionProductobd/:id", productsController.actualizarId);
+router.post("/borrarProductobd/:id", productsController.borrarId);
 
 //--------------------------bd
 

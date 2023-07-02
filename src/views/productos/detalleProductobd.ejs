@@ -32,7 +32,12 @@
       <a href="/productos/edicionProductobd/<%= producto.id_product %>">
       <button > Editar</button>
     </a>
+      <form action="/productos/borrarProductobd/<%= producto.id_product %>" method="POST">
+              <button type="submit"> Borrar</button>
+    </form>
+    
     <br>
+
     </section>
   </main>
 
