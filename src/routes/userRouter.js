@@ -55,11 +55,12 @@ const userController = require("../controllers/userController.js");
 router.get("/listadoUsuarios",userController.usuario)
 
 // Procesa el pedido get con ruta /usuarios/conectarse
-//router.get("/login", userController.login)
-router.post("/login", userController.login)
+
 
 
 //---------------------------------------con bd -----------------------------------------
+
+
 
 router.get("/userdb",userController.mostraruser)
 

@@ -21,11 +21,7 @@ const userController = {
         res.render("user/listadoUsuarios");
     },
      
-    // Manejo del pedido get con ruta /usuarios/conectarse
-    login: (req, res) => {
-       res.render("user/login")
-        /*  res.send(path.join(__dirname, "./views/login.html")) */
-    },
+   
 
     processForm: (req, res) => {
 /*         req.session.EMAIL = req.body.EMAIL;
@@ -42,7 +38,7 @@ const userController = {
         let resultado = bcryptjs.compareSync(contrasenia, contraseniaEncriptada);
 
     
-        res.send("Contraseña encriptada" + resultado);
+        res.send("Contraseña encriptada " + resultado);
  
         
         
@@ -119,10 +115,15 @@ const userController = {
             res.redirect('/');
          })
 
-   //------------------------------------------------- con bd  
+   
+},
 
-
-}
+ // Manejo del pedido get con ruta /usuarios/conectarse
+ login: (req, res) => {
+    res.render("user/login")
+     
+ },
+//------------------------------------------------- con bd  
 }
 
 // Exportamos el objeto literal con los distintos metodos, que se usará en el enrutador de usuarios
