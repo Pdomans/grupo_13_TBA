@@ -30,8 +30,8 @@ const userController = require("../controllers/userController.js");
 // En vez de app.get, utilizamos router.get. Esto va "guardando" en router las distintas rutas, que luego exportamos
 
 
-router.get("/",userController.registro)
-router.post("/",upload.single("ImagenUsuario"),userController.store)
+
+//router.post("/",upload.single("ImagenUsuario"),userController.store)
 
 
 
@@ -47,7 +47,8 @@ router.post("/login", userController.login)
 
 router.get("/userdb",userController.mostraruser)
 
-
+router.get("/",userController.registro)
+router.post("/",userController.crearuser)
 
 
 // Exportamos la variable router ya con todas las rutas "guardadas", que se usará en app.js

@@ -103,14 +103,28 @@ const userController = {
         console.log(error);
         res.send("Error al obtener los usuarios de la base de datos");
       });
-  }
+  },
 
+
+  crearuser :(req,res)=>{
+    
+    db.User.create({
+        'firstname': req.body.usuario,                
+        'lastname': req.body.apellido,
+        'mail' : req.body.email,
+        'pasword': req.body.contrasena,
+        //'image':req.body.stock
+        })
+
+        .then (User => {
+            res.redirect('/');
+         })
 
    //------------------------------------------------- con bd  
 
 
 }
-
+}
 
 // Exportamos el objeto literal con los distintos metodos, que se usará en el enrutador de usuarios
 module.exports = userController;

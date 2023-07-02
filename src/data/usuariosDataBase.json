@@ -642,5 +642,21 @@
   "usuario": "pdoma3",
   "nombre": "Pablo",
   "apellido": "Domañski"
+ },
+ {
+  "id": 93,
+  "password": "$2a$10$Ho5bs3Ry/.jGAoFoiZJ32.EnUNQmzSbBZgs6pM28xzKUcoSo3OfJK",
+  "email": "pepe@gmail",
+  "usuario": "pepe",
+  "nombre": "pepe",
+  "apellido": "pep2"
+ },
+ {
+  "id": 94,
+  "password": "$2a$10$6VYRI0SM4NyXOVxVCUkm3.4kC3KXWD2FNA06K9jE59M2Ey4EGooZK",
+  "email": "asd@asd",
+  "usuario": "pap",
+  "nombre": "asd",
+  "apellido": "asd"
  }
 ]
