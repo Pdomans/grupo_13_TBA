@@ -1,13 +1,11 @@
 let db = require ("../../database/models");
-
 // Creamos el objeto literal con los métodos a exportar
 const { json } = require('express');
 const path = require("path");
 const fs= require ("fs");
 const { Console } = require('console');
-
 const User=require("../models/User.js");
-
+const bcrypt=require('bcryptjs');
 const userFilePath = path.join(__dirname, "../data/usuariosDataBase.json");
 
 //paquete para hacer la encriptacion 
@@ -107,12 +105,13 @@ const userController = {
 
 
   crearuser :(req,res)=>{
-    
+    let password=bcrypt.hashSync (req.body.contrasena, 10)
     db.User.create({
         'firstname': req.body.usuario,                
         'lastname': req.body.apellido,
         'mail' : req.body.email,
-        'pasword': req.body.contrasena,
+         'password':password,  
+        
         //'image':req.body.stock
         })
 
