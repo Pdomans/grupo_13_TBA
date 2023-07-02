@@ -634,5 +634,13 @@
   "usuario": "ejemplo122",
   "nombre": "asd",
   "apellido": "asd"
+ },
+ {
+  "id": 92,
+  "password": "$2a$10$Dsh6y.suSXf/H8TUwY9JhOlsUIFGN7aBRjed/oouOkGDKefWc0GNK",
+  "email": "pablodomanski90@gmail.com",
+  "usuario": "pdoma3",
+  "nombre": "Pablo",
+  "apellido": "Domañski"
  }
 ]

@@ -29,11 +29,11 @@ const userController = require("../controllers/userController.js");
 
 // En vez de app.get, utilizamos router.get. Esto va "guardando" en router las distintas rutas, que luego exportamos
 
-// revisar antes de pushear
+
 router.get("/",userController.registro)
 router.post("/",upload.single("ImagenUsuario"),userController.store)
 
-// revisar antes de pushear
+
 
 // ruta de usuarios para poder realizar el borrado
 router.get("/listadoUsuarios",userController.usuario)

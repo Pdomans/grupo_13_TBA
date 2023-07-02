@@ -52,7 +52,6 @@ const userController = {
     // Manejo del pedido get con ruta /usuarios/registrarse
     registro: (req, res) => {
         res.render("user/registro");
-        /* res.send(path.join(__dirname, "./views/registro.html")) */
     },
     
     processRegister: (req,res) => {
