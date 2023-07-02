@@ -1,4 +1,4 @@
-let db = require ("../../database/models/User");
+let db = require ("../../database/models");
 
 // Creamos el objeto literal con los métodos a exportar
 const { json } = require('express');
@@ -83,24 +83,30 @@ const userController = {
         
     },
 
-  /*        let UsuarioNuevo = {
-            
-             id: usuarios[usuarios.length -1].id+1,
-             email:req.body.email,
-             usuario:req.body.usuario,
-             password:bcrypt.hashSync (req.body.contrasena, 10), //password:bcrypt.hashSync(req.body.contraseña, 10),sal(req.body.contraseña)
-             firstName:req.body.nombre,
-             last_name: req.body.apellido,
-             image:req.file.filename,
-            
-         }; */
-        
-       
-        // usuarios.push(UsuarioNuevo);
-        // let UsuariosJSON = JSON.stringify(usuarios,null, " ");
-        // fs.writeFileSync(userFilePath, UsuariosJSON);
+ //------------------------------------------------- con bd 
 
-   
+
+/* 
+ mostraruser:(req,res)=>{
+    res.render("user/userbd")
+    //res.render("productos/crearProducto");
+ },
+ */
+
+ mostraruser: (req, res) => {    
+    db.User.findAll()
+      .then((usuario) => {
+        console.log(usuario)
+        res.render("user/userbd", {usuario});
+      })
+      .catch((error) => {
+        console.log(error);
+        res.send("Error al obtener los usuarios de la base de datos");
+      });
+  }
+
+
+   //------------------------------------------------- con bd  
 
 
 }

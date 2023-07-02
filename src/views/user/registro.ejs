@@ -17,7 +17,7 @@
     <%-include("../partials/header.ejs") %>
 <!-- COPIAR HEADERS -->
 <main>
-    <form id="registrocuadro" action="/usuario" method="post" enctype="multipart/form-data" >
+    <form id="registrocuadro" action="/usuario" method="post" > <!--  enctype="multipart/form-data"  sacao esto para enviar la info  -->
         <h1>Crear una cuenta</h1>
             <label for="email">Correo electrónico</label>
             <input type="email" name="email" id="email" placeholder="ej. fithouse@gmail.com">

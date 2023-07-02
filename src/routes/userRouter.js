@@ -42,23 +42,14 @@ router.get("/listadoUsuarios",userController.usuario)
 //router.get("/login", userController.login)
 router.post("/login", userController.login)
 
+
+//---------------------------------------con bd -----------------------------------------
+
+router.get("/userdb",userController.mostraruser)
+
+
+
+
 // Exportamos la variable router ya con todas las rutas "guardadas", que se usará en app.js
 module.exports = router;
 
-
-// --------------------------------- 13-06 Eric ----------------------------------------------//
-
-// const express = require("express");
-// const router = express.Router();
-
-
-// Creacion de pelicula: //
-
-// router.get("/, function(req,res,next"){
-//     res.send("responde con algo");
-// };
-
-//module.exports = router
-
-
-// router.get("/crear",userController.registro)
