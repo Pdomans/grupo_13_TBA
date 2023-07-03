@@ -13,19 +13,19 @@ const mainController = {
     // comunicarse con el modelo, conseguir información
         res.render("inicio");     
     },
-    admin: (req, res) => {
-        res.render("admin");
+/*     admin: (req, res) => {
+        res.render("admin"); */
         /* res.sendFile(path.resolve(__dirname, "../views/admin.html")) */
-    },
+    //},
     quiensomos: (req, res) => {
         res.render("quiensomos");
        
     },
     
 
-    adminpost: (req,res)=>{
+/*     adminpost: (req,res)=>{
         
-    }
+    } */
     
 }
 

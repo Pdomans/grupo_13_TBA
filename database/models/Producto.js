@@ -1,5 +1,4 @@
 const { INTEGER } = require("sequelize");
-
 module.exports =function (sequelize,DataTypes){
     let alias="Producto";
 

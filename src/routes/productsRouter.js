@@ -1,6 +1,5 @@
 // Requerimos express y guardamos la ejecución del método Router, que usaremos en el archivo.
 const express = require("express");
-// Router con R mayuscula
 const router = express.Router();
 const multer = require ("multer");
 const path= require("path");
@@ -36,21 +35,23 @@ const productsController = require("../controllers/productsController.js")
 
 
 
+router.get("/", productsController.mostrar);
 
 router.get("/crearProducto",productsController.create2);
 router.post("/crearProducto", productsController.crearProducto);
+
 router.get("/:id", productsController.detalleProductobd); 
-router.get("/", productsController.mostrar);
 router.get("/edicionProductobd/:id", productsController.editarId);
 router.post("/edicionProductobd/:id", productsController.actualizarId);
 router.post("/borrarProductobd/:id", productsController.borrarId);
 
-//--------------------------bd
-
-
 /* router.get("/carrito", productsController.carrito);
+ *///--------------------------bd
 
-router.get("/detalleProducto", productsController.detalle);
+
+
+
+/*router.get("/detalleProducto", productsController.detalle);
 
 router.get("/:idProducto", productsController.detalle);
 

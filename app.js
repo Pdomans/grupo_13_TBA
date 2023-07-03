@@ -32,7 +32,7 @@ app.set('views', path.resolve(__dirname,"./src/views"));
 app.use("/",mainRouter);
 app.use("/productos", productsRouter);
 /* app.use("/carrito", productsRouter); */
-app.use("/usuario", userRouter);
+app.use("/user", userRouter);
 
 
 // ejecucion middleware global 

@@ -24,8 +24,7 @@ const productsController = {
        
         /* res.send(path.join(__dirname, "./src/views/detalleProducto.html")); 
     },
-    /* carrito: (req, res) => {
-        res.render("productos/carrito"); */
+    
         /*   res.send(path.join(__dirname, "../views/carrito.ejs")) */
   /*   }, */
     //crear: (req, res) => {
@@ -99,8 +98,10 @@ const productsController = {
 
 
     //---------------------------bd
-
-
+/*     carrito: (req, res) => {
+        res.render("productos/carrito"); 
+    },
+ */
     mostrar: (req, res) => {    
         db.Producto.findAll()
           .then((productos) => {
@@ -138,7 +139,7 @@ const productsController = {
              })
     },
 
-    detalleProductobd:(req,res)=>{
+            detalleProductobd:(req,res)=>{
         db.Producto.findByPk(req.params.id)
         .then(function(producto){
             res.render("productos/detalleProductobd", {producto});

@@ -3,23 +3,20 @@ const express = require("express");
 const router = express.Router();
 const multer = require ("multer");
 const path= require("path");
-const {body}=require('express-validator');
-
+/* const {body}=require('express-validator');
+ */
 
 
 
 //validaciones express validator
 
-const  validatecrerateform=[
+/* const  validatecrerateform=[
     body("email").isEmail().withMessage('debes completar el campo de email'),
     body("usuario").notEmpty().withMessage('debes completar el campo usuario'),
     body("contrasena").notEmpty().withMessage('debes completar el campo contraseña'),
     body("nombre").notEmpty().withMessage('debes completar el campo nombre'),
     body("apellido").notEmpty().withMessage('debes completar el campo apellido'),
-];
-
-
-
+]; */
 
 const storage =multer.diskStorage({
     // lugar donde vamos a guardar el archivo  cb es un una funcion callb
@@ -44,29 +41,27 @@ const  upload  =multer({storage})
 const userController = require("../controllers/userController.js");
 
 // En vez de app.get, utilizamos router.get. Esto va "guardando" en router las distintas rutas, que luego exportamos
-
-
-
 //router.post("/",upload.single("ImagenUsuario"),userController.store)
-
-
-
 // ruta de usuarios para poder realizar el borrado
-router.get("/listadoUsuarios",userController.usuario)
-
+/* router.get("/listadoUsuarios",userController.usuario) */
 // Procesa el pedido get con ruta /usuarios/conectarse
-
-
 
 //---------------------------------------con bd -----------------------------------------
 
 
-
-router.get("/userdb",userController.mostraruser)
-
+router.get("/userbd",userController.mostraruser)
+router.get("/login", userController.login);
 router.get("/",userController.registro)
-router.post("/",validatecrerateform,userController.crearuser)
+router.post("/",userController.crearuser)
 
+
+router.get("/:id", userController.detalleUsuariobd); 
+router.get("/edicionUsuariobd/:id", userController.editarUsuarioId);
+router.post("/edicionUsuariobd/:id", userController.actualizarUsuarioId);
+router.post("/borrarUsuariobd/:id", userController.borrarUsuarioId);
+
+
+/* router.post("/login", userController.processForm); */
 
 // Exportamos la variable router ya con todas las rutas "guardadas", que se usará en app.js
 module.exports = router;

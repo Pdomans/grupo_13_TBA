@@ -1,38 +1,38 @@
-module.exports =function (sequelize,datatypes){
-  
+const { INTEGER } = require("sequelize");
+module.exports =function (sequelize,DataTypes){
   let alias="User";
 
   let cols = {
 
-      id_user: {
-      type:datatypes.INTEGER,
+       id_user: {
+      type:DataTypes.INTEGER,
       primaryKey:true,
       autoIncrement: true,
-      },
+      }, 
 
       firstname:{
-      type :datatypes.STRING,
+      type:DataTypes.STRING,
       },
 
       lastname:{
-      type :datatypes.STRING,   
+      type :DataTypes.STRING,   
       },
 
       mail:{
-      type :datatypes.STRING,
+      type :DataTypes.STRING,
       },
 
       password:{
-      type :datatypes.STRING,
+      type :DataTypes.STRING,
       },
 
-      image :{
+/*       image :{
       type :datatypes.STRING,
-      },
+      }, */
     
-      id_category:{
+/*       id_category:{
       type :datatypes.STRING,
-      },
+      }, */
     }
 
       let config = {

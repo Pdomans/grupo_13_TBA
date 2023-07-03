@@ -24,10 +24,12 @@
 <br>
     <ul>
       <% usuario.forEach((usuario) => { %>
-        <li>                  
-          <h3><a href="/userdb/<%= usuario.id_user %>">
-          <%= usuario.firstname %>
+
+        <h3><a href="/user/<%= usuario.id_user %>">
+          <%= usuario.firstname %> 
           </a></h3>
+          <br>
+      
       
       <% }) %>
     </ul>

@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     
-        <link rel="stylesheet" href="/css/admin.css">
+        <link rel="stylesheet" href="/css/productos.css">
     
         <title>FitHouse</title>
     
@@ -21,23 +21,42 @@
  <%-include("../partials/header.ejs") %>
  <!-- COPIAR HEADERS -->
 
- 
+ <main>
+    <section>
+      <div class="banner">
+        <img src="/img/banner.png" width="100%">
+      </div>  
+      <section>
+        <p> <h1>Detalle del usuario</h1>
+        <br>
+        <p>Nombre: <%= usuario.firstname %></p>
+        <p>Apellido: <%= usuario.lastname %></p>
+        <p>Email: <%= usuario.mail %></p>
+        <p>Contraseña: <%= usuario.password %></p>
+
+        <br>
+      </section>
+      <a href="/user/edicionUsuariobd/<%= usuario.id_user %>">
+      <button > Editar</button>
+    </a>
+      <form action="/user/borrarUsuariobd/<%= usuario.user %>" method="POST">
+              <button type="submit"> Borrar</button>
+    </form>
+    
+    <br>
+
+    </section>
+  </main>
   
 
-  <h2 id="id"> <%= user.id %></h2>
-  <p id="firstName"> <%=user.firstName %> </p>
-  
 
-
- 
-
+</body>
 
 
 <!----------INICIO DE FOOTER--------------------------------------------------------------------------------------------->
 <%-include("../partials/footer.ejs") %>
 <!----------FIN DE FOOTER--------------------------------------------------------------------------------------------->
 
-</body>
 
 
 
