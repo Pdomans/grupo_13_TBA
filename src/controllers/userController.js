@@ -25,7 +25,7 @@ const { validationResult } = require('express-validator');
       */
     const userController = {
 
-    processForm: (req, res) => {
+    /* processForm: (req, res) => {
         req.session.EMAIL = req.body.EMAIL;
         res.send(req.session);
         req.session.destroy();
@@ -42,7 +42,7 @@ const { validationResult } = require('express-validator');
  
         
         
-    },
+    }, */
     // Manejo del pedido get con ruta /usuarios/registrarse
 
     
@@ -78,7 +78,7 @@ const { validationResult } = require('express-validator');
  //------------------------------------------------- con bd 
 
  registro: (req, res) => {
-    res.render("user/registro");
+    res.render("user/registro",{session:req.session});
 },
 
 // Manejo del pedido get con ruta /usuarios/conectarse
@@ -90,7 +90,8 @@ login: (req, res) => {
  procesoLogin: (req, res) => {
   const mailform = req.body.EMAIL;
   const passform = req.body.password;
-
+ console.log(mailform);
+ console.log(passform);
   db.User.findOne({
     attributes: ['mail', 'password'],
     where: { mail: mailform }
@@ -101,9 +102,13 @@ login: (req, res) => {
       res.send('El correo ingresado no existe');
     } else {
       const contraseñaEncriptada = usuario.password;
+      console.log(contraseñaEncriptada)
 
       if (bcrypt.compareSync(passform, contraseñaEncriptada)) {
-        res.send('La contraseña es correcta');
+       // res.send('La contraseña es correcta');
+        req.session.mail=mailform;
+        console.log(req.session.mailsession)
+        res.redirect("/user")
       } else {
         res.send('La contraseña es incorrecta');
       }

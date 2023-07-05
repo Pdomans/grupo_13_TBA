@@ -17,7 +17,12 @@
         <ul class="lista2flex">
             <li><a href="/user/">Creá tu cuenta</a><i id="iconos" class="far fa-id-card"></i></li> 
             <li><a href="/user/userbd">Listado de usuarios</a><i id="iconos" class="far fa-id-card"></i></li> 
-            <li><a href="/user/login">Ingresar</a><i id="iconos" class="fas fa-sign-in-alt"></i></li>
+            
+            <% if(locals.session.mail){   %>
+                 <li style="color:white"> <%=session.mail%></li>
+            <% }else{ %>
+                <li><a href="/user/login">Ingresar</a><i id="iconos" class="fas fa-sign-in-alt"></i></li>
+            <%}%>
             <li><a href="/quienSomos">Sobre Nosotros</a></li>
         </ul>
     </nav>
