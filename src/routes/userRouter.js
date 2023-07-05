@@ -57,6 +57,14 @@ router.get("/login", userController.login);
 router.post("/login",[check("email").isEmail().withMessage("Email invalido"),check("password").isLength({min: 8}).withMessage("La contraseña debe tener al menos 8 carateres")
 ], userController.procesoLogin);
 
+router.get("/check", function (req,res){
+    if(req.session.usuarioLogueado == undefined){
+        res.send("no estás logueado");
+    }else{
+        res.send("El usuario logueado es:" + req.session.usuarioLogueado.email)
+    }
+})
+
 router.get("/",userController.registro)
 router.post("/",userController.crearuser)
 

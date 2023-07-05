@@ -90,12 +90,13 @@ login: (req, res) => {
  procesoLogin: (req, res) => {
   let errors = validationResult(req);
 
-  if (!errors.isEmpty()) {
+  if (errors.isEmpty()) {
     db.User.findAll().then((usuario) => {
         let usuarioALoguearse = 0;
       for (let i = 0; i < usuario.length; i++) {
         if (usuario[i].mail == req.body.EMAIL) {
-          if (bcrypt.compareSync(req.body.password, usuario[i].password)) {
+            let check = (bcrypt.compareSync(req.body.password, usuario[i].password))
+          if (check) {
              usuarioALoguearse = usuario[i];
             break;
           }
@@ -103,15 +104,16 @@ login: (req, res) => {
       }
 
       if (usuarioALoguearse == undefined) {
-        return res.render("/", {
+        return res.render("user/userbd", {
           errors: [{ msg: "Credenciales inválidas" }],
         });
       }
 
       req.session.usuarioLogueado = usuarioALoguearse;
+      res.render("user/userbd")
     });
   } else {
-    return res.render("/", { errors: errors.errors });
+    return res.render("user/userbd", { errors: errors.errors });
   }
 },
 
