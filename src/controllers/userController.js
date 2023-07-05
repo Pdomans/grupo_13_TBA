@@ -7,6 +7,7 @@ const { brotliDecompress } = require("zlib");
 const multer = require('multer');
 /* const User=require("../models/User.js"); */
 const bcrypt=require('bcryptjs');
+const { validationResult } = require('express-validator');
 /* const userFilePath = path.join(__dirname, "../data/usuariosDataBase.json");
  */
 //paquete para hacer la encriptacion 
@@ -85,6 +86,34 @@ login: (req, res) => {
     res.render("user/login")
      
  },
+
+ procesoLogin: (req, res) => {
+  let errors = validationResult(req);
+
+  if (!errors.isEmpty()) {
+    db.User.findAll().then((usuario) => {
+        let usuarioALoguearse = 0;
+      for (let i = 0; i < usuario.length; i++) {
+        if (usuario[i].mail == req.body.EMAIL) {
+          if (bcrypt.compareSync(req.body.password, usuario[i].password)) {
+             usuarioALoguearse = usuario[i];
+            break;
+          }
+        }
+      }
+
+      if (usuarioALoguearse == undefined) {
+        return res.render("/", {
+          errors: [{ msg: "Credenciales inválidas" }],
+        });
+      }
+
+      req.session.usuarioALoguearse = usuarioALoguearse;
+    });
+  } else {
+    return res.render("/", { errors: errors.errors });
+  }
+},
 
  mostraruser: (req, res) => {    
     db.User.findAll()

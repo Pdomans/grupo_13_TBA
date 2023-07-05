@@ -3,6 +3,8 @@ const express = require("express");
 const router = express.Router();
 const multer = require ("multer");
 const path= require("path");
+const { check, validationResult } = require('express-validator');
+
 /* const {body}=require('express-validator');
  */
 
@@ -51,6 +53,10 @@ const userController = require("../controllers/userController.js");
 
 router.get("/userbd",userController.mostraruser)
 router.get("/login", userController.login);
+
+router.post("/login",[check("email").isEmail().withMessage("Email invalido"),check("password").isLength({min: 8}).withMessage("La contraseña debe tener al menos 8 carateres")
+], userController.procesoLogin);
+
 router.get("/",userController.registro)
 router.post("/",userController.crearuser)
 
