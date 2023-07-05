@@ -45,8 +45,8 @@ router.get("/edicionProductobd/:id", productsController.editarId);
 router.post("/edicionProductobd/:id", productsController.actualizarId);
 router.post("/borrarProductobd/:id", productsController.borrarId);
 
-/* router.get("/carrito", productsController.carrito);
- *///--------------------------bd
+router.get("/carrito", productsController.carrito);
+ ///--------------------------bd
 
 
 

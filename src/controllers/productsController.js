@@ -22,7 +22,7 @@ const productsController = {
         // En req.params tenemos el parametro que definimos en el enrutador (en este caso con la palabra num)
         let idProducto = req.params.idProducto; */
        
-        /* res.send(path.join(__dirname, "./src/views/detalleProducto.html")); 
+        /* res.send(path.join(__dirname, "./src/views.html")); 
     },
     
         /*   res.send(path.join(__dirname, "../views/carrito.ejs")) */
@@ -98,10 +98,10 @@ const productsController = {
 
 
     //---------------------------bd
-/*     carrito: (req, res) => {
+    carrito: (req, res) => {
         res.render("productos/carrito"); 
     },
- */
+ 
     mostrar: (req, res) => {    
         db.Producto.findAll()
           .then((productos) => {
