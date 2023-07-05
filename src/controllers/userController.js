@@ -137,7 +137,7 @@ login: (req, res) => {
         'firstname': req.body.firstname,                
         'lastname': req.body.lastname,
         'mail' : req.body.mail,
-        'password':req.body.password,
+        'password':password,
        
         
         //'image':req.body.stock
