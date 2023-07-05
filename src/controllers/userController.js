@@ -108,7 +108,7 @@ login: (req, res) => {
         });
       }
 
-      req.session.usuarioALoguearse = usuarioALoguearse;
+      req.session.usuarioLogueado = usuarioALoguearse;
     });
   } else {
     return res.render("/", { errors: errors.errors });
