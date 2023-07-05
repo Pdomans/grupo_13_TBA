@@ -41,6 +41,7 @@ const  upload  =multer({storage})
 // Importamos el controlador de usuarios
 
 const userController = require("../controllers/userController.js");
+const { procesoLogin } = require("../controllers/userController.js");
 
 // En vez de app.get, utilizamos router.get. Esto va "guardando" en router las distintas rutas, que luego exportamos
 //router.post("/",upload.single("ImagenUsuario"),userController.store)
@@ -54,9 +55,10 @@ const userController = require("../controllers/userController.js");
 router.get("/userbd",userController.mostraruser)
 router.get("/login", userController.login);
 
-router.post("/login",[check("email").isEmail().withMessage("Email invalido"),check("password").isLength({min: 8}).withMessage("La contraseña debe tener al menos 8 carateres")
+router.post("/login",procesoLogin)
+/* router.post("/login",[check("email").isEmail().withMessage("Email invalido"),check("password").isLength({min: 8}).withMessage("La contraseña debe tener al menos 8 carateres")
 ], userController.procesoLogin);
-
+ */
 router.get("/check", function (req,res){
     if(req.session.usuarioLogueado == undefined){
         res.send("no estás logueado");

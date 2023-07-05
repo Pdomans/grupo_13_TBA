@@ -88,35 +88,33 @@ login: (req, res) => {
  },
 
  procesoLogin: (req, res) => {
-  let errors = validationResult(req);
+  const mailform = req.body.EMAIL;
+  const passform = req.body.password;
 
-  if (errors.isEmpty()) {
-    db.User.findAll().then((usuario) => {
-        let usuarioALoguearse = 0;
-      for (let i = 0; i < usuario.length; i++) {
-        if (usuario[i].mail == req.body.EMAIL) {
-            let check = (bcrypt.compareSync(req.body.password, usuario[i].password))
-          if (check) {
-             usuarioALoguearse = usuario[i];
-            break;
-          }
-        }
+  db.User.findOne({
+    attributes: ['mail', 'password'],
+    where: { mail: mailform }
+  })
+  .then((usuario) => {
+    if (!usuario) {
+      // No se encontró un usuario con el correo proporcionado
+      res.send('El correo ingresado no existe');
+    } else {
+      const contraseñaEncriptada = usuario.password;
+
+      if (bcrypt.compareSync(passform, contraseñaEncriptada)) {
+        res.send('La contraseña es correcta');
+      } else {
+        res.send('La contraseña es incorrecta');
       }
-
-      if (usuarioALoguearse == undefined) {
-        return res.render("user/userbd", {
-          errors: [{ msg: "Credenciales inválidas" }],
-        });
-      }
-
-      req.session.usuarioLogueado = usuarioALoguearse;
-      res.render("user/userbd")
-    });
-  } else {
-    return res.render("user/userbd", { errors: errors.errors });
-  }
+    }
+  })
+  .catch((error) => {
+    console.log(error);
+    res.send('Error en el proceso de inicio de sesión');
+  });
 },
-
+ 
  mostraruser: (req, res) => {    
     db.User.findAll()
       .then((usuario) => {
