@@ -9,7 +9,7 @@ const path= require("path");
 const storage =multer.diskStorage({
     // lugar donde vamos a guardar el archivo 
     destination:(req,file,cb)=>{
-        cb(null,path.join(__dirname,'../public/img'))
+        cb(null,path.join(__dirname,'../../public/img'))
         //cb(null,path.join(__dirname,'../../public/img'))
     },
   // el nombre que le vamos a dar al archivo 
@@ -20,7 +20,7 @@ const storage =multer.diskStorage({
     }
 });
 // ejecucion de multer 
-const  upload  =multer({storage})
+const  upload  =multer({storage:storage})
 
 // Importamos el controlador de productos
 const productsController = require("../controllers/productsController.js")
@@ -38,7 +38,7 @@ const productsController = require("../controllers/productsController.js")
 router.get("/", productsController.mostrar);
 
 router.get("/crearProducto",productsController.create2);
-router.post("/crearProducto", productsController.crearProducto);
+router.post("/crearProducto",upload.single('imagenProducto'), productsController.crearProducto);
 
 router.get("/:id", productsController.detalleProductobd); 
 router.get("/edicionProductobd/:id", productsController.editarId);

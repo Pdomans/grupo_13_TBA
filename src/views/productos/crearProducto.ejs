@@ -17,8 +17,8 @@
     <%-include("../partials/header.ejs") %>
 <!-- COPIAR HEADERS -->
 <main> 
-
-    <form id="registrocuadro" action="/productos/crearProducto" method="POST"  >
+ <!-- agregue el enctype form-data para poder hacer la parte de las imagenes  -->
+    <form id="registrocuadro" action="/productos/crearProducto" method="POST"  enctype="multipart/form-data" >
         <h1>Crear Producto </h1>
             <label for="name_product">Nombre: </label>           
                 <input type="text" name="name_product" id="name_product" placeholder="Ej:Zapatillas">
@@ -38,9 +38,7 @@
                 <input type="number" name="stock" id="stock" placeholder="...">
                     <br>                    
 
-            <!-- <label for="ImagenProducto">imagen del producto </label>
-            <input type="file" name ="ImagenProducto">  -->
-            
+           
             <button  type="submit" class="boton-reg">crear producto</button> 
     </form>
 </main>
